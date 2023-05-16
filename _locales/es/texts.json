@@ -1,0 +1,166 @@
+{
+  "extensionName": {
+    "message": "HeadingsMap",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "To show, browse and audit (for accessibility and SEO) the headings structure",
+    "description": "Description of the extension."
+  },
+  "headersTab": {
+    "message": "Encabezados",
+    "description": ""
+  },
+  "outlineTab": {
+    "message": "HTML5 Outline",
+    "description": ""
+  },
+  "releaseNotesMenuLink": {
+    "message": "Ultimos cambios",
+    "description": ""
+  },
+  "privacyPolicyMenuLink": {
+    "message": "Privacidad",
+    "description": ""
+  },
+  "settingsMenuLabel": {
+    "message": "Configuración",
+    "description": ""
+  },
+  "helpLabel": {
+    "message": "Ayuda",
+    "description": ""
+  },
+  "refreshResultsMenuLink": {
+    "message": "recargar resultados",
+    "description": ""
+  },
+  "closeButton": {
+    "message": "cerrar",
+    "description": ""
+  },
+  "closeButtonAriaLabel": {
+    "message": "cerrar panel",
+    "description": ""
+  },
+  "copyButtonLabel": {
+    "message": "copiar resultado",
+    "description": ""
+  },
+  "analysisAriaLabel": {
+    "message": "Análisis",
+    "description": ""
+  },
+  "infoMenuLabel": {
+    "message": "info",
+    "description": ""
+  },
+  "visible": {
+    "message": "visibles",
+    "description": ""
+  },
+  "collapseTreeNode": {
+    "message": "encabezados anidados",
+    "description": ""
+  },
+  "expandTreeNode": {
+    "message": "encabezados anidados",
+    "description": ""
+  },
+  "clickTheAnchor": {
+    "message": "Click en el icono para copiar la URL",
+    "description": ""
+  },
+  "headingLevel": {
+    "message": "Encabezado de nivel",
+    "description": ""
+  },
+  "element": {
+    "message": "Elemento",
+    "description": ""
+  },
+  "emptyHeader": {
+    "message": "Encabezado vacío",
+    "description": ""
+  },
+  "error": {
+    "message": "Error",
+    "description": ""
+  },
+  "potentiallyHiddenPlural": {
+    "message": "potencialmente ocultos",
+    "description": ""
+  },
+  "potentiallyHidden": {
+    "message": "potencialmente oculto",
+    "description": ""
+  },
+  "missingH1": {
+    "message": "No existe H1",
+    "description": ""
+  },
+  "wrongHierarchy": {
+    "message": "Error en la jerarquía de niveles",
+    "description": ""
+  },
+  "noHeadings": {
+    "message": "Sin encabezados",
+    "description": ""
+  },
+  "documents": {
+    "message": "Documentos",
+    "description": ""
+  },
+  "anchor": {
+    "message": "Ancla",
+    "description": ""
+  },
+  "generatedBy": {
+    "message": "Generado con",
+    "description": ""
+  },
+  "heading": {
+    "message": "Encabezado",
+    "description": ""
+  },
+  "errorNoHeadingSection": {
+    "message": "Error: sección sin encabezado",
+    "description": ""
+  },
+  "contributeMenuLink": {
+    "message": "Contribuir",
+    "description": ""
+  },
+  "pinPanelLabel": {
+    "message": "abrir automáticamente",
+    "description": ""
+  },
+  "pinPanelToTabLabel": {
+    "message": "mantener abierta al navegar",
+    "description": ""
+  },
+  "pinPanelByDomainLabel": {
+    "message": "abrir siempre para este dominio",
+    "description": ""
+  },
+  "pinPanelByURLLabel": {
+    "message": "abrir siempre para esta URL",
+    "description": ""
+  },
+  "pinMenuLabel": {
+    "message": "abrir automáticamente",
+    "description": ""
+  },
+  "switchToLeft": {
+    "message": "mover el panel a la izquierda",
+    "description": ""
+  },
+  "switchToRight": {
+    "message": "mover el panel a la derecha",
+    "description": ""
+  },
+  "active": {
+    "message": "activo",
+    "description": ""
+  }
+}

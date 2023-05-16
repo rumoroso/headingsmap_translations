@@ -1,0 +1,64 @@
+<html lang="es">
+<head><title>Política de privacidad</title></head>
+<body>
+<div class="flex-grid dialog-content" id="privacy_policy">
+    <h2 id="privacy-policy-header">Política de privacidad</h2>
+    <div class="contents custom-scrollbar">
+        <p>La presente política de privacidad se aplica a la extensión <strong>HeadingsMap</strong>, y tiene por objeto
+            informar a los usuarios sobre los permisos necesarios para su funcionamiento y los motivos por los que son
+            necesarios.</p>
+        <h3>No se recogen ni guardan datos</h3>
+        <p>La extensión <strong>HeadingsMap</strong> no recoge ningún dato
+            de ningún sitio web. Solo realiza el análisis del HTML en el lado del navegador (lado del cliente)
+            utilizando javascript (sin el uso de bibliotecas o frameworks de terceros) y no recoge, guarda o
+            comparte ningún dato de las páginas web.</p>
+        <p>Ha sido desarrollada para ayudar y apoyar a los desarrolladores, consultores, auditores de accesibilidad y
+            calidad, o a cualquier otro usuario en su trabajo diario. No hay intenciones ocultas.</p>
+
+        <h3>Permisos del navegador</h3>
+        <p><strong>HeadingsMap</strong> accede al HTML de la página que muestra el navegador. Por esta razón, y también
+            porque ofrece al usuario un conjunto de opciones y preferencias que pueden ser guardadas (tema, posición del
+            panel, tipo de análisis, identificación de errores, etc.), requiere algunos permisos específicos del
+            navegador para funcionar.</p>
+
+        <p>Ninguno de los permisos que se requieren recoge datos o contenido web. Se requieren para
+            realizar el análisis, dar al usuario información sobre el html y los estilos que ha aplicado a sus
+            elementos, y ofrecer un conjunto de opciones para definir la forma en que realizar el análisis, así cómo la
+            forma demostrar los resultados. No se recogen datos de los contenidos ni de los sitios en los que el usuario
+            utiliza la extensión. Además, la extensión no ejecuta ninguna acción mientras no están en
+            ejecución.</p>
+
+        <p>Esta es la lista de permisos del navegador y las razones por las que son necesarios:</p>
+        <dl>
+            <dt>all_urls</dt>
+            <dd>Este permiso permite que la extensión funcione en cualquier URL</dd>
+            <dt>activeTab</dt>
+            <dd>El permiso <code>activeTab</code> concede acceso temporal al sitio en el que se encuentra el usuario y
+                permite que la extensión utilice el permiso <code>tabs</code> en la pestaña actual. Este permiso no
+                muestra ninguna advertencia durante la instalación, y se utiliza para:
+                <ul>
+                    <li>Llamar a <code>tabs.executeScript</code> y <code>tabs.insertCSS</code> en la pestaña actual. La
+                        ejecución de script es necesaria para analizar el DOM. La inserción de CSS es necesaria para
+                        dar estilo al panel y resaltar elementos (característica que tienen la extensión que
+                        consiste en resaltar los elementos de la página al seleccionar su información en el panel)
+                    </li>
+                    <li>Identificar la URL y el título de la pestaña a través de una API que devuelve un objeto tabs. La
+                        única razón para obtener esta información es la de mostrar al usuario los documentos html que se
+                        están viendo y darle la opción de decidir en cuál debe realizar el análisis
+                    </li>
+                </ul>
+            </dd>
+            <dt>storage</dt>
+            <dd>Permite guardar (exclusivamente en el navegador) y recuperar las preferencias del usuario, tales como la
+                disposición del panel, el tema, los avisos de error, etc.
+            </dd>
+            <dt>webNavigation</dt>
+            <dd>Añade "listeners" de eventos para las distintas etapas de una navegación. La navegación consiste en
+                pasar de una URL a otra, normalmente (pero no siempre) en respuesta a una acción del usuario (como hacer
+                clic en un enlace o introducir una URL en la barra de direcciones)
+            </dd>
+        </dl>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<html lang="es">
+<head><title>Changelog</title></head>
+<body>
+<div class="flex-grid dialog-content" id="release_notes">
+    <h2 id="release-notes-header">Ultimos cambios</h2>
+    <div class="contents custom-scrollbar">
+        <dl>
+            <dt data-version="4.3.1">7/5/2023 (v 4.3.1)</dt>
+            <dd>Solucionado un problema con el foco cuando se navega con teclado. Los diálogos (configuración,
+                ayuda, etc.) se mantenían focusables cuando estaban cerrados, con lo que al acceder con teclado,
+                el foco recorría todos sus items. El cambio introducido previene este problema.</dd>
+            <dd>Añadidas las teclas arrowRight y arrowLeft para expandir y contraer los nodos cuando tienen el
+                foco.</dd>
+            <dd>Cuando un item tiene el foco, la tecla "enter" envía el foco directamente al encabezado.</dd>
+
+            <dt data-version="4.3.0">6/5/2023 (v 4.3.0)</dt>
+            <dd>Se ha añadido un botón que permite copiar el árbol de encabezados al portapapeles.</dd>
+            <dd>Se ha añadido la opción para abrir siempre asociada a una URL.</dd>
+            <dd>Mejoras en el código de los menús para hacerlos más accessibles.</dd>
+            <dd>Se incluyen mejoras en la accessibilidad.</dd>
+
+            <dt data-version="4.2.3">29/3/2023 (v 4.2.3)</dt>
+            <dd>Se ha actualizado el comportamiento cuando se mantiene abierta la extensión.</dd>
+
+            <dt data-version="4.2.2">23/3/2023 (v 4.2.2)</dt>
+            <dd>Se ha mejorado la forma en que el panel define the ancho que necesita respecto al elemento "body".</dd>
+
+            <dt data-version="4.2.1">21/3/2023 (v 4.2.1)</dt>
+            <dd>Se ha añadido espacio entre el panel y el contenido de la página.</dd>
+            <dd>Se han incluido algunos cambios que no afectan directamente a la experiencia de usuario. Se trata de
+                mejoras en el código de tal manera que su mantenimiento se facilita y además simplifica la introducción
+                de futuros cambios.</dd>
+
+            <dt data-version="4.2.0">14/3/2023 (v 4.2.0)</dt>
+            <dd>Añadido el soporte para colapsar y expandir el árbol generado a partir de los encabezados. En Windows,
+                utiliza la tecla "alt" junto con un número hace para hacer que el árbol se colapse (o expanda) en los
+                nodos que se corresponden con el encabezado de ese nivel. Por ejemplo, "alt + 2" colapsa (o
+                expande) los nodos creados a partir de encabezados h2. En Mac, la combinación es "ctrl + cmd" junto con
+                el nivel de encabezado a collapsar (o expandir).Esta funcionalidad solo está disponible para el árbol
+                "headingsMap" pero no para el "HTML 5 Outline".</dd>
+            <dd>Solucionado el problema de la pérdida de estilos del panel cuando está en una pestaña que se abre que no
+                está activa (por ejemplo, al abrir un enlace en una pestaña nueva).</dd>
+
+            <dt data-version="4.1.0">13/3/2023 (v 4.1.0)</dt>
+            <dd>Cuando se abre el panel, si el elemento BODY tiene algún margen, este es mantenido. De esta forma se
+                mantiene separación entre ambos elementos.</dd>
+
+            <dt data-version="4.0.0">7/3/2023 (v 4.0.0)</dt>
+            <dd>Hay una nueva opción para abrir la extensión automáticamente. Se puede configurar para que se abra
+                siempre o solo en el dominio de la página que esté activa. La forma de usarlo es mediante un menú (con
+                el icono "pin") incluido en la barra superior y que incluye ambas opciones que se abre usando el botón
+                del icono "pin".
+            </dd>
+            <dd>Ahora la opción de cambiar la posición del panel tiene su propio botón en la barra superior.</dd>
+            <dd>El menú de ajustes también es accesible directamente en la barra superior.</dd>
+            <dd>Nueva opción para considerar o ignorar los encabezados sin contenido. Por defecto se ignoran (en
+                versiones anteriores siempre se tenían en cuenta).
+            </dd>
+            <dd>Los cuadros de diálogo (para ajustes, ayuda, etc.) han cambiado un poco en la forma en que se
+                muestran.
+            </dd>
+            <dd>Esta versión también incluye otros cambios para mejorar la forma en que se inyecta y ejecuta la
+                funcionalidad. He hecho pruebas para comprobar que todo funcionaba como se esperaba, pero lo más
+                probable es que se me hayan pasado escenarios que podrían ocurrir. Si hay algo inesperado en el
+                comportamiento o en los resultados, por favor contáctame al correo <a href="mailto:headingsmap@gmail.com">headingsmap@gmail.com</a>.
+            </dd>
+
+            <dt data-version="3.10.1">26/7/2021 (v 3.10.1)</dt>
+            <dd>Cuando el elemento de encabezado (elementos h1 a h6) utiliza el atributo aria-level, la extensión lo
+                utiliza para identificar su nivel.
+            </dd>
+            <dd>Mejorados los estilos para los diálogos.</dd>
+            <dd>Añadida la traducción al español.</dd>
+            <dd>Nueva sección de contribuciones.</dd>
+            <dd>Eliminada la opción de menú "actualizar resultados.</dd>
+
+            <dt data-version="3.10.0">28/2/2021 (v 3.10.0)</dt>
+            <dd>Añadida la referencia visual opcional que ayuda a identificar las cabeceras/secciones que se encuentran
+                actualmente en la ventana gráfica. Cuando la página se desplaza, si la cabecera (o sección para el árbol
+                de HTML Outline) está en la ventana gráfica, el elemento correspondiente se resalta en el árbol
+                cambiando su fondo y con una línea de 4px en su lado derecho. Esta opción puede activarse en el panel de
+                configuración (casilla de verificación con la etiqueta "Relacionar con viewport").
+            </dd>
+            <dd>Corregido un error en el árbol headingsMap cuando estaba activada la opción de considerar las cabeceras
+                ocultas.
+            </dd>
+            <dd>Mejora de la accesibilidad del componente.</dd>
+            <dd>Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator.</dd>
+        </dl>
+
+        <p>A partir de este punto, el resto de la lista del histórico de cambios está en inglés. Intentaré ir
+            traduciendo a medida que pueda y haga nuevos cambios. </p>
+        <dl lang="en">
+            <dt data-version="3.9.1">7/12/2020 (v 3.9.1)</dt>
+            <dd>Fixed bug that caused content of elements with role "presentation" to be ignored</dd>
+            <dd>Published the <a href="https://rumoroso.bitbucket.io/headingsmap/todo.html">list of potential
+                improvements and new features</a>. The list is built based on also on market requirements and users
+                feedback
+            </dd>
+
+            <dt data-version="3.9.0">10/10/2020 (v 3.9.0)</dt>
+            <dd>Hide tab when HTML5 Outline analysis is not active (to activate it, check "settings > HTML 5 Outline
+                tree")
+            </dd>
+            <dd>Added ellipsis style to the main header (when the option "wrap long texts" is active, it also wraps the
+                text)
+            </dd>
+            <dd>Added Privacy Policy content and menu link</dd>
+
+            <dt data-version="3.8.3">29/6/2020 (v 3.8.3)</dt>
+            <dd>Updated font-family used by the tooltip</dd>
+
+            <dt data-version="3.8.2">28/6/2020 (v 3.8.2)</dt>
+            <dd>Added an optional tooltip that shows information about the header or section (it is shown when moving
+                the mouse over the tree). It can be activated in the options dialog and it is disabled by default
+            </dd>
+            <dd>Replaced select elements with checkboxes in the options dialog. By this way, the user only needs to
+                click once to switch the option value
+            </dd>
+            <dd>Added keyboard interaction to the tree, so when an item has the focus:
+                <ul>
+                    <li>arrow-up/arrow-down: move the focus the next of previous item</li>
+                    <li>enter key: collapse/expand item nested group</li>
+                    <li>escape key: if the tooltip is shown, it closes it</li>
+                </ul>
+            </dd>
+
+            <dt data-version="3.8.1">21/6/2020 (v 3.8.1)</dt>
+            <dd>Added the option to identify what are the elements that the tool consider hidden. When the option to
+                consider hidden elements is active (for the headers and/or HTML5 Outline tabs), an icon is shown at the
+                right side of the items that correspond with hidden elements and the total amount is shown as legend at
+                the bottom. Bear in mind that the way in which the extension identifies hidden elements is based in
+                estimations according to their styles, but documents can implement alternative ways to hide contents
+                (thanks to Alireza Esmikhani for suggestions of new features, and for reporting bugs, both for this
+                version and the previous one)
+            </dd>
+            <dd>Updated to use shadow DOM</dd>
+            <dd>Updated list of requested features to analyse:
+                <ul>
+                    <li>Identify initial header level for sectioning elements in the HTML5 Outline panel</li>
+                    <li>Improve options dialog</li>
+                    <li>Identify in the panel the relative position of the scroll in the page</li>
+                    <li>Offer an alternative way for users that want to share ideas of new features, give feedback or
+                        report bugs
+                    </li>
+                    <li>Show the list of future features and its status</li>
+                    <li>Version for Microsoft Edge</li>
+                    <li>...</li>
+                </ul>
+            </dd>
+
+            <dt data-version="3.8.0">14/6/2020 (v 3.8.0)</dt>
+            <dd>Added the option to consider HGROUP elements in the HTML5 outline</dd>
+            <dd>Improved scroll displacement to the highlighted element</dd>
+            <dd>Improved performance when generating the HTML5 outline</dd>
+            <dd>Bug-fixes related with:
+                <ul>
+                    <li>HTML5 outline (was not considering empty section elements correctly)</li>
+                    <li>aria-labelledby attribute</li>
+                    <li>Errors when identifying non standard HTML elements</li>
+                    <li>Layout</li>
+                    <li>others</li>
+                </ul>
+            </dd>
+
+            <dt data-version="3.7.0">27/5/2020 (v 3.7.0)</dt>
+            <dd>Add the option to wrap long texts in multiple lines instead of using ellipsis (thanks to Yang Yang for
+                the suggestion and feedback)
+            </dd>
+
+            <dt data-version="3.6.7">24/5/2020 (v 3.6.7)</dt>
+            <dd>Exclude from the headings tree the heading elements that have a valid role attribute different of
+                "heading" (thanks to Audrey Maniez for her suggestion and feedback)
+            </dd>
+
+            <dt data-version="3.6.6">6/4/2020 (v 3.6.6)</dt>
+            <dd>Add "identify anchors" option. When it is active (default value), if the headers or sections contain
+                anchors, the items in the tree show an icon. Clicking it, the anchor is copied to the clipboard. The
+                anchor can also be copied by using the browser action "copy link address"
+            </dd>
+
+            <dt data-version="3.6.5">2/3/2020 (v 3.6.5)</dt>
+            <dd>Add "save on resize" option. When it is active, the width of the panel is persisted when closing it</dd>
+
+            <dt data-version="3.6.4">23/2/2020 (v 3.6.4)</dt>
+            <dd>Update scroll bars style for Firefox</dd>
+            <dd>Update toolbar icon</dd>
+
+            <dt data-version="3.6.3">9/1/2020 (v 3.6.3)</dt>
+            <dd>Bug fix that prevented the panel from being open</dd>
+
+            <dt data-version="3.6.2">11/10/2019 (v 3.6.2)</dt>
+            <dd>Improve color contrast of the scroll bars elements in the bright theme</dd>
+
+            <dt data-version="3.6.1">26/9/2019 (v 3.6.1)</dt>
+            <dd>Improve the styles for making the panel more resilient to styles that the page could have (thanks to
+                Anika Henke for his feedback)
+            </dd>
+
+            <dt data-version="3.6.0">17/9/2019 (v 3.6.0)</dt>
+            <dd>Add the option for disabling the highlight of the element in the page when clicking the the tree
+                items
+            </dd>
+
+            <dt data-version="3.5.16">3/7/2019 (v 3.5.16)</dt>
+            <dd>Fix bug related with the error notification in the HTML5 outline tab</dd>
+            <dd>Improve styles</dd>
+
+            <dt data-version="3.5.15">30/6/2019 (v 3.5.15)</dt>
+            <dd>Fix bug related with the <em>href</em> attribute when the headers or sections have <em>name</em> or
+                <em>id</em></dd>
+
+            <dt data-version="3.5.14">20/6/2019 (v 3.5.14)</dt>
+            <dd>Show <em>aria-label</em> and <em>aria-labelledby</em> attribute values for sections, and
+                improve how their information is shown
+            </dd>
+            <dd>Update fields order in the settings panel</dd>
+            <dd>Minor refactor for improving the performance and simplify the code</dd>
+
+            <dt data-version="3.5.13">24/5/2019 (v 3.5.13)</dt>
+            <dd>Fix bug when activating the option for showing hidden headers</dd>
+            <dd>Fix style error that make the scroll bars don't work as expected</dd>
+            <dd>Performance improvements</dd>
+
+            <dt data-version="3.5.12">5/5/2019 (v 3.5.12)</dt>
+            <dd>Allow higher levels than 6 when using <em>aria-level</em> attribute</dd>
+            <dd>Consider <em>role</em> with value <em>heading</em> in the outline algorithm</dd>
+            <dd>Consider <em>aria-labelledby</em> attribute</dd>
+            <dd>Fix error on saving settings</dd>
+
+            <dt data-version="3.5.11">31/3/2019 (v 3.5.11)</dt>
+            <dd>Improve panel resizer</dd>
+            <dd>Improve how tabs are created</dd>
+            <dd>Fix styling when the panel is closed</dd>
+
+            <dt data-version="3.5.7">27/3/2019 (v 3.5.7)</dt>
+            <dd>Fix bug related that prevented showing headers when one of their ancestors had presentational role</dd>
+
+            <dt data-version="3.5.6">16/2/2019 (v 3.5.6)</dt>
+            <dd>Fix bug related with the text to show when all headers (including hidden ones) are considered</dd>
+
+            <dt data-version="3.5.5">22/1/2019 (v 3.5.5)</dt>
+            <dd>Dark theme by default</dd>
+            <dd>Added new information about the status of the HTML 5 Outline test and its algorithm based on
+                <a href="https://www.w3.org/TR/html53/" target="_blank"> HTML 5.3 Working Draft exclusions for the next
+                    Proposed Recommendation</a></dd>
+            <dd>When installing it for the first time, the HTML Outline tab is not active (activating it can be done in
+                the settings view)
+            </dd>
+
+            <dt data-version="3.5.4">13/1/2019 (v 3.5.4)</dt>
+            <dd>Stop considering the hidden elements for assistive technologies (optionally can be considered)</dd>
+            <dd>Consider <em>role</em> attribute with value <em>heading</em> when used for defining headers in the
+                document (combined with <em>aria-level</em> attribute). Thanks to Arnaud Delafosse for his proposal
+                about this improvement (and the previous one) and feedback
+            </dd>
+            <dd>Consider error when heading doesn't have any content</dd>
+            <dd>Improvements in document selector</dd>
+            <dd>Simplify settings</dd>
+            <dd>Bug fixes (errors not correctly identified, ...)</dd>
+
+            <dt data-version="3.5.2">24/12/2018 (v 3.5.2)</dt>
+            <dd>Improvements in document selector</dd>
+            <dd>Margin top when scrolling to element</dd>
+            <dd>Prevent refreshing when document is updated and its structure is the same</dd>
+            <dd>Improve in quality code (modularized, updated,...)</dd>
+            <dd>Bug fix, ..</dd>
+
+            <dt data-version="3.5.1">25/11/2018 (v 3.5.1)</dt>
+            <dd>Selector for getting the headers structure from documents that are included in iframes</dd>
+            <dd>Code modularized</dd>
+            <dd>Performance improvements</dd>
+            <dd>Bug fixes, ..</dd>
+
+            <dt data-version="3.4.3">03/11/2018 (v 3.4.3)</dt>
+            <dd>New collapsable menu</dd>
+            <dd>Included release notes</dd>
+            <dd>Included help content</dd>
+            <dd>Code changes for improving efficiency in the execution</dd>
+
+            <dt>25/10/2018 (v 3.4.2)</dt>
+            <dd>User can resize the panel</dd>
+            <dd>The panel can be located in the right side (as option)</dd>
+            <dd>Added <em>overscroll-behavior</em> property to the CSS</dd>
+            <dd>Performance improvements</dd>
+
+            <dt>23/10/2018 (v 3.4.1)</dt>
+            <dd>Only execute the test of the active tab</dd>
+            <dd>Include loading gif for better user experience</dd>
+            <dd>Clicking the tree root scrolls to the top of the page</dd>
+            <dd>Include options panel in the widget</dd>
+            <dd>Bugfix in the HTML5 Outline that were not showing all sections</dd>
+
+            <dt>18/10/2018 (v 3.4.0)</dt>
+            <dd>Show <em>aria-label</em> content as optional feature</dd>
+            <dd>The links in the trees includes the anchors so they work as link for references</dd>
+            <dd>Style scroll-bars for Chrome and Vivaldi</dd>
+            <dd>Improve code quality</dd>
+            <dd>Fix error when considering headers/sections located outside of the view as hidden</dd>
+
+            <dt>11/10/2018 (v 3.3.7)</dt>
+            <dd>Hidden headers and sections are optionally considered</dd>
+            <dd>Update how the header/section is highlighted</dd>
+            <dd>Improvements in analysis performance</dd>
+
+            <dt>09/10/2018 (v 3.3.6)</dt>
+            <dd>Add Dark theme as option</dd>
+            <dd>Set the HTML5 Outline test as optional</dd>
+            <dd>Improve general styling</dd>
+            <dd>Bugfixes</dd>
+        </dl>
+        <p class="note">I started to add the release notes at this point, so there is no for older versions.</p>
+    </div>
+</div>
+</body>
+</html>

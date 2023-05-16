@@ -1,0 +1,173 @@
+<html lang="es">
+<head><title>Options</title></head>
+<body>
+<div class="flex-grid dialog-content" id="settings_form">
+    <h2 id="settings-header">Configuración</h2>
+
+    <div class="contents settings-content">
+        <fieldset class="fieldset">
+            <legend>General</legend>
+            <div>
+                <label for="showHeadError">
+                    <input type="checkbox" name="showHeadError" id="showHeadError"/>
+                    Identificar errores
+                </label>
+                <label for="highLightElements">
+                    <input type="checkbox" name="highLightElements" id="highLightElements"/>
+                    Resaltar al hacer click
+                </label>
+                <label for="showAriaLabelContent">
+                    <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent" callback="refresh"/>
+                    Considerar ARIA
+                </label>
+                <label for="showAnchors">
+                    <input type="checkbox" name="showAnchors" id="showAnchors" callback="refresh"/>
+                    Identificar anclas
+                </label>
+                <label for="darkTheme">
+                    <input type="checkbox" name="darkTheme" id="darkTheme" callback="setTheme"/>
+                    Modo oscuro
+                </label>
+                <label for="savePanelWidthOnResize">
+                    <input type="checkbox" name="savePanelWidthOnResize" id="savePanelWidthOnResize"
+                           callback="updateInitialPanelWidth"/>
+                    Guardar ancho del panel
+                </label>
+                <label for="normalWrap">
+                    <input type="checkbox" name="normalWrap" id="normalWrap"/>
+                    Cortar texto largo
+                </label>
+                <label for="showTooltip">
+                    <input type="checkbox" name="showTooltip" id="showTooltip" callback="setLinksBehavior"/>
+                    Mostrar tooltip
+                </label>
+                <label for="viewportIndicator">
+                    <input type="checkbox" name="viewportIndicator" id="viewportIndicator" callback="refresh"/>
+                    Indicador de scroll
+                </label>
+                <label for="language">
+                    Idioma
+                    <select name="language" id="language">
+                    </select>
+                </label>
+                <input type="hidden" name="initialPanelWidth" id="initialPanelWidth"/>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Identificar errores</strong>: resalta en el árbol los encabezados que tienen algún error.
+                    </li>
+                    <li><strong>Resaltar al hacer click</strong>: hace que al hacer click en el árbol, el encabezado correspondiente
+                        se resalte por unos segundos.
+                    </li>
+                    <li><strong>Considerar ARIA</strong>: si los encabezados utilizan <em>aria-label</em> or <em>aria-labelledby</em>,
+                        la extensión puede utilizar uss valores como texto del encabezado (esto se debe a que en algunos casos, los
+                        lectores de pantalla podrían acceder a esa información y utilizarla como contenido).
+                    </li>
+                    <li><strong>Identificar anclas</strong>: si el encabezado puede utilizarse como ancha para navegación, la extensión
+                        puede obtener dicha información.
+                    </li>
+                    <li><strong>Modo oscuro</strong>: cambia los estilos haciendo que el fondo sea un todo oscuro y los colores de
+                        primer plano sean claros.
+                    </li>
+                    <li><strong>Guardar ancho del panel</strong>: cuando se cambia del ancho del panel, dicha información puede ser
+                        guardada, con lo que la próxima vez que se abra la extensión, el panel tendrá el mismo ancho.
+                    </li>
+                    <li><strong>Cortar texto largo</strong>: cuando no hay espacio suficiente para el texto, este es truncado. Con
+                        esta opción se puede desactivar dicho estilo y hacer que pase a ser multi-línea.
+                    </li>
+                    <li><strong>Mostrar tooltip</strong>: cuando se activa, al mover el puntero sobre el árbol se muestra
+                        un panel con información sobre el análisis.
+                    </li>
+                    <li><strong>Indicador de scroll</strong>: cuando se activa hace que se identifique en el árbol los encabezados
+                        que están visibles en el área visible de la ventana.
+                    </li>
+                    <li><strong>Idioma</strong>: cambia el idioma. El nuevo idioma no se aplica hasta la próxima vez que la extensión
+                        se abre.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Jerarquía de encabezados</legend>
+            <div>
+                <label for="showHeadErrorH1">
+                    <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
+                    Error si no hay h1 inicial
+                </label>
+                <label for="showHeadLevels">
+                    <input type="checkbox" name="showHeadLevels" id="showHeadLevels"/>
+                    Mostrar nivel de encabezado
+                </label>
+                <label for="showEmptyHeadings">
+                    <input type="checkbox" name="showEmptyHeadings" id="showEmptyHeadings" callback="refresh"/>
+                    Considerar encabezados vacíos
+                </label>
+                <label for="showHiddenHeaders">
+                    <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" callback="refresh"/>
+                    Considerar encabezados ocultos
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Error si no hay h1 inicial</strong>: cuando está activa la opción, considera error cuando el primer encabezado no es h1. Necesita tener activada la opción de "identificar errores".</li>
+                    <li><strong>Mostrar nivel de encabezado</strong>: muestra el nivel de encabezado antes de su texto.</li>
+                    <li><strong>Considerar encabezados vacíos</strong>: hace que los encabezados vacíos se consideren.</li>
+                    <li><strong>Considerar encabezados ocultos</strong>: hace que todos los encabezados sean considerados, independientemente de si están visibles o no.</li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>HTML 5 Outline</legend>
+            <div>
+                <label for="isOutlineTestActive">
+                    <input type="checkbox" name="isOutlineTestActive" id="isOutlineTestActive"
+                           callback="refresh disableFields"
+                           related-fields="showOutLevels showOutElem showHiddenSections considerHgroup"/>
+                    Activar analysis
+                </label>
+                <p class="note">Actualmente no hay navegadores ni tecnología asistiva con soporte nativo para el algoritmo
+                    W3C Outline.
+                    Por ese motivo, no se puede confiar plenamente en él para transmitir la estructura de los documentos a
+                    los usuarios
+                    y usuaria. Los autores de contenido deberçian seguir utilizando los niveles de encabezado (1 to 6) para
+                    hacerlo (<a href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                                target="_blank" lang="en">HTML 5.2 Creating an outline</a>)
+
+                <label for="showOutLevels">
+                    <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
+                    Mostrar índice de sección
+                </label>
+                <label for="showOutElem">
+                    <input type="checkbox" name="showOutElem" id="showOutElem"/>
+                    Mostrar etiqueta de sección
+                </label>
+                <label for="showHiddenSections">
+                    <input type="checkbox" name="showHiddenSections" id="showHiddenSections" callback="refresh"/>
+                    Considerar secciones ocultas *
+                </label>
+                <label for="considerHgroup">
+                    <input type="checkbox" name="considerHgroup" id="considerHgroup" callback="refresh"/>
+                    Considerar HGROUP
+                </label>
+            </div>
+            <p class="note">* Cuando la opción "considerar secciones ocultas" está activa, el análisis puede impactar en el
+                rendimiento cuando la página a revisar es
+                muy larga y compleja.</p>
+
+            <div class="custom-scrollbar settings-information">
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Activar analysis</strong>: extraer esta información puede impactar en el rendimiento, por lo que su ejecución es opcional y está desactivada por defecto. Cuando está activo, ambos análisis (encabezados y HTML 5 Ourline) aparecen como pestañas en el panel.</li>
+                    <li><strong>Mostrar índice de sección</strong>: muestra el índice de la sección.</li>
+                    <li><strong>Mostrar etiqueta de sección</strong>: incluye la etiqueta utilizada para generar la sección.</li>
+                    <li><strong>Considerar secciones ocultas</strong>: considera todos los elementos de sección, independientemente de si están visibles u ocultos.</li>
+                    <li><strong>Considerar HGROUP</strong>: con esta opción, el elemento HGROUP es tratado como elemento que genera sección.</li>
+                </ul>
+            </div>
+        </fieldset>
+    </div>
+</div>
+</body>
+</html>

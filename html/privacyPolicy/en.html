@@ -1,0 +1,65 @@
+<html lang="en">
+<head><title>Privacy Policy</title></head>
+<body>
+<div class="flex-grid dialog-content" id="privacy_policy">
+    <h2 id="privacy-policy-header">Privacy policy</h2>
+    <div class="contents custom-scrollbar">
+        <p>This Privacy Policy applies to the <strong>HeadingsMap</strong> browser extension and is intended to inform
+            users about the permissions that it requires to work and the reasons why they are required.</p>
+        <h3>No data collection</h3>
+        <p><strong>HeadingsMap</strong> does not collect any data from any website. They only
+            perform HTML analysis in the browser side (client side) using vanilla javascript (without the use of third
+            party libraries of frameworks) and do not collect, save or share any data from the web documents.</p>
+        <p>They were developed, and are maintained, for helping and supporting developers, consultants, quality auditors
+            or any other end user on their daily use/work. There are no hidden intents.</p>
+        <h3>Browser permissions</h3>
+        <p><strong>HeadingsMap</strong> access the HTML of the page that is
+            currently displayed by the browser, either the content directly descended from the html tag, as well as the
+            documents that are included by the use of iframes. For this reason, and also because it gives the user a set of
+            options and preferences that can be saved (theme, panel position, type of analysis, error identification, etc.), it
+            requires some specific permissions from the browser to work.</p>
+
+        <p>None of the permissions that the extension requires collect data from any website. They are required to perform the
+            html analysis, give the user information about the html and the styles that it has applied to its elements, and
+            give the user a set of options to define the way in which he/she wants to perform the analysis and how to show the
+            results. There is no data collection from the contents and there is no data collection about the sites in which the
+            user uses the extension. In addition, the extension does not perform any action while they are not in execution.</p>
+
+        <p>This is the list of browser permissions and the reasons why they are required:</p>
+        <dl>
+            <dt>all_urls</dt>
+            <dd>This permission allows the extension to work on any URL because it matches any URL that uses a permitted
+                scheme
+            </dd>
+            <dt>activeTab</dt>
+            <dd>The <code>activeTab</code> permission grants temporary access to the site the user is on and allows the
+                extension to use the "tabs" permission on the current tab. This permission displays no warning on installation.
+                This is used by the extension to:
+                <ul>
+                    <li>Call <code>tabs.executeScript</code> and <code>tabs.insertCSS</code> on the current tab. The script
+                        execution is required to analyse the DOM and the insertion of CSS is required to style the panel and to
+                        highlight the elements (feature that the extension has and that consist on highlight the elements in the
+                        page when selecting their information in the panel)
+                    </li>
+                    <li>Get the URL and the title the tab via an API that returns a <code>tabs.Tab</code> object. The only
+                        reason for getting this information is to show to the user the html documents that he/she is watching
+                        and give the option to decide (by selecting it in a custom selector that shows their title) in which one
+                        the analysis must be performed.
+                    </li>
+                </ul>
+            </dd>
+            <dt>storage</dt>
+            <dd>Enables extensions to store and retrieve data in the browser (not in any remote place or server), and listen for
+                changes to stored items. This feature is used by the extension to save and retrieve the user preferences, like
+                the panel disposition, theme, error warnings, etc.
+            </dd>
+            <dt>webNavigation</dt>
+            <dd>Add event listeners for the various stages of a navigation. A navigation consists of a frame in the browser
+                transitioning from one URL to another, usually (but not always) in response to a user action like clicking a
+                link or entering a URL in the location bar.
+            </dd>
+        </dl>
+    </div>
+</div>
+</body>
+</html>

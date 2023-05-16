@@ -1,0 +1,180 @@
+<html lang="en">
+<head><title>Options</title></head>
+<body>
+
+<div class="flex-grid dialog-content" id="settings_form">
+    <h2 id="settings-header">Settings</h2>
+
+    <div class="contents settings-content">
+        <fieldset class="fieldset">
+            <legend>General settings</legend>
+            <div>
+                <label for="showHeadError">
+                    <input type="checkbox" name="showHeadError" id="showHeadError"/>
+                    Identify errors
+                </label>
+                <label for="highLightElements">
+                    <input type="checkbox" name="highLightElements" id="highLightElements"/>
+                    Highlight on click
+                </label>
+                <label for="showAriaLabelContent">
+                    <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent"
+                           callback="refresh"/>
+                    Consider "aria" content
+                </label>
+                <label for="showAnchors">
+                    <input type="checkbox" name="showAnchors" id="showAnchors" callback="refresh"/>
+                    Identify anchors
+                </label>
+                <label for="darkTheme">
+                    <input type="checkbox" name="darkTheme" id="darkTheme" callback="setTheme"/>
+                    Dark mode
+                </label>
+                <label for="savePanelWidthOnResize">
+                    <input type="checkbox" name="savePanelWidthOnResize" id="savePanelWidthOnResize"
+                           callback="updateInitialPanelWidth"/>
+                    Save width on resize
+                </label>
+                <label for="normalWrap">
+                    <input type="checkbox" name="normalWrap" id="normalWrap"/>
+                    Wrap long text
+                </label>
+                <label for="showTooltip">
+                    <input type="checkbox" name="showTooltip" id="showTooltip" callback="setLinksBehavior"/>
+                    Show tooltip info
+                </label>
+                <label for="viewportIndicator">
+                    <input type="checkbox" name="viewportIndicator" id="viewportIndicator" callback="refresh"/>
+                    Relate with viewport
+                </label>
+                <label for="language">
+                    Language
+                    <select name="language" id="language">
+                    </select>
+                </label>
+                <input type="hidden" name="initialPanelWidth" id="initialPanelWidth"/>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Identify errors</strong>: when active, it highlights the tree item that corresponds
+                        with a header that has an error.
+                    </li>
+                    <li><strong>Highlight on click</strong>: when clicking the tree item, it highlights (for a few
+                        seconds) with an outline the header in the document.
+                    </li>
+                    <li><strong>Consider "aria" content</strong>: if the headers use <em>aria-label</em> or <em>aria-labelledby</em>
+                        attributes, the tool can take their value and use it as text content (the reasoning is that
+                        screen-readers may access to them and use them as content).
+                    </li>
+                    <li><strong>Identify anchors</strong>: if the header can be used as anchor, that information is
+                        considered.
+                    </li>
+                    <li><strong>Dark mode</strong>: when used, it changes the styles of the tool to have dark
+                        background
+                        and light foreground colors.
+                    </li>
+                    <li><strong>Save width on resize</strong>: if it is checked, and if the panel is resized, the
+                        new
+                        width is saved, so next time the tool is used, it keeps it.
+                    </li>
+                    <li><strong>Wrap long text</strong>: by default, the text in the tree items is truncated. When
+                        activating this option, it adapts to multiple lines if needed.
+                    </li>
+                    <li><strong>Show tooltip info</strong>: when it is active, when moving the pointer over the
+                        tree, it displays a tooltip with information.
+                    </li>
+                    <li><strong>Relate with viewport</strong>: when it is active, it shows a light background in the
+                        items that correspond with the headers that are in the viewport area.
+                    </li>
+                    <li><strong>Language</strong>: it switches the language. The new language is not applied until
+                        next time the extension is reopen.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Headers structure tree</legend>
+            <div>
+                <label for="showHeadErrorH1">
+                    <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
+                    Error if not initial h1
+                </label>
+                <label for="showHeadLevels">
+                    <input type="checkbox" name="showHeadLevels" id="showHeadLevels"/>
+                    Show heading level
+                </label>
+                <label for="showEmptyHeadings">
+                    <input type="checkbox" name="showEmptyHeadings" id="showEmptyHeadings" callback="refresh"/>
+                    Consider empty headings
+                </label>
+                <label for="showHiddenHeaders">
+                    <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" callback="refresh"/>
+                    Consider hidden headers
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Error if not initial h1</strong>: when it is active, it highlights as error if the first header is not h1. It needs "Identify errors" to be active.</li>
+                    <li><strong>Show header level</strong>: it shows in the tree the level of the header before its text.</li>
+                    <li><strong>Consider empty headers</strong>: it makes the empty headers to be considered in the tree and its hierarchy.</li>
+                    <li><strong>Consider hidden headers</strong>: it identifies and shows the information of all headers, no matter if they are hidden.</li>
+                </ul>
+            </div>
+
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>
+                HTML 5 Outline tree
+            </legend>
+            <div>
+                <label for="isOutlineTestActive">
+                    <input type="checkbox" name="isOutlineTestActive" id="isOutlineTestActive"
+                           callback="refresh disableFields"
+                           related-fields="showOutLevels showOutElem showHiddenSections considerHgroup"/>
+                    Activate analysis
+                </label>
+                <p class="note">There are no browsers or assistive technology with native implementations of W3C
+                    Outline algorithm. Therefore it cannot be relied upon to convey document structure to users, and
+                    authors should use heading rank for doing it (<a
+                            href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                            target="_blank">HTML 5.2 Creating an outline</a>)
+                </p>
+
+                <label for="showOutLevels">
+                    <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
+                    Show section index
+                </label>
+                <label for="showOutElem">
+                    <input type="checkbox" name="showOutElem" id="showOutElem"/>
+                    Show section tag
+                </label>
+                <label for="showHiddenSections">
+                    <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
+                           callback="refresh"/>
+                    Consider hidden sections *
+                </label>
+                <label for="considerHgroup">
+                    <input type="checkbox" name="considerHgroup" id="considerHgroup" callback="refresh"/>
+                    Consider HGROUP
+                </label>
+            </div>
+            <p class="note">* When "consider hidden sections" option is active, the analysis can have performance
+                implications in long documents</p>
+
+            <div class="custom-scrollbar settings-information">
+                <h3>Details</h3>
+                <ul>
+                    <li><strong>Activate analysis</strong>: extract the document outline can impact in the performance, so its execution is optional and deactivated by default. When it is active, both analysis (headings and HTML 5 Outline) appear as tabs in the panel.</li>
+                    <li><strong>Show section index</strong>: it shows in the section index before its text.</li>
+                    <li><strong>Show section tag</strong>: it includes the section tag as part of the content in the tree.</li>
+                    <li><strong>Consider hidden sections</strong>: it identifies and shows the information of all sections, no matter if they are hidden.</li>
+                    <li><strong>Consider HGROUP</strong>: with this option, the analysis considers HGROUP element as section element.</li>
+                </ul>
+            </div>
+        </fieldset>
+    </div>
+</div>
+</body>
+</html>

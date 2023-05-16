@@ -1,0 +1,94 @@
+<html lang="es">
+<head><title>Ayuda e información</title></head>
+<body>
+<div class="flex-grid dialog-content" id="help_panel">
+    <h2 id="help-header">Ayuda</h2>
+    <div class="contents custom-scrollbar">
+        <p>HeadingsMap es una extensión del navegador que muestra la estructura de encabezados de las páginas web. Además, puede identificar errores potenciales (como niveles de encabezado omitidos), ayudando al realizar revisiones de accesibilidad
+            controles de calidad, auditorías SEO,...</p>
+        <p>La extensión también incluye la función opcional de mostrar la estructura de secciones basada en el algoritmo HTML outline
+            descrito por el W3C. Ambos resultados, los encabezados y las secciones se muestran en un árbol que
+            relaciona los niveles de anidamiento con la jerarquía del documento.</p>
+        <h3>Características</h3>
+        <ul>
+            <li>Muestra la lista de encabezados con información sobre su nivel y estructura jerárquica, e identifica
+                posibles errores
+            </li>
+            <li>Si hay elementos que utilizan el atributo <em>role</em> con valor <em>heading</em>, también son
+                listados. Su nivel es definido por el valor del atributo <em>aria-level</em>, y por defecto es 2 cuando
+                no se utiliza
+            </li>
+            <li>Muestra las secciones (HTML 5 Outline) con información de sus encabezados e identifica posibles errores.
+                Este análisis es opcional y se puede desactivar
+            </li>
+            <li>Cuando la página incluye más de un documento, un selector permite mostrar la información de encabezados
+                y secciones para cada uno de ellos
+            </li>
+            <li>Al pulsar en los encabezados, la web hace scroll hasta la posición del encabezado/sección y lo resalta
+            </li>
+            <li>Detecta los cambios en el DOM y cuando terminan actualiza los árboles</li>
+            <li>Tema oscuro (opcional)</li>
+            <li>Opcionalmente muestra los encabezados y secciones ocultas (ocultos para las tecnologías de asistencia).
+                Cuando se muestran, el árbol incluye un icono para identificar cuáles fueron detectados como visibles y
+                cuáles ocultos
+            </li>
+            <li>Si el encabezado (o sección) es un ancla, el enlace en los resultados tiene el href apuntando a ella
+                (útil para ser copiado directamente desde el árbol con la opción del menú contextual del navegador)
+            </li>
+            <li>Si el contenido del encabezado/sección utiliza aria-label, se puede mostrar su valor (configurable en la
+                sección de ajustes)
+            </li>
+            <li>Disponible en múltiples navegadores. Utiliza la API "browserExtensions" por lo que es compatible con
+                Chrome, Firefox, Microsoft Edge,...
+            </li>
+        </ul>
+        <h3>Jerarquía de encabezados - configuración</h3>
+        <dl>
+            <dt>Error si no hay h1 inicial</dt>
+            <dd>Es comúnmente aceptado que el primer encabezado del documento debe ser un h1. Con esta opción activa, e
+                "identificar errores" también, se identifica como error si no se cumple la regla
+            </dd>
+            <dt>Mostrar nivel de encabezado</dt>
+            <dd>Muestra el nivel de encabezado (1 a 6) que se utiliza como etiqueta (h1 a h6)</dd>
+            <dt>Considerar encabezados ocultos</dt>
+            <dd>Cuando el documento incluye encabezados que están ocultos para cualquier herramienta (no sólo
+                visualmente ocultos, sino también ocultos para las tecnologías de asistencia), no se muestran en el
+                árbol. Esta opción hace que se muestren en el panel como si fuesen visibles
+            </dd>
+            <dt>Identificar anclas</dt>
+            <dd>Cuando los encabezados incluyen anclas, éstas muestran un icono en el árbol. Al hacer clic en el icono
+                se
+                copia la dirección URL dirección al portapapeles (igual que la acción "copiar dirección de enlace" del
+                navegador)
+            </dd>
+        </dl>
+        <h3>HTML 5 outline - configuración</h3>
+        <p>Según el W3C, no hay navegadores ni tecnologías de asistencia que lo soporten, por lo que tener un buen
+            resultado en el test apenas repercute en la accesibilidad final. Según el W3C, cualquier implementación y
+            uso será rastreada, y puede dar lugar a cambios significativos en el futuro del algoritmo.
+        </p>
+        <dl>
+            <dt>Mostrar índice de sección</dt>
+            <dd>Según el algoritmo, cada sección tendría un índice en el árbol. Este ajuste muestra/oculta dicho valor
+            </dd>
+            <dt>Mostrar etiqueta de sección</dt>
+            <dd>Con este ajuste, el árbol muestra la etiqueta HTML que <a
+                    href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
+                    target="_blank">genera las secciones</a>.
+            </dd>
+            <dt>Considerar secciones ocultas</dt>
+            <dd>Cuando el documento incluye secciones ocultas (no sólo visualmente ocultas, sino también ocultas para
+                las tecnologías de asistencia), no se muestran en el árbol. Al activar esta opción, se muestran. En
+                documentos largos, esto podría afectar al rendimiento ya que requiere comprobar todos los elementos del
+                DOM
+            </dd>
+            <dt>Considerar HGROUP</dt>
+            <dd>Cuando se activa, considera el elemento HGROUP como elemento de encabezamiento. De acuerdo con su
+                comportamiento toma el nivel de encabezamiento más alto como nivel y en el esquema los elementos de
+                encabezamiento que contiene no son considerados
+            </dd>
+        </dl>
+    </div>
+</div>
+</body>
+</html>

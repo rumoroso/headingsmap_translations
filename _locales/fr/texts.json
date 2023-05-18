@@ -1,0 +1,166 @@
+{
+  "extensionName": {
+    "message": "HeadingsMap",
+    "description": "Nom de l’extension."
+  },
+  "extensionDescription": {
+    "message": "Montrer, parcourir et auditer la hiérarchie de titres",
+    "description": "Description de l’extension."
+  },
+  "headersTab": {
+    "message": "Titres",
+    "description": ""
+  },
+  "outlineTab": {
+    "message": "Outline HTML5",
+    "description": ""
+  },
+  "releaseNotesMenuLink": {
+    "message": "Notes de version",
+    "description": ""
+  },
+  "privacyPolicyMenuLink": {
+    "message": "Politique de confidentialité",
+    "description": ""
+  },
+  "settingsMenuLabel": {
+    "message": "Paramètres",
+    "description": ""
+  },
+  "helpLabel": {
+    "message": "Aide",
+    "description": ""
+  },
+  "refreshResultsMenuLink": {
+    "message": "Rafraîchir les résultats",
+    "description": ""
+  },
+  "closeButton": {
+    "message": "Fermer",
+    "description": ""
+  },
+  "closeButtonAriaLabel": {
+    "message": "Fermer le panneau",
+    "description": ""
+  },
+  "copyButtonLabel": {
+    "message": "Copier les résultats",
+    "description": ""
+  },
+  "analysisAriaLabel": {
+    "message": "Analyse",
+    "description": ""
+  },
+  "infoMenuLabel": {
+    "message": "Informations",
+    "description": ""
+  },
+  "potentiallyHiddenPlural": {
+    "message": "peut-être masqué",
+    "description": ""
+  },
+  "visible": {
+    "message": "visible",
+    "description": ""
+  },
+  "collapseTreeNode": {
+    "message": "titres imbriqués",
+    "description": ""
+  },
+  "expandTreeNode": {
+    "message": "titres imbriqués",
+    "description": ""
+  },
+  "clickTheAnchor": {
+    "message": "Cliquer pour copier l'URL de l’ancre",
+    "description": ""
+  },
+  "headingLevel": {
+    "message": "Niveau de titre",
+    "description": ""
+  },
+  "element": {
+    "message": "Élément",
+    "description": ""
+  },
+  "emptyHeader": {
+    "message": "Titre vide",
+    "description": ""
+  },
+  "error": {
+    "message": "Erreur",
+    "description": ""
+  },
+  "potentiallyHidden": {
+    "message": "Peut-être masqué",
+    "description": ""
+  },
+  "missingH1": {
+    "message": "Aucun H1",
+    "description": ""
+  },
+  "wrongHierarchy": {
+    "message": "Mauvais niveau de hiérarchie",
+    "description": ""
+  },
+  "noHeadings": {
+    "message": "Aucun titre",
+    "description": ""
+  },
+  "documents": {
+    "message": "Documents",
+    "description": ""
+  },
+  "anchor": {
+    "message": "Ancre",
+    "description": ""
+  },
+  "generatedBy": {
+    "message": "Généré par",
+    "description": ""
+  },
+  "heading": {
+    "message": "Titre",
+    "description": ""
+  },
+  "errorNoHeadingSection": {
+    "message": "Erreur: section sans titre",
+    "description": ""
+  },
+  "contributeMenuLink": {
+    "message": "Contribuer",
+    "description": ""
+  },
+  "pinPanelLabel": {
+    "message": "Toujours ouvrir automatiquement",
+    "description": ""
+  },
+  "pinPanelToTabLabel": {
+    "message": "Garder ouvert lors de la navigation",
+    "description": ""
+  },
+  "pinPanelByDomainLabel": {
+    "message": "Toujours ouvrir pour ce domaine",
+    "description": ""
+  },
+  "pinPanelByURLLabel": {
+    "message": "Toujours ouvrir pour cette URL",
+    "description": ""
+  },
+  "pinMenuLabel": {
+    "message": "Ouvrir automatiquement",
+    "description": ""
+  },
+  "switchToLeft": {
+    "message": "Ancrer le panneau à gauche",
+    "description": ""
+  },
+  "switchToRight": {
+    "message": "Ancrer le panneau à droite",
+    "description": ""
+  },
+  "active": {
+    "message": "actif",
+    "description": ""
+  }
+}

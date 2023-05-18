@@ -1,0 +1,57 @@
+<html lang="fr">
+
+<head>
+    <title>Politique de confidentialité</title>
+</head>
+
+<body>
+    <div class="flex-grid dialog-content" id="privacy_policy">
+        <h2 id="privacy-policy-header">Politique de confidentialité</h2>
+        <div class="contents custom-scrollbar">
+            <p>Cette politique de confidentialité s'applique à l'extension de navigateur <strong>HeadingsMap</strong>
+                et vise à informer les utilisateurs des autorisations requises pour son fonctionnement et des raisons
+                pour lesquelles elles sont nécessaires.
+            </p>
+            <h3>Aucune collecte de données</h3>
+            <p><strong>HeadingsMap</strong> ne collecte aucune donnée à partir de quelque site web que ce soit.
+                L'extension effectue uniquement une analyse HTML côté navigateur (côté client) à l'aide de JavaScript
+                (sans utiliser de bibliothèques ou de frameworks tiers)
+                et ne collecte, ne sauvegarde ni ne partage aucune donnée des documents web.</p>
+            <p>Elle a été développée et est maintenue dans le but d'aider et de soutenir les personnes dans leur utilisation/travail quotidien (développement, audit d’accessibilité, SEO, qualité…).
+                Il n'y a pas d'intentions cachées.</p>
+            <h3>Permissions du navigateur</h3>
+            <p><strong>HeadingsMap</strong> accède au code HTML de la page actuellement affichée par le navigateur, à la fois le contenu directement descendant de la balise html et les documents inclus par le biais des iframes.
+                Pour cette raison, et aussi parce qu'elle offre un ensemble d'options et de préférences pouvant être sauvegardées (thème, position du panneau, type d'analyse, identification des erreurs, etc.), elle requiert certaines permissions spécifiques du navigateur pour fonctionner.
+            </p>
+
+            <p>Aucune des permissions requises par l'extension ne collecte de données à partir de quelque site web que ce soit. 
+                Elles sont nécessaires pour effectuer l'analyse HTML, fournir à l'utilisateur des informations sur le HTML et les styles appliqués à ses éléments, et lui donner un ensemble d'options pour définir la manière dont il souhaite effectuer l'analyse et afficher les résultats. 
+                Aucune collecte de données n'est effectuée à partir des contenus et aucune collecte de données n'est effectuée sur les sites dans lesquels l'utilisateur utilise l'extension. 
+                De plus, l'extension n'effectue aucune action lorsqu'elle n'est pas en cours d'exécution.</p>
+
+            <p>Voici la liste des permissions du navigateur et les raisons pour lesquelles elles sont requises&nbsp;:</p>
+            <dl>
+                <dt>all_urls</dt>
+                <dd>Cette permission permet à l'extension de fonctionner sur n'importe quelle URL car elle correspond à n'importe quelle URL utilisant un schéma autorisé.
+                </dd>
+                <dt>activeTab</dt>
+                <dd>La permission <code>activeTab</code> accorde un accès temporaire au site sur lequel se trouve l'utilisateur ou l'utilisatrice et permet à l'extension d'utiliser la permission "tabs" sur l'onglet actuel. 
+                    Cette permission n'affiche aucune alerte lors de l'installation. Elle est utilisée par l'extension pour :
+                    <ul>
+                        <li>Appeler <code>tabs.executeScript</code> et <code>tabs.insertCSS</code> sur l'onglet actif. 
+                            L'exécution du script est nécessaire pour analyser le DOM et l'insertion de CSS est nécessaire pour styliser le panneau et mettre en évidence les éléments (fonctionnalité de l'extension consistant à mettre en évidence les éléments de la page lors de la sélection de leurs informations dans le panneau).</li>
+                        <li>Obtenir l'URL et le titre de l'onglet via une API qui renvoie un objet <code>tabs.Tab</code>. La seule raison de récupérer ces informations est de montrer à l'utilisateur ou l'utilisatrice les documents HTML consultés et de donner la possibilité de décider (en les sélectionnant dans un sélecteur personnalisé affichant leur titre) dans lequel l'analyse doit être effectuée.</li>
+                    </ul>
+                </dd>
+                <dt>storage</dt>
+                <dd>Permet aux extensions de stocker et de récupérer des données dans le navigateur (pas à distance ou sur un serveur) et d'écouter les modifications des éléments stockés. 
+                    Cette fonctionnalité est utilisée par l'extension pour enregistrer et récupérer les préférences de l'utilisateur, telles que la disposition du panneau, le thème, les avertissements d'erreurs, etc.</dd>
+                <dt>webNavigation</dt>
+                <dd>Ajoute des écouteurs d'événements pour les différentes étapes d'une navigation. Une navigation consiste en une transition d'une URL à une autre dans une fenêtre du navigateur, généralement (mais pas toujours) en réponse à une action de l'utilisateur, comme cliquer sur un lien ou saisir une URL dans la barre d'adresse.</dd> 
+                </dd>
+            </dl>
+        </div>
+    </div>
+</body>
+
+</html>

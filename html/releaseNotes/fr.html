@@ -2,207 +2,317 @@
 <head><title>Changelog</title></head>
 <body>
 <div class="flex-grid dialog-content" id="release_notes">
-    <h2 id="release-notes-header">Notes de version</h2>
+    <h1 id="release-notes-header">Notes de version</h1>
     <div class="contents custom-scrollbar">
         <dl>
+            <dt data-version="4.4.0">18/5/2023 (v 4.4.0)</dt>
+            <dd>Translated to French by Luce Carevic. Thank you very much for her willingness to collaborate in this way
+                and for doing it so quickly.</dd>
+            <dd>Correction d'un bug qui empêchait le lancement de la configuration de l'infobulle (avec les informations
+                d'en-tête) tant que l'extension n'était pas rouverte.</dd>
+
             <dt data-version="4.3.1">7/5/2023 (v 4.3.1)</dt>
-                <dd>Empêche le focus sur les éléments masqués. Lorsque les dialogues (paramètres, aide, notes de version, etc.) sont fermés, ils restaient accessibles au focus, de sorte que lors de l'accès au clavier, le focus passait par tous leurs éléments. La modification empêche cela.</dd>
-                <dd>Ajout des touches de clavier arrowRight et arrowLeft pour développer/réduire les nœuds de l'arborescence (lorsqu'ils ont le focus).</dd>
-                <dd>Lorsqu'un élément a le focus, la touche "Entrée" déplace le focus sur le titre correspondant.</dd>
+            <dd>Empêche le focus sur les éléments masqués. Lorsque les dialogues (paramètres, aide, notes de version,
+                etc.) sont fermés, ils restaient accessibles au focus, de sorte que lors de l'accès au clavier, le focus
+                passait par tous leurs éléments. La modification empêche cela.
+            </dd>
+            <dd>Ajout des touches de clavier arrowRight et arrowLeft pour développer/réduire les nœuds de l'arborescence
+                (lorsqu'ils ont le focus).
+            </dd>
+            <dd>Lorsqu'un élément a le focus, la touche "Entrée" déplace le focus sur le titre correspondant.</dd>
             <dt data-version="4.3.0">6/5/2023 (v 4.3.0)</dt>
-                <dd>Ajout d'un bouton pour copier l'arborescence dans le presse-papiers.</dd>
-                <dd>Ajout de l'option "toujours ouvrir" pour l'URL actuelle.</dd>
-                <dd>Amélioration du code qui génère les menus, maintenant ce sont de véritables boutons.</dd>
-                <dd>Comprend des améliorations en termes d'accessibilité.</dd>
+            <dd>Ajout d'un bouton pour copier l'arborescence dans le presse-papiers.</dd>
+            <dd>Ajout de l'option "toujours ouvrir" pour l'URL actuelle.</dd>
+            <dd>Amélioration du code qui génère les menus, maintenant ce sont de véritables boutons.</dd>
+            <dd>Comprend des améliorations en termes d'accessibilité.</dd>
             <dt data-version="4.2.3">23/3/2023 (v 4.2.3)</dt>
-                <dd>Mise à jour de la manière dont le panneau peut être maintenu ouvert.</dd>
+            <dd>Mise à jour de la manière dont le panneau peut être maintenu ouvert.</dd>
             <dt data-version="4.2.2">29/3/2023 (v 4.2.2)</dt>
-                <dd>Amélioration de la manière dont le panneau prend de la place lors de l'ouverture et du redimensionnement.</dd>
+            <dd>Amélioration de la manière dont le panneau prend de la place lors de l'ouverture et du
+                redimensionnement.
+            </dd>
             <dt data-version="4.2.1">21/3/2023 (v 4.2.1)</dt>
-                <dd>Maintenant, il y a un espace entre le panneau et le contenu.</dd>
-                <dd>Il y a eu des modifications dans le code qui, bien qu'elles ne soient pas orientées vers l'utilisateur, étaient nécessaires pour améliorer la qualité du code, afin qu'il soit plus facile à maintenir et à modifier dans le futur.</dd>
+            <dd>Maintenant, il y a un espace entre le panneau et le contenu.</dd>
+            <dd>Il y a eu des modifications dans le code qui, bien qu'elles ne soient pas orientées vers l'utilisateur,
+                étaient nécessaires pour améliorer la qualité du code, afin qu'il soit plus facile à maintenir et à
+                modifier dans le futur.
+            </dd>
 
-                <dt data-version="4.2.0">14/3/2023 (v 4.2.0)</dt>
-                <dd>Ajout des raccourcis clavier pour basculer les nœuds de l'arborescence par niveau de titre. Sur Windows, utilisez la combinaison de la touche "alt" avec un numéro de touche pour réduire (ou développer) les nœuds de l'arborescence correspondant aux titres du même niveau que le numéro. Par exemple, "alt + 2" réduit (ou développe) tous les nœuds créés à partir des éléments h2. Sur Mac, la combinaison est "ctrl + cmd" avec le niveau de titre. Ce comportement est uniquement disponible pour l'arborescence "headingsMap" mais pas pour l'arborescence "HTML5 outline".</dd>
-                <dd>Correction du problème des styles incorrects dans le panneau lorsqu'il est dans un nouvel onglet qui n'est pas directement mis au premier plan (par exemple, lorsqu'un lien est ouvert dans un nouvel onglet).</dd>
-                <dt data-version="4.1.0">13/3/2023 (v 4.1.0)</dt>
-                <dd>Lors de l'ouverture du panneau, la marge de l'élément BODY est conservée. De cette façon, il y a un espace entre le panneau et le contenu.</dd>
-                <dt data-version="4.0.0">7/3/2023 (v 4.0.0)</dt>
-                <dd>Il y a une nouvelle option pour ouvrir automatiquement l'extension. Elle peut être configurée pour s'ouvrir toujours ou uniquement dans le domaine de la page active. La façon de l'utiliser est via un menu (avec l'icône "épingler") inclus dans la barre supérieure et qui propose les deux options accessibles avec le bouton-icône "épingler".</dd>
-                <dd>Maintenant, l'option "Changer la position du panneau" a son propre bouton dans la barre supérieure.</dd>
-                <dd>Le menu des paramètres est également accessible directement dans la barre supérieure.</dd>
-                <dd>Nouvelle option pour prendre en compte ou ignorer les titres sans contenu. Ils sont ignorés par défaut (dans les versions précédentes, ils étaient toujours pris en compte).</dd>
-                <dd>Les dialogues (pour les paramètres, l'aide, etc.) ont légèrement changé dans leur façon d'être affichés.</dd>
-                <dd>Cette version comprend également d'autres modifications pour améliorer la façon dont la fonctionnalité est injectée et exécutée. Des tests ont été effectués pour vérifier que tout fonctionnait comme prévu, mais il est possible que j'ai manqué des cas qui pourraient se produire. Si vous rencontrez un comportement ou des résultats inattendus, veuillez me contacter par e-mail à l'adresse <a href="mailto:headingsmap@gmail.com">headingsmap@gmail.com</a>.</dd>
-                <dt data-version="3.10.1">26/7/2021 (v 3.10.1)</dt>
-<dd>Lorsque l'élément de titre (éléments h1 à h6) utilise l'attribut <em>aria-level</em>, l'extension l'utilise pour identifier son niveau.</dd>
-<dd>Amélioration des styles des dialogues.</dd>
-<dd>Ajout de la traduction en espagnol.</dd>
-<dd>Nouvelle section de contribution.</dd>
-<dd>Suppression de l'option de menu "actualiser les résultats".</dd>
+            <dt data-version="4.2.0">14/3/2023 (v 4.2.0)</dt>
+            <dd>Ajout des raccourcis clavier pour basculer les nœuds de l'arborescence par niveau de titre. Sur Windows,
+                utilisez la combinaison de la touche "alt" avec un numéro de touche pour réduire (ou développer) les
+                nœuds de l'arborescence correspondant aux titres du même niveau que le numéro. Par exemple, "alt + 2"
+                réduit (ou développe) tous les nœuds créés à partir des éléments h2. Sur Mac, la combinaison est "ctrl +
+                cmd" avec le niveau de titre. Ce comportement est uniquement disponible pour l'arborescence
+                "headingsMap" mais pas pour l'arborescence "HTML5 outline".
+            </dd>
+            <dd>Correction du problème des styles incorrects dans le panneau lorsqu'il est dans un nouvel onglet qui
+                n'est pas directement mis au premier plan (par exemple, lorsqu'un lien est ouvert dans un nouvel
+                onglet).
+            </dd>
+            <dt data-version="4.1.0">13/3/2023 (v 4.1.0)</dt>
+            <dd>Lors de l'ouverture du panneau, la marge de l'élément BODY est conservée. De cette façon, il y a un
+                espace entre le panneau et le contenu.
+            </dd>
+            <dt data-version="4.0.0">7/3/2023 (v 4.0.0)</dt>
+            <dd>Il y a une nouvelle option pour ouvrir automatiquement l'extension. Elle peut être configurée pour
+                s'ouvrir toujours ou uniquement dans le domaine de la page active. La façon de l'utiliser est via un
+                menu (avec l'icône "épingler") inclus dans la barre supérieure et qui propose les deux options
+                accessibles avec le bouton-icône "épingler".
+            </dd>
+            <dd>Maintenant, l'option "Changer la position du panneau" a son propre bouton dans la barre supérieure.</dd>
+            <dd>Le menu des paramètres est également accessible directement dans la barre supérieure.</dd>
+            <dd>Nouvelle option pour prendre en compte ou ignorer les titres sans contenu. Ils sont ignorés par défaut
+                (dans les versions précédentes, ils étaient toujours pris en compte).
+            </dd>
+            <dd>Les dialogues (pour les paramètres, l'aide, etc.) ont légèrement changé dans leur façon d'être
+                affichés.
+            </dd>
+            <dd>Cette version comprend également d'autres modifications pour améliorer la façon dont la fonctionnalité
+                est injectée et exécutée. Des tests ont été effectués pour vérifier que tout fonctionnait comme prévu,
+                mais il est possible que j'ai manqué des cas qui pourraient se produire. Si vous rencontrez un
+                comportement ou des résultats inattendus, veuillez me contacter par e-mail à l'adresse <a
+                        href="mailto:headingsmap@gmail.com">headingsmap@gmail.com</a>.
+            </dd>
+            <dt data-version="3.10.1">26/7/2021 (v 3.10.1)</dt>
+            <dd>Lorsque l'élément de titre (éléments h1 à h6) utilise l'attribut <em>aria-level</em>, l'extension
+                l'utilise pour identifier son niveau.
+            </dd>
+            <dd>Amélioration des styles des dialogues.</dd>
+            <dd>Ajout de la traduction en espagnol.</dd>
+            <dd>Nouvelle section de contribution.</dd>
+            <dd>Suppression de l'option de menu "actualiser les résultats".</dd>
             <dt data-version="3.10.0">28/2/2021 (v 3.10.0)</dt>
-            <dd>Ajout de la référence visuelle facultative qui aide à identifier les en-têtes/sections qui sont actuellement dans le champ de vision. Lorsque la page défile, si le titre (ou la section pour l'arborescence HTML Outline) est dans le champ de vision, l'élément correspondant est mis en évidence dans l'arborescence en changeant son arrière-plan et en ajoutant une ligne de 4px sur son côté droit. 
-                Cette option peut être activée dans le panneau des paramètres (case à cocher avec l'intitulé "Lier à la fenêtre d'affichage")</dd>
-            <dd>Correction du bogue dans l'arborescence "headingsMap" lorsque l'option de prise en compte des en-têtes masqués était active</dd>
-<dd>Amélioration de l'accessibilité du composant</dd>
-<dt data-version="3.9.1">7/12/2020 (v 3.9.1)</dt>
-<dd>Correction du bogue qui faisait ignorer le contenu des éléments avec le rôle "presentation"</dd>
-<dd>Publication de la <a href="https://rumoroso.bitbucket.io/headingsmap/todo.html">liste des améliorations potentielles et des nouvelles fonctionnalités</a>. La liste est également élaborée en fonction des exigences du marché et des retours des utilisateurs.</dd>
-<dt data-version="3.9.0">10/10/2020 (v 3.9.0)</dt>
-<dd>Masquer l'onglet lorsque l'analyse de l'arborescence HTML5 Outline n'est pas active (pour l'activer, vérifiez "paramètres > arborescence HTML5 Outline")</dd>
-<dd>Ajout du style des points de suspension à l'en-tête principal (lorsque l'option "Renvoyer à la ligne" est activée, elle renvoie également le texte)</dd>
-<dd>Ajout du contenu de la politique de confidentialité et du lien dans le menu</dd>
-<dt data-version="3.8.3">29/6/2020 (v 3.8.3)</dt>
-<dd>Mise à jour de la famille de polices utilisée par l'info-bulle</dd>
+            <dd>Ajout de la référence visuelle facultative qui aide à identifier les en-têtes/sections qui sont
+                actuellement dans le champ de vision. Lorsque la page défile, si le titre (ou la section pour
+                l'arborescence HTML Outline) est dans le champ de vision, l'élément correspondant est mis en évidence
+                dans l'arborescence en changeant son arrière-plan et en ajoutant une ligne de 4px sur son côté droit.
+                Cette option peut être activée dans le panneau des paramètres (case à cocher avec l'intitulé "Lier à la
+                fenêtre d'affichage")
+            </dd>
+            <dd>Correction du bogue dans l'arborescence "headingsMap" lorsque l'option de prise en compte des en-têtes
+                masqués était active
+            </dd>
+            <dd>Amélioration de l'accessibilité du composant</dd>
+            <dt data-version="3.9.1">7/12/2020 (v 3.9.1)</dt>
+            <dd>Correction du bogue qui faisait ignorer le contenu des éléments avec le rôle "presentation"</dd>
+            <dd>Publication de la <a href="https://rumoroso.bitbucket.io/headingsmap/todo.html">liste des améliorations
+                potentielles et des nouvelles fonctionnalités</a>. La liste est également élaborée en fonction des
+                exigences du marché et des retours des utilisateurs.
+            </dd>
+            <dt data-version="3.9.0">10/10/2020 (v 3.9.0)</dt>
+            <dd>Masquer l'onglet lorsque l'analyse de l'arborescence HTML5 Outline n'est pas active (pour l'activer,
+                vérifiez "paramètres > arborescence HTML5 Outline")
+            </dd>
+            <dd>Ajout du style des points de suspension à l'en-tête principal (lorsque l'option "Renvoyer à la ligne"
+                est activée, elle renvoie également le texte)
+            </dd>
+            <dd>Ajout du contenu de la politique de confidentialité et du lien dans le menu</dd>
+            <dt data-version="3.8.3">29/6/2020 (v 3.8.3)</dt>
+            <dd>Mise à jour de la famille de polices utilisée par l'info-bulle</dd>
 
-<dt data-version="3.8.2">28/6/2020 (v 3.8.2)</dt>
-<dd>Ajout d'une infobulle facultative qui affiche des informations sur le titre ou la section (elle s'affiche lorsque la souris survole l'arborescence). Elle peut être activée dans la boîte de dialogue des options et est désactivée par défaut.</dd>
-<dd>Remplacement des éléments de sélection par des cases à cocher dans la boîte de dialogue des options. De cette manière, l'utilisateur n'a besoin de cliquer qu'une fois pour changer la valeur de l'option.</dd>
-<dd>Ajout d'une interaction clavier à l'arborescence, de sorte que lorsque un élément est sélectionné :
-<ul>
-<li>Touche flèche haut/flèche bas : déplace la sélection vers l'élément précédent ou suivant</li>
-<li>Touche Entrée : développe/réduit le groupe imbriqué de l'élément</li>
-<li>Touche Échap : ferme l'infobulle si elle est affichée</li>
-</ul>
-</dd>
-<dt data-version="3.8.1">21/6/2020 (v 3.8.1)</dt>
-<dd>Ajout de l'option permettant d'identifier les éléments considérés comme masqués par l'outil. Lorsque l'option pour prendre en compte les éléments masqués est activée (pour les onglets titres et/ou HTML5 Outline), une icône est affichée à droite des éléments correspondant aux éléments masqués et le nombre total est affiché en légende en bas. Notez que la façon dont l'extension identifie les éléments masqués est basée sur des estimations en fonction de leurs styles, mais les documents peuvent mettre en œuvre des moyens alternatifs pour masquer le contenu (merci à Alireza Esmikhani pour les suggestions de nouvelles fonctionnalités et pour avoir signalé des bogues, tant pour cette version que pour la précédente).</dd>
-<dd>Mise à jour pour utiliser le shadow DOM.</dd>
-<dd>Mise à jour de la liste des fonctionnalités demandées à analyser :
-<ul>
-<li>Identifier le niveau d'en-tête initial pour les éléments de section dans le panneau HTML5 Outline</li>
-<li>Améliorer la boîte de dialogue des options</li>
-<li>Identifier dans le panneau la position relative du défilement dans la page</li>
-<li>Offrir un moyen alternatif aux utilisateurs qui souhaitent partager des idées de nouvelles fonctionnalités, donner des commentaires ou signaler des bogues</li>
-<li>Afficher la liste des fonctionnalités futures et leur statut</li>
-<li>Version pour Microsoft Edge</li>
-<li>...</li>
-</ul>
-</dd>
-<dt data-version="3.8.0">14/6/2020 (v 3.8.0)</dt>
-<dd>Ajout de l'option pour prendre en compte les éléments HGROUP dans l'arborescence HTML5.</dd>
-<dd>Amélioration du défilement jusqu'à l'élément mis en évidence.</dd>
-<dd>Amélioration des performances lors de la génération de l'arborescence HTML5.</dd>
-<dd>Corrections de bugs liés à :
-<ul>
-<li>L'arborescence HTML5 (ne prenait pas correctement en compte les éléments de section vides)</li>
-<li>L'attribut aria-labelledby</li>
-<li>Les erreurs lors de l'identification des éléments HTML non standard</li>
-<li>La mise en page</li>
-<li>Autres</li>
-</ul>
-</dd>
+            <dt data-version="3.8.2">28/6/2020 (v 3.8.2)</dt>
+            <dd>Ajout d'une infobulle facultative qui affiche des informations sur le titre ou la section (elle
+                s'affiche lorsque la souris survole l'arborescence). Elle peut être activée dans la boîte de dialogue
+                des options et est désactivée par défaut.
+            </dd>
+            <dd>Remplacement des éléments de sélection par des cases à cocher dans la boîte de dialogue des options. De
+                cette manière, l'utilisateur n'a besoin de cliquer qu'une fois pour changer la valeur de l'option.
+            </dd>
+            <dd>Ajout d'une interaction clavier à l'arborescence, de sorte que lorsque un élément est sélectionné :
+                <ul>
+                    <li>Touche flèche haut/flèche bas : déplace la sélection vers l'élément précédent ou suivant</li>
+                    <li>Touche Entrée : développe/réduit le groupe imbriqué de l'élément</li>
+                    <li>Touche Échap : ferme l'infobulle si elle est affichée</li>
+                </ul>
+            </dd>
+            <dt data-version="3.8.1">21/6/2020 (v 3.8.1)</dt>
+            <dd>Ajout de l'option permettant d'identifier les éléments considérés comme masqués par l'outil. Lorsque
+                l'option pour prendre en compte les éléments masqués est activée (pour les onglets titres et/ou HTML5
+                Outline), une icône est affichée à droite des éléments correspondant aux éléments masqués et le nombre
+                total est affiché en légende en bas. Notez que la façon dont l'extension identifie les éléments masqués
+                est basée sur des estimations en fonction de leurs styles, mais les documents peuvent mettre en œuvre
+                des moyens alternatifs pour masquer le contenu (merci à Alireza Esmikhani pour les suggestions de
+                nouvelles fonctionnalités et pour avoir signalé des bogues, tant pour cette version que pour la
+                précédente).
+            </dd>
+            <dd>Mise à jour pour utiliser le shadow DOM.</dd>
+            <dd>Mise à jour de la liste des fonctionnalités demandées à analyser :
+                <ul>
+                    <li>Identifier le niveau d'en-tête initial pour les éléments de section dans le panneau HTML5
+                        Outline
+                    </li>
+                    <li>Améliorer la boîte de dialogue des options</li>
+                    <li>Identifier dans le panneau la position relative du défilement dans la page</li>
+                    <li>Offrir un moyen alternatif aux utilisateurs qui souhaitent partager des idées de nouvelles
+                        fonctionnalités, donner des commentaires ou signaler des bogues
+                    </li>
+                    <li>Afficher la liste des fonctionnalités futures et leur statut</li>
+                    <li>Version pour Microsoft Edge</li>
+                    <li>...</li>
+                </ul>
+            </dd>
+            <dt data-version="3.8.0">14/6/2020 (v 3.8.0)</dt>
+            <dd>Ajout de l'option pour prendre en compte les éléments HGROUP dans l'arborescence HTML5.</dd>
+            <dd>Amélioration du défilement jusqu'à l'élément mis en évidence.</dd>
+            <dd>Amélioration des performances lors de la génération de l'arborescence HTML5.</dd>
+            <dd>Corrections de bugs liés à :
+                <ul>
+                    <li>L'arborescence HTML5 (ne prenait pas correctement en compte les éléments de section vides)</li>
+                    <li>L'attribut aria-labelledby</li>
+                    <li>Les erreurs lors de l'identification des éléments HTML non standard</li>
+                    <li>La mise en page</li>
+                    <li>Autres</li>
+                </ul>
+            </dd>
 
-<dt data-version="3.7.0">27/5/2020 (v 3.7.0)</dt>
-<dd>Ajout de l'option permettant de faire passer les longs textes sur plusieurs lignes au lieu d'utiliser les points de suspension (merci à Yang Yang pour la suggestion et les commentaires).</dd>
-<dt data-version="3.6.7">24/5/2020 (v 3.6.7)</dt>
-<dd>Exclusion des titres de l'arborescence qui ont un attribut de rôle valide différent de "heading" (merci à Audrey Maniez pour sa suggestion et ses commentaires).</dd>
-<dt data-version="3.6.6">6/4/2020 (v 3.6.6)</dt>
-<dd>Ajout de l'option "afficher les ancres". Lorsqu'elle est activée (valeur par défaut), si les en-têtes ou les sections contiennent des ancres, les éléments de l'arborescence affichent une icône. En cliquant dessus, l'ancre est copiée dans le presse-papiers. L'ancre peut également être copiée en utilisant l'action du navigateur "copier l'adresse du lien".</dd>
-<dt data-version="3.6.5">2/3/2020 (v 3.6.5)</dt>
-<dd>Ajout de l'option "enregistrer lors du redimensionnement". Lorsqu'elle est activée, la largeur du panneau est conservée lors de sa fermeture.</dd>
-<dt data-version="3.6.4">23/2/2020 (v 3.6.4)</dt>
-<dd>Mise à jour du style des barres de défilement pour Firefox.</dd>
-<dd>Mise à jour de l'icône de la barre d'outils.</dd>
-<dt data-version="3.6.3">9/1/2020 (v 3.6.3)</dt>
-<dd>Correction d'un bug qui empêchait l'ouverture du panneau.</dd>
-<dt data-version="3.6.2">11/10/2019 (v 3.6.2)</dt>
-<dd>Amélioration du contraste des couleurs des éléments de la barre de défilement dans le thème clair.</dd>
-<dt data-version="3.6.1">26/9/2019 (v 3.6.1)</dt>
-<dd>Amélioration des styles pour rendre le panneau plus résistant aux styles que la page pourrait avoir (merci à Anika Henke pour ses commentaires).</dd>
-<dt data-version="3.6.0">17/9/2019 (v 3.6.0)</dt>
-<dd>Ajout de l'option permettant de désactiver la mise en évidence de l'élément dans la page lorsque l'on clique sur les éléments de l'arborescence.</dd>
-<dt data-version="3.5.16">3/7/2019 (v 3.5.16)</dt>
-<dd>Correction d'un bug lié à la notification d'erreur dans l'onglet de l'arborescence HTML5.</dd>
-<dd>Amélioration des styles.</dd>
-<dt data-version="3.5.15">30/6/2019 (v 3.5.15)</dt>
-<dd>Correction d'un bug lié à l'attribut <em>href</em> lorsque les titres ou les sections ont un attribut <em>name</em> ou <em>id</em>.</dd>
+            <dt data-version="3.7.0">27/5/2020 (v 3.7.0)</dt>
+            <dd>Ajout de l'option permettant de faire passer les longs textes sur plusieurs lignes au lieu d'utiliser
+                les points de suspension (merci à Yang Yang pour la suggestion et les commentaires).
+            </dd>
+            <dt data-version="3.6.7">24/5/2020 (v 3.6.7)</dt>
+            <dd>Exclusion des titres de l'arborescence qui ont un attribut de rôle valide différent de "heading" (merci
+                à Audrey Maniez pour sa suggestion et ses commentaires).
+            </dd>
+            <dt data-version="3.6.6">6/4/2020 (v 3.6.6)</dt>
+            <dd>Ajout de l'option "afficher les ancres". Lorsqu'elle est activée (valeur par défaut), si les en-têtes ou
+                les sections contiennent des ancres, les éléments de l'arborescence affichent une icône. En cliquant
+                dessus, l'ancre est copiée dans le presse-papiers. L'ancre peut également être copiée en utilisant
+                l'action du navigateur "copier l'adresse du lien".
+            </dd>
+            <dt data-version="3.6.5">2/3/2020 (v 3.6.5)</dt>
+            <dd>Ajout de l'option "enregistrer lors du redimensionnement". Lorsqu'elle est activée, la largeur du
+                panneau est conservée lors de sa fermeture.
+            </dd>
+            <dt data-version="3.6.4">23/2/2020 (v 3.6.4)</dt>
+            <dd>Mise à jour du style des barres de défilement pour Firefox.</dd>
+            <dd>Mise à jour de l'icône de la barre d'outils.</dd>
+            <dt data-version="3.6.3">9/1/2020 (v 3.6.3)</dt>
+            <dd>Correction d'un bug qui empêchait l'ouverture du panneau.</dd>
+            <dt data-version="3.6.2">11/10/2019 (v 3.6.2)</dt>
+            <dd>Amélioration du contraste des couleurs des éléments de la barre de défilement dans le thème clair.</dd>
+            <dt data-version="3.6.1">26/9/2019 (v 3.6.1)</dt>
+            <dd>Amélioration des styles pour rendre le panneau plus résistant aux styles que la page pourrait avoir
+                (merci à Anika Henke pour ses commentaires).
+            </dd>
+            <dt data-version="3.6.0">17/9/2019 (v 3.6.0)</dt>
+            <dd>Ajout de l'option permettant de désactiver la mise en évidence de l'élément dans la page lorsque l'on
+                clique sur les éléments de l'arborescence.
+            </dd>
+            <dt data-version="3.5.16">3/7/2019 (v 3.5.16)</dt>
+            <dd>Correction d'un bug lié à la notification d'erreur dans l'onglet de l'arborescence HTML5.</dd>
+            <dd>Amélioration des styles.</dd>
+            <dt data-version="3.5.15">30/6/2019 (v 3.5.15)</dt>
+            <dd>Correction d'un bug lié à l'attribut <em>href</em> lorsque les titres ou les sections ont un attribut
+                <em>name</em> ou <em>id</em>.
+            </dd>
 
-<dt data-version="3.5.14">20/6/2019 (v 3.5.14)</dt>
-<dd>Afficher les valeurs des attributs <em>aria-label</em> et <em>aria-labelledby</em> pour les sections et améliorer la façon dont leurs informations sont affichées.</dd>
-<dd>Mettre à jour l'ordre des champs dans le panneau des paramètres.</dd>
-<dd>Réorganisation mineure pour améliorer les performances et simplifier le code.</dd>
-<dt data-version="3.5.13">24/5/2019 (v 3.5.13)</dt>
-<dd>Correction d'un bug lors de l'activation de l'option d'affichage des titres masqués.</dd>
-<dd>Correction d'une erreur de style qui empêchait le fonctionnement correct des barres de défilement.</dd>
-<dd>Améliorations des performances.</dd>
-<dt data-version="3.5.12">5/5/2019 (v 3.5.12)</dt>
-<dd>Autoriser des niveaux supérieurs à 6 lors de l'utilisation de l'attribut <em>aria-level</em>.</dd>
-<dd>Prendre en compte l'attribut <em>role</em> avec la valeur <em>heading</em> dans l'algorithme de l'aperçu.</dd>
-<dd>Prendre en compte l'attribut <em>aria-labelledby</em>.</dd>
-<dd>Correction d'une erreur lors de l'enregistrement des paramètres.</dd>
-<dt data-version="3.5.11">31/3/2019 (v 3.5.11)</dt>
-<dd>Amélioration du redimensionnement du panneau.</dd>
-<dd>Amélioration de la création des onglets.</dd>
-<dd>Correction du style lorsque le panneau est fermé.</dd>
-<dt data-version="3.5.7">27/3/2019 (v 3.5.7)</dt>
-<dd>Correction d'un bug qui empêchait l'affichage des titres lorsque l'un de leurs ancêtres avait un rôle de présentation.</dd>
-<dt data-version="3.5.6">16/2/2019 (v 3.5.6)</dt>
-<dd>Correction d'un bug lié au texte à afficher lorsque tous les en-têtes (y compris ceux masqués) sont pris en compte.</dd>
+            <dt data-version="3.5.14">20/6/2019 (v 3.5.14)</dt>
+            <dd>Afficher les valeurs des attributs <em>aria-label</em> et <em>aria-labelledby</em> pour les sections et
+                améliorer la façon dont leurs informations sont affichées.
+            </dd>
+            <dd>Mettre à jour l'ordre des champs dans le panneau des paramètres.</dd>
+            <dd>Réorganisation mineure pour améliorer les performances et simplifier le code.</dd>
+            <dt data-version="3.5.13">24/5/2019 (v 3.5.13)</dt>
+            <dd>Correction d'un bug lors de l'activation de l'option d'affichage des titres masqués.</dd>
+            <dd>Correction d'une erreur de style qui empêchait le fonctionnement correct des barres de défilement.</dd>
+            <dd>Améliorations des performances.</dd>
+            <dt data-version="3.5.12">5/5/2019 (v 3.5.12)</dt>
+            <dd>Autoriser des niveaux supérieurs à 6 lors de l'utilisation de l'attribut <em>aria-level</em>.</dd>
+            <dd>Prendre en compte l'attribut <em>role</em> avec la valeur <em>heading</em> dans l'algorithme de
+                l'aperçu.
+            </dd>
+            <dd>Prendre en compte l'attribut <em>aria-labelledby</em>.</dd>
+            <dd>Correction d'une erreur lors de l'enregistrement des paramètres.</dd>
+            <dt data-version="3.5.11">31/3/2019 (v 3.5.11)</dt>
+            <dd>Amélioration du redimensionnement du panneau.</dd>
+            <dd>Amélioration de la création des onglets.</dd>
+            <dd>Correction du style lorsque le panneau est fermé.</dd>
+            <dt data-version="3.5.7">27/3/2019 (v 3.5.7)</dt>
+            <dd>Correction d'un bug qui empêchait l'affichage des titres lorsque l'un de leurs ancêtres avait un rôle de
+                présentation.
+            </dd>
+            <dt data-version="3.5.6">16/2/2019 (v 3.5.6)</dt>
+            <dd>Correction d'un bug lié au texte à afficher lorsque tous les en-têtes (y compris ceux masqués) sont pris
+                en compte.
+            </dd>
 
             <dt data-version="3.5.5">22/1/2019 (v 3.5.5)</dt>
             <dd>Thème sombre par défaut</dd>
             <dd>Ajout de nouvelles informations sur l'état du test de l'aperçu HTML 5 et de son algorithme basé sur
-                <a href="https://www.w3.org/TR/html53/" target="_blank" lang="en"> HTML 5.3 Working Draft exclusions for the next
+                <a href="https://www.w3.org/TR/html53/" target="_blank" lang="en"> HTML 5.3 Working Draft exclusions for
+                    the next
                     Proposed Recommendation</a></dd>
-            <dd>Lors de la première installation, l'onglet Aperçu HTML n'est pas actif (son activation peut être effectuée dans les paramètres).</dd>
+            <dd>Lors de la première installation, l'onglet Aperçu HTML n'est pas actif (son activation peut être
+                effectuée dans les paramètres).
+            </dd>
 
             <dt data-version="3.5.4">13/1/2019 (v 3.5.4)</dt>
-            <dd>Cesser de considérer les éléments masqués pour les technologies d'assistance (peut éventuellement être pris en compte)</dd>
-            <dd>Prendre en compte l'attribut <em>role</em> avec la valeur <em>heading</em> lorsqu'il est utilisé pour définir les titres dans le document (combiné avec l'attribut <em>aria-level</em>). Merci à Arnaud Delafosse pour sa proposition concernant cette amélioration (et la précédente) et ses commentaires.</dd>
+            <dd>Cesser de considérer les éléments masqués pour les technologies d'assistance (peut éventuellement être
+                pris en compte)
+            </dd>
+            <dd>Prendre en compte l'attribut <em>role</em> avec la valeur <em>heading</em> lorsqu'il est utilisé pour
+                définir les titres dans le document (combiné avec l'attribut <em>aria-level</em>). Merci à Arnaud
+                Delafosse pour sa proposition concernant cette amélioration (et la précédente) et ses commentaires.
+            </dd>
             <dd>Tenir compte de l'erreur lorsque le titre n'a aucun contenu.</dd>
             <dd>Améliorations du sélecteur de document.</dd>
             <dd>Simplification des paramètres.</dd>
             <dd>Corrections de bugs (erreurs incorrectement identifiées…)</dd>
-    
+
             <dt data-version="3.5.2">24/12/2018 (v 3.5.2)</dt>
             <dd>Améliorations du sélecteur de document.</dd>
             <dd>Marge supérieure lors du défilement vers l'élément.</dd>
             <dd>Empêcher le rafraîchissement lorsque le document est mis à jour et que sa structure est identique.</dd>
             <dd>Amélioration de la qualité du code (modularisé, mis à jour…)</dd>
             <dd>Correction de bugs…</dd>
-    
+
             <dt data-version="3.5.1">25/11/2018 (v 3.5.1)</dt>
             <dd>Sélecteur pour obtenir la structure des titres à partir des documents inclus dans des iframes.</dd>
             <dd>Code modularisé.</dd>
             <dd>Améliorations des performances.</dd>
             <dd>Corrections de bugs, …</dd>
-    
+
             <dt data-version="3.4.3">03/11/2018 (v 3.4.3)</dt>
             <dd>Nouveau menu déroulant.</dd>
             <dd>Inclusion des notes de version.</dd>
             <dd>Inclusion du contenu d'aide.</dd>
             <dd>Changements de code pour améliorer l'efficacité de l'exécution.</dd>
-    
+
             <dt>25/10/2018 (v 3.4.2)</dt>
             <dd>L'utilisateur peut redimensionner le panneau.</dd>
             <dd>Le panneau peut être situé sur le côté droit (en option).</dd>
             <dd>Ajout de la propriété <em>overscroll-behavior</em> au CSS.</dd>
             <dd>Améliorations des performances.</dd>
-    
+
             <dt>23/10/2018 (v 3.4.1)</dt>
-<dd>Exécuter uniquement le test de l'onglet actif</dd>
-<dd>Inclusion d'une animation de chargement pour une meilleure expérience utilisateur</dd>
-<dd>En cliquant sur la racine de l'arborescence, le défilement se fait jusqu'en haut de la page</dd>
-<dd>Inclusion du panneau des options dans le widget</dd>
-<dd>Correction de bugs dans l'aperçu HTML5 qui ne montrait pas toutes les sections</dd>
-<dt>18/10/2018 (v 3.4.0)</dt>
-<dd>Afficher le contenu de <em>aria-label</em> en tant que fonctionnalité optionnelle</dd>
-<dd>Les liens dans les arbres incluent les ancres pour qu'ils fonctionnent comme des liens vers des références</dd>
-<dd>Style des barres de défilement pour Chrome et Vivaldi</dd>
-<dd>Amélioration de la qualité du code</dd>
-<dd>Correction de l'erreur lors de la prise en compte des titres/sections situés en dehors de la vue comme étant masqués</dd>
-<dt>11/10/2018 (v 3.3.7)</dt>
-<dd>Les titres et les sections masqués sont facultativement pris en compte</dd>
-<dd>Mise à jour de la façon dont le titre/la section sont mis en évidence</dd>
-<dd>Améliorations des performances d'analyse</dd>
-<dt>09/10/2018 (v 3.3.6)</dt>
-<dd>Ajout du thème sombre en option</dd>
-<dd>Définir le test de l'aperçu HTML5 comme optionnel</dd>
-<dd>Amélioration de la mise en forme générale</dd>
-<dd>Correction de bugs</dd>
+            <dd>Exécuter uniquement le test de l'onglet actif</dd>
+            <dd>Inclusion d'une animation de chargement pour une meilleure expérience utilisateur</dd>
+            <dd>En cliquant sur la racine de l'arborescence, le défilement se fait jusqu'en haut de la page</dd>
+            <dd>Inclusion du panneau des options dans le widget</dd>
+            <dd>Correction de bugs dans l'aperçu HTML5 qui ne montrait pas toutes les sections</dd>
+            <dt>18/10/2018 (v 3.4.0)</dt>
+            <dd>Afficher le contenu de <em>aria-label</em> en tant que fonctionnalité optionnelle</dd>
+            <dd>Les liens dans les arbres incluent les ancres pour qu'ils fonctionnent comme des liens vers des
+                références
+            </dd>
+            <dd>Style des barres de défilement pour Chrome et Vivaldi</dd>
+            <dd>Amélioration de la qualité du code</dd>
+            <dd>Correction de l'erreur lors de la prise en compte des titres/sections situés en dehors de la vue comme
+                étant masqués
+            </dd>
+            <dt>11/10/2018 (v 3.3.7)</dt>
+            <dd>Les titres et les sections masqués sont facultativement pris en compte</dd>
+            <dd>Mise à jour de la façon dont le titre/la section sont mis en évidence</dd>
+            <dd>Améliorations des performances d'analyse</dd>
+            <dt>09/10/2018 (v 3.3.6)</dt>
+            <dd>Ajout du thème sombre en option</dd>
+            <dd>Définir le test de l'aperçu HTML5 comme optionnel</dd>
+            <dd>Amélioration de la mise en forme générale</dd>
+            <dd>Correction de bugs</dd>
         </dl>
-        <p class="note">J'ai commencé à ajouter les notes de version à partir de cette version, donc il n'y en a pas pour les versions antérieures.</p>
+        <p class="note">J'ai commencé à ajouter les notes de version à partir de cette version, donc il n'y en a pas
+            pour les versions antérieures.</p>
     </div>
 </div>
 </body>

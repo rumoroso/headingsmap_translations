@@ -1,0 +1,166 @@
+<html lang="fr">
+<head><title>Options</title></head>
+<body>
+
+<div class="flex-grid dialog-content" id="settings_form">
+    <h2 id="settings-header">Paramètres</h2>
+
+    <div class="contents settings-content">
+        <fieldset class="fieldset">
+            <legend>Général</legend>
+            <div>
+                <label for="showHeadError">
+                    <input type="checkbox" name="showHeadError" id="showHeadError"/>
+                    Afficher les erreurs
+                </label>
+                <label for="highLightElements">
+                    <input type="checkbox" name="highLightElements" id="highLightElements"/>
+                    Mettre en évidence
+                </label>
+                <label for="showAriaLabelContent">
+                    <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent"
+                           callback="refresh"/>
+                    Afficher les attributs ARIA
+                </label>
+                <label for="showAnchors">
+                    <input type="checkbox" name="showAnchors" id="showAnchors" callback="refresh"/>
+                    Afficher les ancres
+                </label>
+                <label for="darkTheme">
+                    <input type="checkbox" name="darkTheme" id="darkTheme" callback="setTheme"/>
+                    Thème sombre
+                </label>
+                <label for="savePanelWidthOnResize">
+                    <input type="checkbox" name="savePanelWidthOnResize" id="savePanelWidthOnResize"
+                           callback="updateInitialPanelWidth"/>
+                    Enregistrer la largeur lors du redimensionnement
+                </label>
+                <label for="normalWrap">
+                    <input type="checkbox" name="normalWrap" id="normalWrap"/>
+                    Renvoyer à la ligne
+                </label>
+                <label for="showTooltip">
+                    <input type="checkbox" name="showTooltip" id="showTooltip" callback="setLinksBehavior"/>
+                    Afficher une infobulle d’informations
+                </label>
+                <label for="viewportIndicator">
+                    <input type="checkbox" name="viewportIndicator" id="viewportIndicator" callback="refresh"/>
+                    Lier à la fenêtre d'affichage
+                </label>
+                <label for="language">
+                    Langue
+                    <select name="language" id="language">
+                    </select>
+                </label>
+                <input type="hidden" name="initialPanelWidth" id="initialPanelWidth"/>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h3>Détails</h3>
+                <ul>
+                    <li><strong>Afficher les erreurs</strong>&nbsp;: met en évidence les ruptures dans la hiérarchie de titres.
+                    </li>
+                    <li><strong>Mettre en évidence</strong>&nbsp;: entoure (pendant quelques secondes) le titre dans la page lorsqu’un élément de l’arborescence est sélectionné.
+                    </li>
+                    <li><strong>Afficher les attributs ARIA</strong>&nbsp;: si des attributs <em>aria-label</em> ou <em>aria-labelledby</em> sont présents sur les titres,
+                        l’outil affiche l’attribut et la valeur (car les lecteurs d’écran y accèdent et les utilisent).
+                    </li>
+                    <li><strong>Afficher les ancres</strong>&nbsp;: affiche une ancre sur les titres qui le sont.
+                    </li>
+                    <li><strong>Thème sombre</strong>&nbsp;: lorsque l’option est cochée, les styles de l’extension sont modifiés. Le fond est sombre et la couleur de texte claire.
+                    </li>
+                    <li><strong>Enregistrer la largeur lors du redimensionnement</strong>&nbsp;: enregistre la nouvelle largeur après un redimensionnement, de sorte que la prochaine fois que l’extension est utilisée, il conserve cette largeur.
+                    </li>
+                    <li><strong>Renvoyer à la ligne</strong>&nbsp;: par défaut, le texte des éléments de l'arborescence est tronqué. Lorsque cette option est activée, le texte est affiché sur plusieurs lignes si nécessaire.
+                    </li>
+                    <li><strong>Afficher une infobulle d’informations</strong>&nbsp;: affiche une infobulle avec des informations au survol des éléments de l’arborescence.
+                    </li>
+                    <li><strong>Lier à la fenêtre d'affichage</strong>&nbsp;: affiche un fond clair sur les titres visibles dans la zone affichée par le navigateur.
+                    </li>
+                    <li><strong>Langue</strong>&nbsp;: changer la langue. Le changement sera effectif après réouverture de l’extension.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Headers structure tree</legend>
+            <div>
+                <label for="showHeadErrorH1">
+                    <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
+                    Afficher une erreur si pas de H1 initial
+                </label>
+                <label for="showHeadLevels">
+                    <input type="checkbox" name="showHeadLevels" id="showHeadLevels"/>
+                    Afficher le niveau de titre
+                </label>
+                <label for="showEmptyHeadings">
+                    <input type="checkbox" name="showEmptyHeadings" id="showEmptyHeadings" callback="refresh"/>
+                    Afficher les titres vides
+                </label>
+                <label for="showHiddenHeaders">
+                    <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" callback="refresh"/>
+                    Afficher les titres masqués
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h3>Détails</h3>
+                <ul>
+                    <li><strong>Afficher une erreur si pas de H1 au début</strong>&nbsp;: affiche une erreur si le premier titre n’est pas un H1. L’option «&nbsp;Afficher les erreurs&nbsp;» doit être cochée.</li>
+                    <li><strong>Afficher le niveau de titre</strong>&nbsp;: affiche le niveau de titre avant le texte.</li>
+                    <li><strong>Afficher les titres vides</strong>&nbsp;: affiche les titres vides dans la hiérarchie de titres.</li>
+                    <li><strong>Afficher les titres masqués</strong>&nbsp;: affiche tous les titres même ceux qui sont masqués.</li>
+                </ul>
+            </div>
+
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>
+                Arborescence de l'outline HTML5
+            </legend>
+            <div>
+                <label for="isOutlineTestActive">
+                    <input type="checkbox" name="isOutlineTestActive" id="isOutlineTestActive"
+                           callback="refresh disableFields"
+                           related-fields="showOutLevels showOutElem showHiddenSections considerHgroup"/>
+                    Activer l’analyse
+                </label>
+                <p class="note">Il n'existe aucun navigateur ou technologie d'assistance doté d'implémentations natives de l'algorithme de l'arborescence W3C. 
+                    Par conséquent, on ne peut pas l’utiliser pour transmettre la structure du document aux utilisateurs, et les auteurs devraient utiliser le niveau des titres pour le faire (<a
+                    href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                    target="_blank">HTML 5.2 Création d'une arborescence</a>).
+                </p>
+
+                <label for="showOutLevels">
+                    <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
+                    Afficher l'index de section
+                </label>
+                <label for="showOutElem">
+                    <input type="checkbox" name="showOutElem" id="showOutElem"/>
+                    Afficher la balise section
+                </label>
+                <label for="showHiddenSections">
+                    <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
+                           callback="refresh"/>
+                    Afficher les sections masquées *
+                </label>
+                <label for="considerHgroup">
+                    <input type="checkbox" name="considerHgroup" id="considerHgroup" callback="refresh"/>
+                    Afficher HGROUP
+                </label>
+            </div>
+            <p class="note">*Lorsque l'option «&nbsp;Afficher les sections masquées&nbsp;» est activée, l'analyse peut avoir des impacts sur les performances dans les documents longs.</p>
+
+            <div class="custom-scrollbar settings-information">
+                <h3>Détails</h3>
+                <ul>
+                    <li><strong>Activer l’analyse</strong>&nbsp;: l'extraction de l'arborescence du document peut avoir un impact sur les performances, donc son exécution est facultative et désactivée par défaut. Lorsqu'elle est activée, les deux analyses (titres et arborescence HTML 5) apparaissent comme des onglets dans le panneau.</li>
+                    <li><strong>Afficher l'index de section</strong>&nbsp;: affiche l'index de section avant son texte.</li>
+                    <li><strong>Afficher la balise section</strong>&nbsp;: inclut la balise de section en tant que partie du contenu dans l'arborescence.</li>
+                    <li><strong>Afficher les sections masquées</strong>&nbsp;: identifie et affiche les informations de toutes les sections, qu'elles soient masquées ou non.</li>
+                    <li><strong>Afficher HGROUP</strong>&nbsp;: avec cette option, l'analyse considère l'élément HGROUP comme un élément de section.</li>
+                </ul>
+            </div>
+        </fieldset>
+    </div>
+</div>
+</body>
+</html>

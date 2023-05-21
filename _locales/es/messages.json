@@ -111,6 +111,10 @@
     "message": "Documentos",
     "description": ""
   },
+  "documentSelectorTitle": {
+    "message": "seleccione el documento para obtener su estructura de encabezados o secciones",
+    "description": ""
+  },
   "anchor": {
     "message": "Ancla",
     "description": ""

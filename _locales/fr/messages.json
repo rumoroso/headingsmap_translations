@@ -111,6 +111,10 @@
     "message": "Documents",
     "description": ""
   },
+  "documentSelectorTitle": {
+    "message": "select the document to obtain its heading/sectioning structure",
+    "description": ""
+  },
   "anchor": {
     "message": "Ancre",
     "description": ""

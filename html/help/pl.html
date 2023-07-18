@@ -1,0 +1,138 @@
+<html lang="pl">
+  <head>
+    <title>Pomoc i informacje</title>
+  </head>
+
+  <body>
+    <div class="flex-grid dialog-content" id="help_panel">
+      <h1 id="help-header">Pomoc</h1>
+      <div class="contents custom-scrollbar">
+        <p>
+          HeadingsMap to rozszerzenie przeglądarki wyświetlające strukturę
+          nagłówków stron internetowych. Ponadto może identyfikować potencjalne
+          błędy (np. brakujące poziomy nagłówków), wspierając sprawdzanie
+          dostępności, kontrolę jakości, audyty SEO...
+        </p>
+        <p>
+          Rozszerzenie zawiera również opcjonalną funkcjonalność wyświetlania
+          sekcji opartej o algorytm HTML5 outline opisany przez W3C. Oba
+          elementy, nagłówki i sekcje są wyświetlane w drzewie, z którym
+          powiązane są poziomy zagnieżdżenia elementów.
+        </p>
+        <h2>Funkcjonalności</h2>
+        <ul>
+          <li>
+            Pokazuje listę nagłówków z ich poziomem oraz informacje o błędach w
+            hierarchii nagłówków.
+          </li>
+          <li>
+            Jeśli istnieją elementy, które używają atrybutu <em>role</em> z
+            wartością <em>heading</em>, są one również wymienione. Ich poziom
+            opiera się na wartości atrybutu <em>aria-level</em> (jeśli nie jest
+            zdefiniowana, to wartość domyślna wynosi 2).
+          </li>
+          <li>
+            Lista nagłówków z informacją o ostrzeżeniach i błędach w strukturze.
+          </li>
+          <li>
+            Pobiera informacje ze strony internetowej, a także z ramek iframe
+            (zawiera listę rozwijaną strona/ramka).
+          </li>
+
+          <li>
+            Klikając na nagłówek w panelu, dokument przewija się do pozycji
+            nagłówka oraz zaznacza go.
+          </li>
+          <li>Po wykryciu zmian w DOM aktualizuje drzewo.</li>
+          <li>Ciemny motyw (opcjonalnie).</li>
+          <li>HTML5 Outline jest opcjonalny.</li>
+          <li>
+            Opcjonalnie pokazuje ukryte nagłówki i sekcje (ukryte dla
+            technologii asystujących). Gdy opcja jest włączona, do elementów w
+            drzewie dodawana jest ikona, która identyfikuje, które z nich
+            zostały ukryte (nie tylko wizualnie ukryte, ale także ukryte dla
+            technologii asystujących).
+          </li>
+          <li>
+            Jeśli nagłówek (lub sekcja) ma atrybut ID, to pojawi się spinacz (po
+            kliknięciu kopiuje link wraz z kratką # i ID nagłówka).
+          </li>
+          <li>
+            Jeśli zawartość nagłówka/sekcji używa aria-label, jego zawartość
+            może być pokazana (opcjonalna funkcja w ustawieniach).
+          </li>
+          <li>
+            Wersja dla wielu przeglądarek. Używa "browserExtensions API" więc
+            jest kompatybilna z Chrome, Firefox, Microsoft Edge.
+          </li>
+        </ul>
+        <h2>HeadingsMap drzewo - ustawienia</h2>
+        <dl>
+          <dt>Błąd, brak nagłówka H1</dt>
+          <dd>
+            Błąd, jeśli brak początkowego nagłówka H1. Powszechnie przyjmuje
+            się, że pierwszy nagłówek w dokumencie musi być H1. Z tą opcją
+            aktywną, a także “zidentyfikuj błędy” brak H1 będzie zwracany jako
+            błąd.
+          </dd>
+          <dt>Poziom nagłówka</dt>
+          <dd>
+            Zawiera poziom nagłówka (od 1 do 6), który wynika z użytego tagu (H1
+            do H6).
+          </dd>
+          <dt>Uwzględnij ukryte nagłówki</dt>
+          <dd>
+            Gdy dokument zawiera nagłówki, które są ukryte (nie tylko wizualnie,
+            ale także ukryte dla technologii asystujących), nie są one
+            pokazywane w drzewie. Po aktywacji tej opcji są pokazywane w panelu.
+          </dd>
+          <dt>Zidentyfikuj kotwice</dt>
+          <dd>
+            Gdy nagłówki zawierają atrybut ID, w panelu przy nagłówku pojawia
+            się ikona spinacza. Kliknięcie ikony kopiuje link z kratką # i ID
+            nagłówka (można też użyć opcji “Kopiuj odnośnik” z przeglądarki).
+          </dd>
+        </dl>
+        <h2>HTML5 outline - ustawienia</h2>
+        <p>
+          Według W3C, nie ma przeglądarek ani technologii które to wspierają,
+          więc uzyskanie dobrego wyniku w teście ma niewielki wpływ na
+          ostateczną dostępność. Każda implementacja i użycie tych różnych
+          propozycji będzie śledzona i może doprowadzić do znaczących przyszłych
+          zmian w algorytmie.
+        </p>
+        <dl>
+          <dt>Pokaż indeks sekcji</dt>
+          <dd>
+            Według algorytmu, każda sekcja ma indeks w drzewie. To ustawienie
+            pokazuje/ukrywa tę wartość.
+          </dd>
+          <dt>Pokaż tag sekcji</dt>
+          <dd>
+            Z tym ustawieniem, drzewo pokazuje tag HTML, który
+            <a
+              href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
+              target="_blank"
+              >generuje sekcje</a
+            >.
+          </dd>
+          <dt>Uwzględnij ukryte sekcje</dt>
+          <dd>
+            Gdy dokument zawiera ukryte sekcje (nie tylko wizualnie ukryte, ale
+            także ukryte dla technologii asystujących), nie są one pokazywane w
+            drzewie. Po aktywacji tej opcji są one pokazywane. W dużych stronach
+            internetowych może to wpłynąć na wydajność, ponieważ wymaga
+            sprawdzenia wszystkich elementów w DOM.
+          </dd>
+          <dt>Uwzględnij HGROUP</dt>
+          <dd>
+            Gdy opcja jest zaznaczona, traktuje element HGROUP jako element
+            nagłówka. Zgodnie z jego zachowaniem, bierze najwyższy poziom
+            nagłówka jako swój poziom (nagłówki, które zawiera, nie są
+            uwzględniane).
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </body>
+</html>

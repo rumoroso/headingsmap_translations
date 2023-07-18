@@ -1,0 +1,89 @@
+<html lang="pl">
+
+<head>
+    <title>Polityka prywatności</title>
+</head>
+
+<body>
+    <div class="flex-grid dialog-content" id="privacy_policy">
+        <h1 id="privacy-policy-header">Polityka prywatności</h1>
+        <div class="contents custom-scrollbar">
+            <p>
+                Niniejsza Polityka prywatności dotyczy rozszerzenia przeglądarki
+                <strong>HeadingsMap</strong> i ma na celu poinformowanie użytkowników
+                o uprawnieniach, których wymaga do działania i powodach, dla których
+                są one wymagane.
+            </p>
+
+            <h2>Brak zbierania danych</h2>
+            <p>
+                <strong>HeadingsMap</strong> nie zbiera żadnych danych ze strony
+                internetowej. Wykonuje tylko analizę HTML po stronie przeglądarki (po
+                stronie klienta) za pomocą zwykłego JavaScriptu (bez użycia bibliotek
+                lub frameworków stron trzecich) i nie zbiera, nie zapise ani nie
+                udostępnia żadnych danych ze stron internetowych.
+            </p>
+            <p>
+                Dodatek został opracowany i jest utrzymywany w celu pomocy i wsparcia
+                programistów, konsultantów, audytorów jakości lub innych użytkowników
+                końcowych w ich codziennym użytkowaniu/pracy. Nie ma ukrytych
+                intencji.
+            </p>
+            <h2>Uprawnienia przeglądarki</h2>
+            <p>
+                <strong>HeadingsMap</strong> uzyskuje dostęp do HTML strony, która
+                jest aktualnie wyświetlana przez przeglądarkę, zarówno do zawartości
+                bezpośrednio pochodzącej z tagu HTML, jak i do dokumentów, które są
+                dołączane za pomocą ramek (iframe). Z powodu dostarczenia
+                użytkownikowi zestawu opcji i preferencji, które można zapisać
+                (motyw, pozycja panelu, typ analizy, identyfikacja błędów itp.),
+                wymaga niektórych konkretnych uprawnień od przeglądarki.
+            </p>
+
+            <p>
+                Żadne z uprawnień, których wymaga rozszerzenie, nie zbierają danych z
+                żadnej strony internetowej. Są one wymagane do wykonania analizy HTML,
+                udzielenia użytkownikowi informacji o HTML  oraz udzielenia użytkownikowi zestawu
+                opcji do zdefiniowania sposobu, w jaki chce wykonać analizę i jak
+                wyświetlić wyniki. Nie ma zbierania danych z treści i nie ma zbierania
+                danych o stronach, na których użytkownik korzysta z rozszerzenia.
+                Ponadto rozszerzenie nie wykonuje żadnych działań podczas gdy jest nieaktywne.
+            </p>
+
+            <p>To jest lista uprawnień przeglądarki</p>
+            <dl>
+                <dt>all_urls</dt>
+                <dd> To uprawnienie pozwala rozszerzeniu działać na dowolnym adresie URL, ponieważ pasuje do dowolnego
+                    adresu URL, który używa dozwolonego schematu </dd>
+                <dt>activeTab</dt>
+                <dd> Uprawnienie <code>activeTab</code> przyznaje tymczasowy dostęp do strony, na której znajduje się
+                    użytkownik i pozwala rozszerzeniu używać uprawnienia “tabs” na bieżącej karcie. To uprawnienie nie
+                    wyświetla żadnego ostrzeżenia podczas instalacji. Jest ono wykorzystywane przez rozszerzenie do:
+                    <ul>
+                        <li> Wywołania <code>tabs.executeScript</code> i
+                            <code>tabs.insertCSS</code>
+                            na bieżącej karcie. Wykonanie skryptu jest wymagane do analizy DOM, a wstawienie CSS jest
+                            wymagane do stylizacji panelu i podświetlenia elementów (funkcja, którą ma rozszerzenie i
+                            która polega na podświetlaniu elementów na stronie po wybraniu z panelu)
+                        </li>
+                        <li> Pobrania adresu URL i tytułu karty za pomocą API, które zwraca obiekt
+                            <code>tabs.Tab</code>.
+                            Jedynym powodem pobierania tych informacji jest pokazanie użytkownikowi strony HTML wraz z ramkami,
+                            który ogląda i danie możliwości zdecydowania (poprzez wybranie go w liście rozwijanej), którą stronę/ramkę ma podać analizie. </li>
+                    </ul>
+                </dd>
+                <dt>storage</dt>
+                <dd> Umożliwia rozszerzeniom przechowywanie i pobieranie danych w przeglądarce (nie w żadnym zdalnym
+                    miejscu lub na serwerze) oraz nasłuchiwanie zmian przechowywanych elementów. Ta funkcja jest
+                    wykorzystywana przez rozszerzenie do zapisywania i pobierania preferencji użytkownika, takich jak
+                    rozmieszczenie panelu, motyw, ostrzeżenia o błędach itp. </dd>
+                <dt>webNavigation</dt>
+                <dd>
+                    Dodaje nasłuch do zdarzeń dla różnych etapów nawigacji. Nawigacja polega na przejściu w
+                    przeglądarce z jednego adresu URL na inny, zwykle (ale nie zawsze) w odpowiedzi na akcję
+                    użytkownika, taką jak kliknięcie linku lub wpisanie adresu URL w pasku adresu.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,494 @@
+<html lang="pl">
+  <head>
+    <title>Lista zmian</title>
+  </head>
+  <body>
+    <div class="flex-grid dialog-content" id="release_notes">
+      <h1 id="release-notes-header">Informacja o wydaniach</h1>
+      <div class="contents custom-scrollbar">
+        <dl>
+          <dt data-version="4.4.2">22/5/2023 (v 4.4.2)</dt>
+          <dd>
+            Naprawiono błąd, który powodował awarię rozszerzenia, gdy doctype
+            dokumentu to XHTML 1.1. Dziękuję José Luis González za zgłoszenie
+            tego i pomoc w naprawie.
+          </dd>
+          <dd>
+            Drobne poprawki do wersji francuskiej (dziękujemy ponownie Luce
+            Carevic za ich wykrycie i gotowość do ich aktualizacji).
+          </dd>
+
+          <dt data-version="4.4.1">19/5/2023 (v 4.4.1)</dt>
+          <dd>
+            Naprawiono błąd związany z tłumaczeniem, który sprawiał, że niektóre
+            teksty pojawiały się zawsze w języku angielskim.
+          </dd>
+          <dd>Dodano brakującą etykietę w języku francuskim.</dd>
+
+          <dt data-version="4.4.0">19/5/2023 (v 4.4.0)</dt>
+          <dd>
+            Przetłumaczone rozszerzenie na język francuski przez Luce Carevic.
+            Jestem jej bardzo wdzięczny za jej chęć współpracy w ten sposób i za
+            to, że zrobiła to tak szybko.
+          </dd>
+          <dd>
+            Naprawiono błąd, który uniemożliwiał ustawienie podpowiedzi (z
+            informacją o nagłówku) dopóki rozszerzenie nie zostało ponownie
+            otwarte.
+          </dd>
+
+          <dt data-version="4.3.1">7/5/2023 (v 4.3.1)</dt>
+          <dd>
+            Zapobieganie sfokusowania się na ukrytych elementach panelu. Gdy
+            okna dialogowe (ustawienia, pomoc, informacje o wydaniu itp.) są
+            zamknięte, nadal można było się na nich sfokusowć. Uzyskując dostęp
+            za pomocą klawiatury, fokus przeszedł przez wszystkie ukryte
+            elementy.
+          </dd>
+          <dd>
+            Dodano obsługę klawiatury (strzałka w prawo i strzałka w lewo), aby
+            rozwinąć/zwinąć węzły drzewa (gdy są sfokusowane).
+          </dd>
+          <dd>
+            Gdy element jest sfokusowany, klawisz „enter” ustawia fokus na
+            odpowiadającym mu nagłówku.
+          </dd>
+
+          <dt data-version="4.3.0">6/5/2023 (v 4.3.0)</dt>
+          <dd>Dodano przycisk do kopiowania drzewa.</dd>
+          <dd>Dodano opcje "zawsze otwaraj" dla tego linku.</dd>
+          <dd>
+            Poprawiono kod generujący menu, więc teraz jest oparty o semantyczny
+            przyciski.
+          </dd>
+          <dd>Poprawiono niektóre elementy dostępności.</dd>
+
+          <dt data-version="4.2.3">23/3/2023 (v 4.2.3)</dt>
+          <dd>Zaktualizowano sposób, w jaki może zostać otwarty.</dd>
+          <dt data-version="4.2.2">29.03.2023 (v 4.2.2)</dt>
+          <dd>
+            Poprawiono sposób, w jaki panel zajmuje miejsce, kiedy zmieniany
+            jest rozmiar.
+          </dd>
+
+          <dt data-version="4.2.1">21.03.2023 (v 4.2.1)</dt>
+          <dd>Teraz między panelem, a stroną jest trochę miejsca.</dd>
+          <dd>
+            Było kilka zmian w kodzie, które chociaż nie są zorientowane na
+            użytkowników, były wymagane do poprawy jakości kodu, więc jest
+            lepiej dla przyszłych zmian.
+          </dd>
+
+          <dt data-version="4.2.0">14.03.2023 (wersja 4.2.0)</dt>
+          <dd>
+            Dodano skróty klawiaturowe do ukrywania/odkrywania węzłów w drzewie.
+            W systemie Windows użyj kombinacji klawisza „alt” z dowolnym
+            klawiczem numerycznym, aby zwinąć (lub rozwinąć) odpowiednie węzły
+            drzewa z nagłówkami tego samego poziomu co liczba. Na przykład, „alt
+            + 2” zwija (lub rozwija) wszystkie węzły utworzone z elementów H2.
+            Na komputerze Mac kombinacja to „ctrl + cmd” z poziomem nagłówka. To
+            zachowanie jest dostępne tylko dla drzewa nagłówków, ale nie dla
+            HTML5 outline.
+          </dd>
+          <dd>
+            Naprawiono problem z niewłaściwymi stylami w panelu, gdy jest to
+            m.in. nowa karta, która nie jest sfokusowano bezpośrednio (na
+            przykład, gdy link jest otwarty w nowej karcie).
+          </dd>
+
+          <dt data-version="4.1.0">13/3/2023 (v 4.1.0)</dt>
+          <dd>
+            Podczas otwierania panelu margines strony jest zachowywany. W ten
+            sposób między panelem, a stroną jest pewien odstęp.
+          </dd>
+
+          <dt data-version="4.0.0">7/3/2023 (v 4.0.0)</dt>
+          <dd>
+            Dostępna jest nowa opcja automatycznego otwierania rozszerzenia.
+            Możesz ustawić, aby otwierać go zawsze lub tylko w domenie strony,
+            która jest aktywna. Sposób użycia to menu (z ikoną „szpilki”)
+            zawarte w górnym pasku i zawiera obie opcje.
+          </dd>
+          <dd>
+            Teraz opcja zmiany pozycji panelu ma swój własny przycisk w górnym
+            pasku.
+          </dd>
+          <dd>
+            Menu ustawień jest również dostępne bezpośrednio na górnym pasku.
+          </dd>
+          <dd>
+            Nowa opcja uwzględniania lub ignorowania nagłówków bez treści.
+            Domyślnie są ignorowane (w poprzednich wersjach były zawsze
+            wyświetlane).
+          </dd>
+          <dd>
+            Nieco się zmienił sposób wyświetlania okien dialogowych (dla
+            ustawień, pomocy itp.).
+          </dd>
+          <dd>
+            Ta wersja zawiera również inne zmiany mające na celu ulepszenie
+            sposobu wstrzykiwania i działania funkcjonalności. Testowano czy
+            wszystko działa zgodnie z oczekiwaniami, ale najprawdopodobniej
+            przegapiłem scenariusze, które mogą się wydarzyć. Jeśli coś
+            nieoczekiwanie się zachowuje lub zwraca wyniki proszę o kontakt na
+            maila:
+            <a href="mailto:headingsmap@gmail.com">headingsmap@gmail.com</a>.
+          </dd>
+
+          <dt data-version="3.10.1">26/7/2021 (v 3.10.1)</dt>
+          <dd>
+            Gdy element nagłówka (od H1 do H6) używa atrybutu
+            <em>aria-level</em>, rozszerzenie używa go do określenia swojego
+            poziomu.
+          </dd>
+          <dd>Poprawiono style okien dialogowych.</dd>
+          <dd>Dodano tłumaczenie na język hiszpański.</dd>
+          <dd>Nowa sekcja wsparcia.</dd>
+          <dd>Usunięto opcję „odśwież wyniki”.</dd>
+
+          <dt data-version="3.10.0">28/2/2021 (v 3.10.0)</dt>
+          <dd>
+            Dodano opcjonalne odniesienie wizualne, które pomaga zidentyfikować
+            nagłówki/sekcje, które są aktualnie wyświetlane. Kiedy strona jest
+            przewijana, jeśli nagłówek (lub sekcja w HTML5 outline) jest w
+            środku strony, odpowiedni element jest podświetlony w drzewie przez
+            zmieniające tło oraz z linią 4px po prawej stronie. Tę opcję można
+            aktywować w panelu ustawień (pole wyboru z etykietą „Poświetl
+            widoczne w oknie").
+          </dd>
+          <dd>
+            Naprawiono błąd w drzewie, gdy opcja wyświetlania ukrytych nagłówków
+            była aktywna.
+          </dd>
+          <dd>Poprawiono dostępność komponentu.</dd>
+
+          <dt data-version="3.9.1">7/12/2020 (v 3.9.1)</dt>
+          <dd>
+            Naprawiono błąd, który powodował że zawartość elementów z rolą
+            „prezentacja” był ignorowany.
+          </dd>
+
+          <dd>
+            Opublikowano
+            <a href="https://rumoroso.bitbucket.io/headingsmap/todo.html"
+              >listę potencjalnych ulepszeń i nowych funkcji</a
+            >. Lista jest budowana w oparciu również o wymagania rynku i
+            informacji zwrotnej od użytkowników.
+          </dd>
+
+          <dt data-version="3.9.0">10/10/2020 (v 3.9.0)</dt>
+          <dd>
+            Ukryj kartę, gdy analiza HTML5 Outline nie jest aktywna (aby ją
+            aktywować, zaznacz „ustawienia > drzewo HTML 5 Outline”).
+          </dd>
+          <dd>
+            Dodano styl wielokropka do głównego nagłówka (gdy opcja „Zawijaj
+            długi tekst” jest aktywny, zawija również tekst).
+          </dd>
+          <dd>Dodano treść Polityki prywatności i link do menu.</dd>
+
+          <dt data-version="3.8.3">29/6/2020 (v 3.8.3)</dt>
+          <dd>Zaktualizowano rodzinę czcionek używaną przez podpowiedź.</dd>
+
+          <dt data-version="3.8.2">28/6/2020 (v 3.8.2)</dt>
+          <dd>
+            Dodano opcjonalną podpowiedź, która pokazuje informację o nagłówku
+            lub przekrój (widoczny po najechaniu myszką na drzewo). To może być
+            aktywowane w ustawieniach i domyślnie jest wyłączone.
+          </dd>
+          <dd>
+            Zastąpiono wybrane elementy polami wyboru w ustawieniach. W ten
+            sposób użytkownik musi kliknąć tylko raz, aby przełączyć opcję.
+          </dd>
+          <dd>
+            Dodano obsługę klawiatury z drzewem, więc kiedy jest fokus:
+            <ul>
+              <li>
+                strzałka w górę/strzałka w dół: przesuwa fokus na następny
+                element/poprzedni elementu.
+              </li>
+              <li>klawisz enter: zwija/rozwija listę</li>
+              <li>
+                klawisz Escape: jeśli podpowiedź jest wyświetlana, zamyka ją.
+              </li>
+            </ul>
+          </dd>
+
+          <dt data-version="3.8.1">21/6/2020 (v 3.8.1)</dt>
+          <dd>
+            Dodano opcję identyfikacji, jakie są elementy, które narzędzie
+            uważać za ukryte. Kiedy opcja uwzględnienia ukrytych elementów jest
+            zaznaczona (dla nagłówków i/lub HTML5 outline), wyświetlana jest
+            ikona po prawej stronie nagłówka w panelu. Miej na uwadze że sposób,
+            w jaki rozszerzenie identyfikuje ukryte elementy opierają się na
+            szacunkach zgodnie z ich stylami, ale dokumenty mogą wdrożyć
+            alternatywne sposoby ukrywania treści (dzięki Alireza Esmikhani za
+            sugestie dotyczące nowych funkcji i zgłaszanie błędów, zarówno dla
+            tej wersji, jak i poprzedniej)
+          </dd>
+          <dd>Zaktualizowano, aby używać shadow DOM</dd>
+          <dd>
+            Zaktualizowana lista żądanych funkcji do analizy:
+            <ul>
+              <li>
+                Zidentyfikuj początkowy poziom nagłówka dla elementów sekcji w
+                HTML5 outline.
+              </li>
+              <li>Ulepsz okno dialogowe opcji.</li>
+              <li>Zidentyfikuj w panelu wyświetlaną część strony.</li>
+              <li>
+                Zaoferuj alternatywny sposób użytkownikom, którzy chcą dzielić
+                się pomysłami na nowe funkcje, wyrażać opinie lub zgłaszać
+                błędy.
+              </li>
+              <li>Pokaż listę przyszłych funkcji i ich status.</li>
+              <li>Wersja dla Microsoft Edge.</li>
+            </ul>
+          </dd>
+
+          <dt data-version="3.8.0">14/6/2020 (v 3.8.0)</dt>
+          <dd>Dodano opcję uwzględnienia elementów HGROUP w HTML5 outline.</dd>
+          <dd>
+            Poprawiono przesuwanie przewijania do podświetlonego elementu.
+          </dd>
+          <dd>Poprawiona wydajność podczas generowania HTML5 outline.</dd>
+          <dd>
+            Poprawki błędów związane z:
+            <ul>
+              <li>
+                HTML5 outline (nie brano prawidłowo pod uwagę pustych elementów
+                sekcji).
+              </li>
+              <li>atrybut aria-labelledby.</li>
+              <li>
+                Błędy podczas identyfikowania niestandardowych elementów HTML.
+              </li>
+              <li>Układ.</li>
+              <li>Inne.</li>
+            </ul>
+          </dd>
+
+          <dt data-version="3.7.0">27/5/2020 (v 3.7.0)</dt>
+          <dd>
+            Dodaj opcję zawijania długich tekstów w wielu wierszach zamiast
+            używać wielokropka (dzięki Yang Yang za sugestię i opinie).
+          </dd>
+
+          <dt data-version="3.6.7">24/5/2020 (v 3.6.7)</dt>
+          <dd>
+            Wyklucz z drzewa nagłówków elementy nagłówka, które mają atrybut
+            roli inny niż „nagłówek” (dzięki Audrey Maniez za jej sugestie i
+            opinie).
+          </dd>
+
+          <dt data-version="3.6.6">6/4/2020 (v 3.6.6)</dt>
+          <dd>
+            Dodaj opcję „zidentyfikuj kotwice”. Gdy jest aktywny (wartość
+            domyślna), jeśli nagłówki lub sekcje zawierają kotwice, widoczne
+            jest ikona. Kliknięcie jej powoduje skopiowanie kotwicy do schowka.
+            The kotwicę można również skopiować za pomocą akcji przeglądarki
+            „kopiuj odnośnik".
+          </dd>
+
+          <dt data-version="3.6.5">2/3/2020 (v 3.6.5)</dt>
+          <dd>
+            Dodaj opcję „Zachowaj szerokość po zmianie wielkości okna”. Kiedy
+            jest aktywna, szerokość panelu jest zachowywana po jego zamknięciu.
+          </dd>
+
+          <dt data-version="3.6.4">23/2/2020 (v 3.6.4)</dt>
+          <dd>Zaktualizowano styl pasków przewijania dla Firefoksa.</dd>
+          <dd>Zaktualizowano ikonę paska narzędzi.</dd>
+
+          <dt data-version="3.6.3">9/1/2020 (v 3.6.3)</dt>
+          <dd>Naprawiono błąd, który uniemożliwiał otwarcie panelu.</dd>
+
+          <dt data-version="3.6.2">11/10/2019 (v 3.6.2)</dt>
+          <dd>
+            Poprawiono kontrast kolorów elementów pasków przewijania w jasnym
+            motywie panelu.
+          </dd>
+
+          <dt data-version="3.6.1">26/9/2019 (v 3.6.1)</dt>
+          <dd>
+            Poprawiono style, aby panel był bardziej odporny na style jakie
+            strona może mieć (podziękowania dla Aniki Henke za opinię).
+          </dd>
+
+          <dt data-version="3.6.0">17/9/2019 (v 3.6.0)</dt>
+          <dd>
+            Dodaj opcję wyłączania podświetlenia elementu po kliknięciu w
+            drzewie nagłówków.
+          </dd>
+
+          <dt data-version="3.5.16">3/7/2019 (v 3.5.16)</dt>
+          <dd>
+            Naprawiono błąd związany z powiadomieniem o błędzie HTML5 outline.
+          </dd>
+          <dd>Poprawiono style.</dd>
+
+          <dt data-version="3.5.15">30/6/2019 (v 3.5.15)</dt>
+          <dd>
+            Naprawiono błąd związany z atrybutem <em>href</em>, gdy nagłówki lub
+            sekcje mają <em>name</em> lub <em>id</em>.
+          </dd>
+
+          <dt data-version="3.5.14">20/6/2019 (v 3.5.14)</dt>
+          <dd>
+            Wyświetla atrybuty <em>aria-label</em> i <em>aria-labelledby</em>
+            i poprawiono sposób wyświetlania tych informacji.
+          </dd>
+          <dd>Zaktualizowano kolejność pól w panelu ustawień.</dd>
+          <dd>Drobny refaktor poprawiający wydajność i upraszczający kod.</dd>
+
+          <dt data-version="3.5.13">24/5/2019 (v 3.5.13)</dt>
+          <dd>
+            Naprawono błąd podczas aktywacji opcji pokazywania ukrytych
+            nagłówków
+          </dd>
+          <dd>
+            Naprawiono błąd stylu, który powoduje, że paski przewijania nie
+            działają zgodnie z oczekiwaniami.
+          </dd>
+          <dd>Ulepszenia wydajności.</dd>
+
+          <dt data-version="3.5.12">5/5/2019 (v 3.5.12)</dt>
+          <dd>
+            Zezwolono na poziomy wyższe niż 6, gdy używasz atrybutu
+            <em>aria-level</em>.
+          </dd>
+          <dd>
+            Uwzględniono <em>role</em> z wartością <em>heading</em> w algorytmie
+            HTML5 outline.
+          </dd>
+          <dd>Uwzględniono atrybut <em>aria-labelledby</em>,</dd>
+          <dd>Naprawiono błąd podczas zapisywania ustawień.</dd>
+
+          <dt data-version="3.5.11">31/3/2019 (v 3.5.11)</dt>
+          <dd>Poprawiono zmianę rozmiaru panelu.</dd>
+          <dd>Poprawiono sposób tworzenia kart.</dd>
+          <dd>Naprawiono stylizację, gdy panel jest zamknięty.</dd>
+
+          <dt data-version="3.5.7">27/3/2019 (v 3.5.7)</dt>
+          <dd>
+            Naprawiono błąd, który uniemożliwiał wyświetlanie nagłówków, gdy
+            jeden z przodków pełnił rolę prezentacyjną.
+          </dd>
+
+          <dt data-version="3.5.6">16/2/2019 (v 3.5.6)</dt>
+          <dd>
+            Naprawiono błąd związany z wyświetlaniem teksty, gdy wszystkie
+            nagłówki (w tym ukryte) są brane pod uwagę.
+          </dd>
+
+          <dt data-version="3.5.5">22/1/2019 (v 3.5.5)</dt>
+          <dd>Ustawiono domyślny ciemny motyw.</dd>
+          <dd>
+            Dodano nowe informacje o stanie testu HTML5 Outline i jego
+            algorytmie opartym na
+            <a href="https://www.w3.org/TR/html53/" target="_blank">
+              Wykluczeniu w wersji roboczej HTML 5.3</a
+            >
+          </dd>
+          <dd>
+            Podczas pierwszej instalacji zakładka HTML5 Outline nie jest aktywny
+            (aktywację można wykonać w widoku ustawień).
+          </dd>
+
+          <dt data-version="3.5.4">13/1/2019 (v 3.5.4)</dt>
+          <dd>
+            Domyślnie przestano rozważać ukryte elementy dla technologii
+            wspomagających (opcjonalnie można rozważyć).
+          </dd>
+          <dd>
+            Uwzględniono atrybut <em>role</em> z wartością
+            <em>heading</em> kiedy używany jest do definiowania nagłówków w
+            dokumencie (w połączeniu z atrybutem <em>aria-level</em>). Dziękuję
+            Arnaudowi Delafosse za jego propozycję dotyczącą tego ulepszenia (i
+            poprzedniego) oraz informację zwrotną.
+          </dd>
+          <dd>
+            Uwzględniono uwagę o nagłówku, który nie zawiera żadnej treści.
+          </dd>
+          <dd>Ulepszono listę wyboru stron/ramek.</dd>
+          <dd>Uproszczono ustawienia.</dd>
+          <dd>Poprawiono błędy (błędy nieprawidłowo zidentyfikowane itd.)</dd>
+
+          <dt data-version="3.5.2">24/12/2018 (v 3.5.2)</dt>
+          <dd>Ulepszono listę wyboru stron/ramek.</dd>
+          <dd>Dodano górny margines podczas przewijania do elementu.</dd>
+          <dd>
+            Zapobiega się odświeżaniu, gdy dokument jest aktualizowany, a jego
+            struktura jest taka sama.
+          </dd>
+          <dd>Poprawiono jakość kodu (zmodyfikowano i zaktualizowano).</dd>
+          <dd>Poprawki błędów.</dd>
+
+          <dt data-version="3.5.1">25/11/2018 (v 3.5.1)</dt>
+          <dd>
+            Utworzono selektor do pobierania struktury nagłówków z dokumentów,
+            które są zawarte w ramkach (iframe).
+          </dd>
+          <dd>Kod zmodularyzowany.</dd>
+          <dd>Ulepszenia wydajności.</dd>
+          <dd>Poprawki błędów.</dd>
+
+          <dt data-version="3.4.3">03/11/2018 (v 3.4.3)</dt>
+
+          <dd>Nowe zwijane menu.</dd>
+          <dd>Dołączono informacje o wydaniu.</dd>
+          <dd>Dołączono treści pomocy.</dd>
+          <dd>Zmiany w kodzie poprawiające efektywność wykonywania.</dd>
+
+          <dt>25.10.2018 (wersja 3.4.2)</dt>
+          <dd>Użytkownik może zmienić rozmiar panelu.</dd>
+          <dd>Panel może być umieszczony z prawej strony (jako opcja).</dd>
+          <dd>Dodano właściwość <em>overscroll-behavior</em> do CSS.</dd>
+          <dd>Ulepszenia wydajności.</dd>
+
+          <dt>23.10.2018 (v 3.4.1)</dt>
+          <dd>Wykonywanie testu tylko aktywnej karty.</dd>
+          <dd>
+            Dołączanie wczytywanie GIF-ów, aby poprawić wygodę użytkownika.
+          </dd>
+          <dd>
+            Kliknięcie korzenia drzewa powoduje przewinięcie do góry strony.
+          </dd>
+          <dd>Dołączenie panelu opcji.</dd>
+          <dd>
+            Poprawka błędu w HTML5 outline, który nie wyświetlał wszystkich
+            sekcji.
+          </dd>
+          <dt>18/10/2018 (v 3.4.0)</dt>
+          <dd>
+            Pokazano zawartość <em>aria-label</em> jako funkcję opcjonalną.
+          </dd>
+          <dd>
+            Nagłówki w drzewach zawierają kotwice, więc działają jako łącza.
+          </dd>
+          <dd>Style pasków przewijania dla Chrome i Vivaldi.</dd>
+          <dd>Poprawiono jakość kodu.</dd>
+          <dd>
+            Naprawiono błąd podczas uwzględniania nagłówków/sekcji znajdujących
+            się poza obszarem widoku (ukryte).
+          </dd>
+
+          <dt>11.10.2018 (wersja 3.3.7)</dt>
+          <dd>Ukryte nagłówki i sekcje są opcjonalnie brane pod uwagę.</dd>
+          <dd>Zaktualizowano sposób podświetlania nagłówka/sekcji.</dd>
+          <dd>Poprawiono wydajności analizy.</dd>
+
+          <dt>10.09.2018 (wersja 3.3.6)</dt>
+          <dd>Dodano ciemny motyw jako opcję.</dd>
+          <dd>Ustawiono HTML5 Outline jako opcjonalne.</dd>
+          <dd>Poprawiono ogólny styl.</dd>
+          <dd>Poprawiono błędy.</dd>
+        </dl>
+        <p class="note">
+          Zacząłem dodawać informacje o wydaniu w tym momencie, więc nie ma
+          informacji dla starszych wersji.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

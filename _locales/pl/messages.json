@@ -1,0 +1,170 @@
+{
+  "extensionName": {
+    "message": "HeadingsMap",
+    "description": "Nazwa rozszerzenia."
+  },
+  "extensionDescription": {
+    "message": "Aby wyświetlać, przeglądać i przeprowadzać audyt (pod kątem dostępności i SEO) struktury nagłówków",
+    "description": "Opis rozszerzenia"
+  },
+  "headersTab": {
+    "message": "Struktura nagłówków",
+    "description": ""
+  },
+  "outlineTab": {
+    "message": "HTML5 Outline",
+    "description": ""
+  },
+  "releaseNotesMenuLink": {
+    "message": "Informacje o wydaniach",
+    "description": ""
+  },
+  "privacyPolicyMenuLink": {
+    "message": "Polityka prywatności",
+    "description": ""
+  },
+  "settingsMenuLabel": {
+    "message": "Ustawienia",
+    "description": ""
+  },
+  "helpLabel": {
+    "message": "Pomoc",
+    "description": ""
+  },
+  "refreshResultsMenuLink": {
+    "message": "Odśwież wyniki",
+    "description": ""
+  },
+  "closeButton": {
+    "message": "Zamknij",
+    "description": ""
+  },
+  "closeButtonAriaLabel": {
+    "message": "Zamknij panel",
+    "description": ""
+  },
+  "copyButtonLabel": {
+    "message": "Kopiuj strukturę nagłówków",
+    "description": ""
+  },
+  "analysisAriaLabel": {
+    "message": "Analiza",
+    "description": ""
+  },
+  "infoMenuLabel": {
+    "message": "Informacje",
+    "description": ""
+  },
+  "potentiallyHiddenPlural": {
+    "message": "Prawdopodobnie ukryte elementy",
+    "description": ""
+  },
+  "visible": {
+    "message": "Widoczne elementy",
+    "description": ""
+  },
+  "collapseTreeNode": {
+    "message": "Zagnieżdżone elementy",
+    "description": ""
+  },
+  "expandTreeNode": {
+    "message": "Zagnieżdżone elementy",
+    "description": ""
+  },
+  "clickTheAnchor": {
+    "message": "Kliknij ikonkę, aby skopiować link",
+    "description": ""
+  },
+  "headingLevel": {
+    "message": "Poziom nagłówka",
+    "description": ""
+  },
+  "element": {
+    "message": "Element",
+    "description": ""
+  },
+  "emptyHeader": {
+    "message": "Pusty nagłówek",
+    "description": ""
+  },
+  "error": {
+    "message": "Błąd",
+    "description": ""
+  },
+  "potentiallyHidden": {
+    "message": "Prawdopodobnie ukryte elementy",
+    "description": ""
+  },
+  "missingH1": {
+    "message": "Brakujący nagłówek H1",
+    "description": ""
+  },
+  "wrongHierarchy": {
+    "message": "Błędna hierarchia nagłówków",
+    "description": ""
+  },
+  "noHeadings": {
+    "message": "Brak nagłówków",
+    "description": ""
+  },
+  "documents": {
+    "message": "Strona/ramka",
+    "description": ""
+  },
+  "documentSelectorTitle": {
+    "message": "Wybierz stronę/ramkę, aby uzyskać jego strukturę nagłówków",
+    "description": ""
+  },
+  "anchor": {
+    "message": "Link",
+    "description": ""
+  },
+  "generatedBy": {
+    "message": "Wygenerowane przez",
+    "description": ""
+  },
+  "heading": {
+    "message": "Nagłówek",
+    "description": ""
+  },
+  "errorNoHeadingSection": {
+    "message": "Błąd: sekcja bez nagłówków",
+    "description": ""
+  },
+  "contributeMenuLink": {
+    "message": "Wsparcie",
+    "description": ""
+  },
+  "pinPanelLabel": {
+    "message": "Otwieranie panelu",
+    "description": ""
+  },
+  "pinPanelToTabLabel": {
+    "message": "Zostaw otwarte w trakcie przeglądania",
+    "description": ""
+  },
+  "pinPanelByDomainLabel": {
+    "message": "Zawsze otwieraj dla tej domeny",
+    "description": ""
+  },
+  "pinPanelByURLLabel": {
+    "message": "Zawsze otwieraj dla tego linku",
+    "description": ""
+  },
+  "pinMenuLabel": {
+    "message": "Ustaw otwieranie",
+    "description": ""
+  },
+  "switchToLeft": {
+    "message": "Przełącz panel na lewo",
+    "description": ""
+  },
+  "switchToRight": {
+    "message": "Przełącz panel na prawo",
+    "description": ""
+  },
+  "active": {
+    "message": "Aktywny",
+    "description": ""
+  }
+}

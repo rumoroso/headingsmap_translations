@@ -1,0 +1,302 @@
+<html lang="pl">
+  <head>
+    <title>Ustawienia</title>
+  </head>
+  <body>
+    <div class="flex-grid dialog-content" id="settings_form">
+      <h1 id="settings-header">Ustawienia</h1>
+
+      <div class="contents settings-content">
+        <fieldset class="fieldset">
+          <legend>Główne ustawienia</legend>
+          <div>
+            <label for="showHeadError">
+              <input type="checkbox" name="showHeadError" id="showHeadError" />
+              Pokaż błędy
+            </label>
+            <label for="highLightElements">
+              <input
+                type="checkbox"
+                name="highLightElements"
+                id="highLightElements"
+              />
+              Zaznacz po kliknięciu
+            </label>
+            <label for="showAriaLabelContent">
+              <input
+                type="checkbox"
+                name="showAriaLabelContent"
+                id="showAriaLabelContent"
+                data-callback="refresh"
+              />
+              Dodaj informację o "aria"
+            </label>
+            <label for="showAnchors">
+              <input
+                type="checkbox"
+                name="showAnchors"
+                id="showAnchors"
+                data-callback="refresh"
+              />
+              Znajdź kotwicę
+            </label>
+            <label for="darkTheme">
+              <input
+                type="checkbox"
+                name="darkTheme"
+                id="darkTheme"
+                data-callback="setTheme"
+              />
+              Ciemny motyw
+            </label>
+            <label for="savePanelWidthOnResize">
+              <input
+                type="checkbox"
+                name="savePanelWidthOnResize"
+                id="savePanelWidthOnResize"
+                data-callback="updateInitialPanelWidth"
+              />
+              Zachowaj szerokość po zmianie wielkości okna
+            </label>
+            <label for="normalWrap">
+              <input type="checkbox" name="normalWrap" id="normalWrap" />
+              Zawijaj długi tekst
+            </label>
+            <label for="showTooltip">
+              <input
+                type="checkbox"
+                name="showTooltip"
+                id="showTooltip"
+                data-callback="setLinksBehavior"
+              />
+              Pokaż podpowiedź
+            </label>
+            <label for="viewportIndicator">
+              <input
+                type="checkbox"
+                name="viewportIndicator"
+                id="viewportIndicator"
+                data-callback="refresh"
+              />
+              Podświetl widoczne w oknie
+            </label>
+            <label for="language">
+              Język
+              <select name="language" id="language"></select>
+            </label>
+            <p class="note">
+              Zmiana języka jest stosowana po ponownym uruchomieniu rozszerzenia
+              (zamknięciu i ponownym otwarciu).
+            </p>
+            <input
+              type="hidden"
+              name="initialPanelWidth"
+              id="initialPanelWidth"
+            />
+          </div>
+          <div class="custom-scrollbar settings-information">
+            <h2>Szczegóły</h2>
+            <ul>
+              <li>
+                <strong>Pokaż błędy</strong>: Gdy jest zaznaczone, podświetla
+                element drzewa z błędem.
+              </li>
+              <li>
+                <strong>Zaznacz po kliknięciu</strong>: po kliknięciu elementu
+                drzewa wyświetli się ramka (przez kilka sekund) wokół nagłówka
+                na stronie internetowej.
+              </li>
+              <li>
+                <strong>Dodaj informację o "aria"</strong>: jeśli nagłówek używa
+                atrybutów <em>aria-label</em> lub <em>aria-labelledby</em>, to
+                zostaje wyświetlona "aria" (przesłanką jest dostęp technologii
+                asystujących do ARIA)
+              </li>
+              <li>
+                <strong>Znajdź kotwicę</strong>: Jeśli nagłówek ma ID to
+                wyświetli się spinacz w panelu. Kliknięcie spinacza kopiuje link
+                do kotwicy (ID nagłówka).
+              </li>
+              <li>
+                <strong>Ciemny motyw</strong>: kiedy jest zaznaczone, panel ma
+                ciemne tło i jasne litery.
+              </li>
+              <li>
+                <strong>Zachowaj szerokość po zmianie wielkości okna</strong>:
+                jeśli jest zaznaczone, a okno zmieniło rozmiar, zachowana jest
+                szerokość panelu.
+              </li>
+              <li>
+                <strong>Zawijaj długi tekst</strong>: domyślnie tekst w
+                elementach drzewa jest obcinany. Po zaznaczeniu tej opcji
+                dostosowuje się do wielu linii, jeśli jest to konieczne.
+              </li>
+              <li>
+                <strong>Pokaż podpowiedź</strong>: gdy jest zaznaczone, po
+                przesunięciu myszy nad nagłówek, wyświetla się podpowiedź z
+                informacją.
+              </li>
+              <li>
+                <strong>Podświetl widoczne w oknie</strong>: gdy jest zaznaczone
+                pokazuje jasne tło w elementach na panelu, które odpowiadają
+                nagłówkom widocznym w oknie przeglądarki.
+              </li>
+              <li>
+                <strong>Język</strong>: zmienia język. Nowy język nie jest
+                stosowany do czasu ponownego otwarcia rozszerzenia.
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Drzewo nagłówków</legend>
+          <div>
+            <label for="showHeadErrorH1">
+              <input
+                type="checkbox"
+                name="showHeadErrorH1"
+                id="showHeadErrorH1"
+              />
+              Błąd, jeśli nie ma nagłówka H1
+            </label>
+            <label for="showHeadLevels">
+              <input
+                type="checkbox"
+                name="showHeadLevels"
+                id="showHeadLevels"
+              />
+              Pokaż poziom nagłówków
+            </label>
+            <label for="showEmptyHeadings">
+              <input
+                type="checkbox"
+                name="showEmptyHeadings"
+                id="showEmptyHeadings"
+                data-callback="refresh"
+              />
+              Pokaż puste nagłówki
+            </label>
+            <label for="showHiddenHeaders">
+              <input
+                type="checkbox"
+                name="showHiddenHeaders"
+                id="showHiddenHeaders"
+                data-callback="refresh"
+              />
+              Pokaż ukryte nagłówki
+            </label>
+          </div>
+          <div class="custom-scrollbar settings-information">
+            <h2>Szczegóły</h2>
+            <ul>
+              <li>
+                <strong>Błąd, jeśli nie ma nagłówka H1</strong>: kiedy jest
+                zaznaczone, wyświetla błąd, jeśli pierwszy nagłówek nie jest H1.
+                Potrzebuje zaznaczoną opcje “Pokaż błędy”, aby być działać.
+              </li>
+              <li>
+                <strong>Pokaż poziom nagłówków</strong>: pokazuje poziom
+                nagłówka przed jego zawartością.
+              </li>
+              <li>
+                <strong>Pokaż puste nagłówki</strong>: po zaznaczeniu pokazane
+                są w drzewie puste nagłówki.
+              </li>
+              <li>
+                <strong>Pokaż ukryte nagłówki</strong>: identyfikuje i pokazuje
+                wszystkie nagłówki, niezależnie od tego, czy są ukryte czy
+                pokazane na stronie.
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Drzewo HTML5 Outline</legend>
+          <div>
+            <label for="isOutlineTestActive">
+              <input
+                type="checkbox"
+                name="isOutlineTestActive"
+                id="isOutlineTestActive"
+                data-callback="refresh disableFields"
+                data-related-fields="showOutLevels showOutElem showHiddenSections considerHgroup"
+              />
+              Aktywuj analizę
+            </label>
+            <p class="note">
+              Nie ma przeglądarek ani technologii wspierających natywnie
+              implementację algorytmu W3C Outline. Dlatego nie można na nim
+              polegać, aby przekazywać użytkownikom strukturę dokumentu, a
+              autorzy powinni używać poziomu nagłówka do tego celu. (<a
+                href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                target="_blank"
+                >HTML 5.2 Tworzenie w oparciu o outline</a
+              >)
+            </p>
+
+            <label for="showOutLevels">
+              <input type="checkbox" name="showOutLevels" id="showOutLevels" />
+              Pokaż indeks sekcji
+            </label>
+            <label for="showOutElem">
+              <input type="checkbox" name="showOutElem" id="showOutElem" />
+              Pokaż tag sekcji
+            </label>
+            <label for="showHiddenSections">
+              <input
+                type="checkbox"
+                name="showHiddenSections"
+                id="showHiddenSections"
+                data-callback="refresh"
+              />
+              Uwzględnij ukryte sekcje *
+            </label>
+            <label for="considerHgroup">
+              <input
+                type="checkbox"
+                name="considerHgroup"
+                id="considerHgroup"
+                data-callback="refresh"
+              />
+              Uwzględnij HGROUP
+            </label>
+          </div>
+          <p class="note">
+            * Gdy opcja "uwzględnij ukryte sekcje" jest zaznaczona, analiza może
+            mieć wpływ na wydajność na dużych stronach internetowych.
+          </p>
+
+          <div class="custom-scrollbar settings-information">
+            <h2>Szczegóły</h2>
+            <ul>
+              <li>
+                <strong>Aktywuj analizę</strong>: Wyodrębnienie outline strony
+                internetowej może wpływać na wydajność, dlatego jego wykonanie
+                jest opcjonalne i domyślnie wyłączone. Gdy jest aktywne, obie
+                analizy (Struktura nagłówków i HTML5 Outline) pojawiają się jako
+                karty w panelu.
+              </li>
+              <li>
+                <strong>Pokaż indeks sekcji</strong>: pokazuje indeks przed
+                tekstem.
+              </li>
+              <li>
+                <strong>Pokaż tag sekcji</strong>: zawiera tag sekcji jako część
+                zawartości w drzewie.
+              </li>
+              <li>
+                <strong>Uwzględnij ukryte sekcje</strong>: identyfikuje i
+                pokazuje informacje o wszystkich sekcjach, niezależnie od tego,
+                czy są ukryte czy pokazane na stronie.
+              </li>
+              <li>
+                <strong>Uwzględnij HGROUP</strong>: z tą opcją analiza traktuje
+                element HGROUP jako element sekcji.
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>

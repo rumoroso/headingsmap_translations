@@ -43,6 +43,10 @@
     "message": "Fermer le panneau",
     "description": ""
   },
+  "revealHeadingsButtonAriaLabel": {
+    "message": "Afficher les titres",
+    "description": ""
+  },
   "copyButtonLabel": {
     "message": "Copier les résultats",
     "description": ""
@@ -65,6 +69,14 @@
   },
   "collapseTreeNode": {
     "message": "titres imbriqués",
+    "description": ""
+  },
+  "collapseLabel": {
+    "message": "s'effondrer",
+    "description": ""
+  },
+  "expandLabel": {
+    "message": "développer",
     "description": ""
   },
   "expandTreeNode": {
@@ -137,10 +149,6 @@
   },
   "pinPanelLabel": {
     "message": "Toujours ouvrir automatiquement",
-    "description": ""
-  },
-  "pinPanelToTabLabel": {
-    "message": "Garder ouvert lors de la navigation",
     "description": ""
   },
   "pinPanelByDomainLabel": {

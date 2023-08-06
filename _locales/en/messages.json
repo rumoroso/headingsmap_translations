@@ -43,6 +43,10 @@
     "message": "close panel",
     "description": ""
   },
+  "revealHeadingsButtonAriaLabel": {
+    "message": "reveal headers",
+    "description": ""
+  },
   "copyButtonLabel": {
     "message": "copy results",
     "description": ""
@@ -65,6 +69,14 @@
   },
   "collapseTreeNode": {
     "message": "nested headers",
+    "description": ""
+  },
+  "collapseLabel": {
+    "message": "collapse",
+    "description": ""
+  },
+  "expandLabel": {
+    "message": "expand",
     "description": ""
   },
   "expandTreeNode": {
@@ -137,10 +149,6 @@
   },
   "pinPanelLabel": {
     "message": "open automatically always",
-    "description": ""
-  },
-  "pinPanelToTabLabel": {
-    "message": "keep open while browsing",
     "description": ""
   },
   "pinPanelByDomainLabel": {

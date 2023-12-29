@@ -16,15 +16,15 @@
     "description": ""
   },
   "releaseNotesMenuLink": {
-    "message": "Informacje o wydaniach",
+    "message": "informacje o wydaniach",
     "description": ""
   },
   "privacyPolicyMenuLink": {
-    "message": "Polityka prywatności",
+    "message": "polityka prywatności",
     "description": ""
   },
-  "settingsMenuLabel": {
-    "message": "Ustawienia",
+  "settingsLabel": {
+    "message": "ustawienia",
     "description": ""
   },
   "helpLabel": {
@@ -32,7 +32,7 @@
     "description": ""
   },
   "refreshResultsMenuLink": {
-    "message": "Odśwież wyniki",
+    "message": "odśwież wyniki",
     "description": ""
   },
   "closeButton": {
@@ -55,8 +55,8 @@
     "message": "Analiza",
     "description": ""
   },
-  "infoMenuLabel": {
-    "message": "Informacje",
+  "maniMenuLabel": {
+    "message": "Menu",
     "description": ""
   },
   "potentiallyHiddenPlural": {
@@ -73,6 +73,10 @@
   },
   "collapseLabel": {
     "message": "upadek",
+    "description": ""
+  },
+  "collapserDescription": {
+    "message": "Aby zwinąć/rozwinąć drzewo nagłówków według poziomu nagłówka. Użyj skrótu klawiaturowego: alt + poziom nagłówka.",
     "description": ""
   },
   "expandLabel": {
@@ -144,7 +148,7 @@
     "description": ""
   },
   "contributeMenuLink": {
-    "message": "Wsparcie",
+    "message": "wsparcie",
     "description": ""
   },
   "pinPanelLabel": {
@@ -171,8 +175,128 @@
     "message": "Przełącz panel na prawo",
     "description": ""
   },
+  "switchPositionLabel": {
+    "message": "zmiana pozycji",
+    "description": ""
+  },
   "active": {
     "message": "Aktywny",
+    "description": ""
+  },
+  "searchLabel": {
+    "message": "nagłówek wyszukiwania",
+    "description": ""
+  },
+  "searchButtonLabel": {
+    "message": "wyszukiwanie",
+    "description": ""
+  },
+  "closeSearchButtonLabel": {
+    "message": "zamknij wyszukiwanie",
+    "description": ""
+  },
+  "resultsListLabel": {
+    "message": "nagłówki",
+    "description": ""
+  },
+  "ariaLiveSwitchedToLeft": {
+    "message": "dołączony po lewej stronie widoku",
+    "description": ""
+  },
+  "ariaLiveSwitchedToRight": {
+    "message": "dołączone po prawej stronie widoku",
+    "description": ""
+  },
+  "ariaLiveExpandedLevel": {
+    "message": "nagłówki w drzewie pod poziomem {level} rozwinięte",
+    "description": ""
+  },
+  "ariaLiveCollapsedLevel": {
+    "message": "nagłówki w drzewie pod poziomem {level} zwinięte",
+    "description": ""
+  },
+  "ariaLiveHeadingsCopied": {
+    "message": "struktura skopiowana do schowka",
+    "description": ""
+  },
+  "shortcuts": {
+    "message": "skróty klawiaturowe",
+    "description": ""
+  },
+  "shortcutEditLabel": {
+    "message": "naciśnij dowolny klawisz (może być połączony z klawiszami modyfikującymi 'control', 'shift', 'alt' lub 'meta')",
+    "description": ""
+  },
+  "shortcutHintMessage": {
+    "message": "naciśnij dowolny klawisz",
+    "description": ""
+  },
+  "shortcutErrorMessage": {
+    "message": "skrót już użyty",
+    "description": ""
+  },
+  "shortcutEditButton": {
+    "message": "edytuj skrót",
+    "description": ""
+  },
+  "shortcutResetButton": {
+    "message": "zresetuj skrót do domyślnego",
+    "description": ""
+  },
+  "shortcutSaveButton": {
+    "message": "zapisz skrót",
+    "description": ""
+  },
+  "shortcutCancelButton": {
+    "message": "anuluj edycję skrótu",
+    "description": ""
+  },
+  "shortcutNotDefined": {
+    "message": "jeszcze nie zdefiniowany",
+    "description": ""
+  },
+  "saved": {
+    "message": "zapisany",
+    "description": ""
+  },
+  "openShortcutsDialog": {
+    "message": "Otwórz okno dialogowe skrótów",
+    "description": ""
+  },
+  "openSettingsDialog": {
+    "message": "Otwórz okno dialogowe ustawień",
+    "description": ""
+  },
+  "updatePanelPosition": {
+    "message": "Zaktualizuj pozycję panelu (lewy - prawy)",
+    "description": ""
+  },
+  "identifyHeadersInPage": {
+    "message": "Identyfikuj nagłówki na stronie",
+    "description": ""
+  },
+  "searchInHeadingsTree": {
+    "message": "Szukaj w drzewie nagłówków",
+    "description": ""
+  },
+  "focussHeadingsTree": {
+    "message": "Skoncentruj drzewo nagłówków",
+    "description": ""
+  },
+  "toggleTreeNodesByLevel": {
+    "message": "Zwiń lub rozwiń węzły drzewa według poziomu nagłówka",
+    "description": ""
+  },
+  "shortcutsPanelDescription": {
+    "message": "To jest lista skrótów klawiaturowych powiązanych z funkcjami rozszerzenia. Istniejące skróty można modyfikować i dostosowywać do własnych potrzeb. W jednym skrócie można połączyć więcej niż jeden klawisz. Dozwolone są tylko litery, cyfry, klawisz <kbd class='shortcut'>shift</kbd> i niektóre znaki: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>.",
+    "description": ""
+  },
+  "shortcutsPanelDescriptionBottom": {
+    "message": "Jeśli masz sugestie dotyczące funkcji skrótów, wyślij je na adres <a href='mailto:headingsmap@gmail.com'>headingsmap@gmail.com</a>.",
+    "description": ""
+  },
+  "number": {
+    "message": "numer",
     "description": ""
   }
 }

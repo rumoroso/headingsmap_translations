@@ -2,8 +2,8 @@
 <head><title>Options</title></head>
 <body>
 
-<div class="flex-grid dialog-content" id="settings_form">
-    <h1 id="settings-header">Paramètres</h1>
+<div class="content">
+    <h1 id="settings-header" class="headingsmap-exclude">Paramètres</h1>
 
     <div class="contents settings-content">
         <fieldset class="fieldset">
@@ -79,7 +79,7 @@
                     </li>
                     <li><strong>Lier à la fenêtre d'affichage</strong>&nbsp;: affiche un fond clair sur les titres visibles dans la zone affichée par le navigateur.
                     </li>
-                    <li><strong>Langue</strong>&nbsp;: changer la langue. Le changement sera effectif après réouverture de l’extension.
+                    <li><strong>Simplified view</strong>: it hides buttons simplifying the view of the panel.
                     </li>
                 </ul>
             </div>
@@ -103,6 +103,10 @@
                     <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" data-callback="refresh"/>
                     Afficher les titres masqués
                 </label>
+                <label for="hideTreeResultsTools">
+                    <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+                    Masquer les outils (recherche, etc.)
+                </label>
             </div>
             <div class="custom-scrollbar settings-information">
                 <h2>Détails</h2>
@@ -111,6 +115,8 @@
                     <li><strong>Afficher le niveau de titre</strong>&nbsp;: affiche le niveau de titre avant le texte.</li>
                     <li><strong>Afficher les titres vides</strong>&nbsp;: affiche les titres vides dans la hiérarchie de titres.</li>
                     <li><strong>Afficher les titres masqués</strong>&nbsp;: affiche tous les titres même ceux qui sont masqués.</li>
+                    <li><strong>Masquer les outils</strong>: il masque les boutons, ce qui simplifie l'affichage du panneau.
+                    </li>
                 </ul>
             </div>
 
@@ -164,6 +170,107 @@
             </div>
         </fieldset>
     </div>
+    <style>
+        #dialog-panel .content {
+            height: 100%;
+        }
+
+        #dialog-panel .settings-content {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #dialog-panel .settings-content > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .settings-information {
+            overflow: auto;
+        }
+
+        #dialog-panel .tab-button {
+            width: 33.3%;
+        }
+
+        #dialog-panel .tabs {
+            margin-top: 30px;
+        }
+
+        #dialog-panel .tab-button {
+            max-width: none;
+        }
+
+        #dialog-panel .tab-button:not([aria-selected=true]) {
+            margin-bottom: 1px;
+        }
+
+        #dialog-panel div[role=tabpanel].active {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #dialog-panel .fieldset {
+            position: relative;
+            box-sizing: border-box;
+            border: none;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .fieldset legend {
+            font-weight: bold;
+            position: absolute;
+            top: -5000px;
+            left: -5000px;
+        }
+
+        #dialog-panel .fieldset label {
+            display: block;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        #dialog-panel .fieldset p {
+            border-top: 1px dotted transparent;
+        }
+
+        #dialog-panel li {
+            font-size: .9rem;
+        }
+
+        #dialog-panel .fieldset p label {
+            float: none;
+            width: auto;
+            box-sizing: border-box;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        #dialog-panel .fieldset legend label {
+            width: auto;
+            margin: auto;
+        }
+
+        #dialog-panel .fieldset select {
+            font-weight: normal;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n + 1) {
+            clear: left;
+        }
+    </style>
 </div>
 </body>
 </html>

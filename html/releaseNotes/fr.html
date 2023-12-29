@@ -1,10 +1,46 @@
 <html lang="fr">
 <head><title>Changelog</title></head>
 <body>
-<div class="flex-grid dialog-content" id="release_notes">
-    <h1 id="release-notes-header">Notes de version</h1>
+<div class="content" id="release_notes">
+    <h1 id="release-notes-header" class="headingsmap-exclude">Notes de version</h1>
     <div class="contents custom-scrollbar">
         <dl>
+            <dt data-version="4.7.0">28/12/2023 (v 4.7.0)</dt>
+            <dd>Nouveaux <strong>raccourcis pour interagir avec l'extension</. L'extension comprend désormais des
+                raccourcis permettant de déclencher des actions telles que la fonction de recherche, de réduire les
+                nœuds dans les résultats, d'ouvrir la boîte de dialogue des paramètres et même d'ouvrir la boîte de
+                dialogue pour afficher les raccourcis. Étant donné que l'utilisation des raccourcis pourrait entrer en
+                conflit avec certains raccourcis des technologies d'assistance, je les ai rendus configurables. Certains
+                ont une valeur par défaut et d'autres ne sont pas encore définis, de sorte que les utilisateurs peuvent
+                les configurer en fonction de leurs besoins.
+            </dd>
+            <dd>Les boutons permettant de modifier la position du panneau et d'accéder aux paramètres font désormais
+                partie du menu principal. L'objectif principal était de simplifier l'affichage et de réduire le nombre
+                de frappes lors de l'interaction avec le clavier.
+            </dd>
+            <dd>Option <strong>permettant de masquer</strong> les outils offerts par l'onglet des rubriques (boutons de
+                réduction par niveau, boutons de recherche et de copie). L'objectif principal, comme nous l'avons déjà
+                mentionné, était de simplifier l'affichage. Bien que le bouton de recherche soit caché, la touche de
+                raccourci pour la recherche fonctionne toujours et l'affiche. Il est simplement caché visuellement et
+                n'est disponible qu'avec le clavier.
+            </dd>
+            <dd>Améliorations de l'accessibilité.
+            </dd>
+            <dd>Améliorations du comportement de la boîte de dialogue, des menus, etc.
+            </dd>
+
+            <dt data-version="4.6.3">13/12/2023 (v 4.6.3)</dt>
+            <dd>Amélioration de l'accessibilité.</dd>
+            <dd>Amélioration des styles.</dd>
+
+            <dt data-version="4.6.2">11/12/2023 (v 4.6.2)</dt>
+            <dd>Nouvelle fonction de recherche pour trouver des en-têtes dans l'arbre.</dd>
+            <dd>Amélioration des boutons permettant de réduire/développer l'arbre par niveaux (amélioration de
+                l'accessibilité, du comportement, de l'interaction avec le clavier, etc.).
+            </dd>
+            <dd>Modification des arbres pour utiliser le rôle ARIA approprié et le comportement attendu du clavier.</dd>
+            <dd>Amélioration de la taille des boutons.</dd>
+
             <dt data-version="4.5.8">17/11/2023 (v 4.5.8)</dt>
             <dd>Correction d'un bug qui empêchait d'obtenir des résultats lorsqu'il y avait des images sans attribut
                 src.</dd>

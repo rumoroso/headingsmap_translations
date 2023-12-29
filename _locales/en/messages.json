@@ -20,11 +20,11 @@
     "description": ""
   },
   "privacyPolicyMenuLink": {
-    "message": "Privacy policy",
+    "message": "privacy policy",
     "description": ""
   },
-  "settingsMenuLabel": {
-    "message": "settings menu",
+  "settingsLabel": {
+    "message": "settings",
     "description": ""
   },
   "helpLabel": {
@@ -55,8 +55,8 @@
     "message": "Analysis",
     "description": ""
   },
-  "infoMenuLabel": {
-    "message": "info",
+  "maniMenuLabel": {
+    "message": "Menu",
     "description": ""
   },
   "potentiallyHiddenPlural": {
@@ -73,6 +73,10 @@
   },
   "collapseLabel": {
     "message": "collapse",
+    "description": ""
+  },
+  "collapserDescription": {
+    "message": "Buttons to collapse/expand the headings tree by heading level. Use the keyboard shortcut: alt + heading level",
     "description": ""
   },
   "expandLabel": {
@@ -144,7 +148,7 @@
     "description": ""
   },
   "contributeMenuLink": {
-    "message": "Contribute",
+    "message": "contribute",
     "description": ""
   },
   "pinPanelLabel": {
@@ -171,8 +175,128 @@
     "message": "switch panel position to right",
     "description": ""
   },
+  "switchPositionLabel": {
+    "message": "change panel position",
+    "description": ""
+  },
   "active": {
     "message": "active",
+    "description": ""
+  },
+  "searchLabel": {
+    "message": "search heading",
+    "description": ""
+  },
+  "searchButtonLabel": {
+    "message": "open headings search",
+    "description": ""
+  },
+  "closeSearchButtonLabel": {
+    "message": "close headings search",
+    "description": ""
+  },
+  "resultsListLabel": {
+    "message": "headings",
+    "description": ""
+  },
+  "ariaLiveSwitchedToLeft": {
+    "message": "attached to the left of the view",
+    "description": ""
+  },
+  "ariaLiveSwitchedToRight": {
+    "message": "attached to the right of the view",
+    "description": ""
+  },
+  "ariaLiveExpandedLevel": {
+    "message": "headings in the tree under level {level} expanded",
+    "description": ""
+  },
+  "ariaLiveCollapsedLevel": {
+    "message": "headings in the tree under level {level} collapsed",
+    "description": ""
+  },
+  "ariaLiveHeadingsCopied": {
+    "message": "structure copied to clipboard",
+    "description": ""
+  },
+  "shortcuts": {
+    "message": "keyboard shortcuts",
+    "description": ""
+  },
+  "shortcutEditLabel": {
+    "message": "press any key (it can be combined with modifier keys 'control', 'shift', 'alt', or 'meta')",
+    "description": ""
+  },
+  "shortcutHintMessage": {
+    "message": "press any key",
+    "description": ""
+  },
+  "shortcutErrorMessage": {
+    "message": "shortcut already used",
+    "description": ""
+  },
+  "shortcutEditButton": {
+    "message": "edit shortcut",
+    "description": ""
+  },
+  "shortcutResetButton": {
+    "message": "reset shortcut to default",
+    "description": ""
+  },
+  "shortcutSaveButton": {
+    "message": "save shortcut",
+    "description": ""
+  },
+  "shortcutCancelButton": {
+    "message": "cancel shortcut edition",
+    "description": ""
+  },
+  "shortcutNotDefined": {
+    "message": "not defined yet",
+    "description": ""
+  },
+  "saved": {
+    "message": "saved",
+    "description": ""
+  },
+  "openShortcutsDialog": {
+    "message": "Open the shortcuts dialog",
+    "description": ""
+  },
+  "openSettingsDialog": {
+    "message": "Open the settings dialog",
+    "description": ""
+  },
+  "updatePanelPosition": {
+    "message": "Change the panel position (left - right)",
+    "description": ""
+  },
+  "identifyHeadersInPage": {
+    "message": "Identify headers in page",
+    "description": ""
+  },
+  "searchInHeadingsTree": {
+    "message": "Search in the headings tree",
+    "description": ""
+  },
+  "focussHeadingsTree": {
+    "message": "Focus the headings tree",
+    "description": ""
+  },
+  "toggleTreeNodesByLevel": {
+    "message": "Collapse or expand the tree nodes by heading level",
+    "description": ""
+  },
+  "shortcutsPanelDescription": {
+    "message": "This is the list of keyboard shortcuts associated to the extension features. You can modify the existing ones, adapt them to your needs. More than one key can be combined in one shortcut. Only letters, numbers, <kbd class='shortcut'>shift</kbd> and some characters are allowed: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>",
+    "description": ""
+  },
+  "shortcutsPanelDescriptionBottom": {
+    "message": "If you have suggestions about the shortcuts feature, please send them to <a href='mailto:headingsmap@gmail.com'>headingsmap@gmail.com</a>.",
+    "description": ""
+  },
+  "number": {
+    "message": "number",
     "description": ""
   }
 }

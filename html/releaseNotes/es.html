@@ -1,10 +1,43 @@
 <html lang="es">
 <head><title>Changelog</title></head>
 <body>
-<div class="flex-grid dialog-content" id="release_notes">
-    <h1 id="release-notes-header">Ultimos cambios</h1>
+<div class="content" id="release_notes">
+    <h1 id="release-notes-header" class="headingsmap-exclude">Ultimos cambios</h1>
     <div class="contents custom-scrollbar">
         <dl>
+            <dt data-version="4.7.0">28/12/2023 (v 4.7.0)</dt>
+            <dd>Nuevos <strong>atajos de teclado para interactuar con la extensión</strong>. Ahora incluye algunos
+                atajos para activar acciones como la función de búsqueda, contraer nodos en los resultados, abrir el
+                diálogo de configuración e incluso abrir el diálogo para mostrar los atajos. Dado que el uso de atajos
+                podría colisionar con algunos atajos de la tecnología de asistencia, los he hecho configurables. Algunos
+                tienen un valor por defecto y otros aún no están definidos, por lo que los usuarios pueden configurarlos
+                en función de sus necesidades.
+            </dd>
+            <dd>Los botones para cambiar la posición del panel y acceder a los ajustes forman ahora parte del menú
+                principal. El objetivo principal era simplificar la vista y también reducir las pulsaciones al
+                interactuar con el teclado.
+            </dd>
+            <dd>Opción de <strong>ocultar las herramientas</strong> que ofrece la pestaña de encabezados (botones para
+                contraer por niveles, botones de búsqueda y copia. El objetivo principal, como ya se ha mencionado, era
+                simplificar la vista. Aunque el botón de búsqueda está oculto, el atajo de teclado para la búsqueda
+                sigue funcionando y lo muestra. Sólo está oculto visualmente y sólo está disponible con el teclado.
+            </dd>
+            <dd>Mejoras de accesibilidad.
+            </dd>
+
+            <dt data-version="4.6.3">13/12/2023 (v 4.6.3)</dt>
+            <dd>Mejoras de accesibilidad.</dd>
+            <dd>Estilos mejorados.</dd>
+
+            <dt data-version="4.6.2">11/12/2023 (v 4.6.2)</dt>
+            <dd>Nueva función de búsqueda para los encabezados en el árbol.</dd>
+            <dd>Mejoras en los botones que collapsan/expanden el árbol por niveles (mejoras en accesibilidad,
+                comportamiento, interacción con teclado, etc.).
+            </dd>
+            <dd>Actualizado el árbol de encabezados para utilizar el apropiado role y la manera apropiada de interacción
+                con el teclado.</dd>
+            <dd>Mejora en el tamaño de los botones.</dd>
+
             <dt data-version="4.5.8">17/11/2023 (v 4.5.8)</dt>
             <dd>Se ha corregido un error que evitaba mostrar resultados cuando existían imágenes sin el attribute
                 src.</dd>

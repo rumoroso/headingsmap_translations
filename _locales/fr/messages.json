@@ -16,15 +16,15 @@
     "description": ""
   },
   "releaseNotesMenuLink": {
-    "message": "Notes de version",
+    "message": "notes de version",
     "description": ""
   },
   "privacyPolicyMenuLink": {
-    "message": "Politique de confidentialité",
+    "message": "politique de confidentialité",
     "description": ""
   },
-  "settingsMenuLabel": {
-    "message": "Paramètres",
+  "settingsLabel": {
+    "message": "paramètres",
     "description": ""
   },
   "helpLabel": {
@@ -32,7 +32,7 @@
     "description": ""
   },
   "refreshResultsMenuLink": {
-    "message": "Rafraîchir les résultats",
+    "message": "rafraîchir les résultats",
     "description": ""
   },
   "closeButton": {
@@ -55,8 +55,8 @@
     "message": "Analyse",
     "description": ""
   },
-  "infoMenuLabel": {
-    "message": "Informations",
+  "maniMenuLabel": {
+    "message": "Menu",
     "description": ""
   },
   "potentiallyHiddenPlural": {
@@ -73,6 +73,10 @@
   },
   "collapseLabel": {
     "message": "s'effondrer",
+    "description": ""
+  },
+  "collapserDescription": {
+    "message": "Pour réduire/développer l'arborescence de l'en-tête par niveau d'en-tête. Utilisez le raccourci clavier : alt + niveau d'en-tête.",
     "description": ""
   },
   "expandLabel": {
@@ -144,7 +148,7 @@
     "description": ""
   },
   "contributeMenuLink": {
-    "message": "Contribuer",
+    "message": "contribuer",
     "description": ""
   },
   "pinPanelLabel": {
@@ -171,8 +175,128 @@
     "message": "Ancrer le panneau à droite",
     "description": ""
   },
+  "switchPositionLabel": {
+    "message": "changer de position",
+    "description": ""
+  },
   "active": {
     "message": "actif",
+    "description": ""
+  },
+  "searchLabel": {
+    "message": "Titre de la recherche",
+    "description": ""
+  },
+  "searchButtonLabel": {
+    "message": "recherche",
+    "description": ""
+  },
+  "closeSearchButtonLabel": {
+    "message": "fermer la recherche",
+    "description": ""
+  },
+  "resultsListLabel": {
+    "message": "titres",
+    "description": ""
+  },
+  "ariaLiveSwitchedToLeft": {
+    "message": "attachée à la gauche de la vue",
+    "description": ""
+  },
+  "ariaLiveSwitchedToRight": {
+    "message": "attachée à la droite de la vue",
+    "description": ""
+  },
+  "ariaLiveExpandedLevel": {
+    "message": "titres dans l'arbre sous le niveau {level} développé",
+    "description": ""
+  },
+  "ariaLiveCollapsedLevel": {
+    "message": "les titres de l'arbre sous le niveau {level} sont réduits",
+    "description": ""
+  },
+  "ariaLiveHeadingsCopied": {
+    "message": "structure copiée dans le presse-papiers",
+    "description": ""
+  },
+  "shortcuts": {
+    "message": "raccourcis clavier",
+    "description": ""
+  },
+  "shortcutEditLabel": {
+    "message": "appuyer sur n'importe quelle touche (elle peut être combinée avec les touches de modification 'control', 'shift', 'alt', ou 'meta')",
+    "description": ""
+  },
+  "shortcutHintMessage": {
+    "message": "appuyer sur n'importe quelle touche",
+    "description": ""
+  },
+  "shortcutErrorMessage": {
+    "message": "raccourci déjà utilisé",
+    "description": ""
+  },
+  "shortcutEditButton": {
+    "message": "modifier le raccourci",
+    "description": ""
+  },
+  "shortcutResetButton": {
+    "message": "réinitialiser le raccourci par défaut",
+    "description": ""
+  },
+  "shortcutSaveButton": {
+    "message": "enregistrer le raccourci",
+    "description": ""
+  },
+  "shortcutCancelButton": {
+    "message": "annuler l'édition du raccourci",
+    "description": ""
+  },
+  "shortcutNotDefined": {
+    "message": "pas encore défini",
+    "description": ""
+  },
+  "saved": {
+    "message": "sauvé",
+    "description": ""
+  },
+  "openShortcutsDialog": {
+    "message": "Ouvrir la boîte de dialogue des raccourcis",
+    "description": ""
+  },
+  "openSettingsDialog": {
+    "message": "Ouvrir la boîte de dialogue des paramètres",
+    "description": ""
+  },
+  "updatePanelPosition": {
+    "message": "Mise à jour de la position du panneau (gauche - droite)",
+    "description": ""
+  },
+  "identifyHeadersInPage": {
+    "message": "Identifier les en-têtes dans la page",
+    "description": ""
+  },
+  "searchInHeadingsTree": {
+    "message": "Recherche dans l'arbre des titres",
+    "description": ""
+  },
+  "focussHeadingsTree": {
+    "message": "Focaliser l'arbre des titres",
+    "description": ""
+  },
+  "toggleTreeNodesByLevel": {
+    "message": "Réduire ou développer les nœuds de l'arbre par niveau d'en-tête",
+    "description": ""
+  },
+  "shortcutsPanelDescription": {
+    "message": "Voici la liste des raccourcis clavier associés aux fonctionnalités de l'extension. Vous pouvez modifier les raccourcis existants et les adapter à vos besoins. Plusieurs touches peuvent être combinées dans un même raccourci. Seuls les lettres, les chiffres, la touche <kbd class='shortcut'>shift</kbd> et certains caractères: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>.",
+    "description": ""
+  },
+  "shortcutsPanelDescriptionBottom": {
+    "message": "Si vous avez des suggestions concernant la fonctionnalité des raccourcis, veuillez les envoyer à <a href='mailto:headingsmap@gmail.com'>headingsmap@gmail.com</a>.",
+    "description": ""
+  },
+  "number": {
+    "message": "numéro",
     "description": ""
   }
 }

@@ -1,10 +1,8 @@
 <html lang="pl">
-  <head>
-    <title>Ustawienia</title>
-  </head>
+  <head><title>Ustawienia</title></head>
   <body>
-    <div class="flex-grid dialog-content" id="settings_form">
-      <h1 id="settings-header">Ustawienia</h1>
+    <div class="content">
+      <h1 id="settings-header" class="headingsmap-exclude">Ustawienia</h1>
 
       <div class="contents settings-content">
         <fieldset class="fieldset">
@@ -185,6 +183,10 @@
               />
               Pokaż ukryte nagłówki
             </label>
+            <label for="hideTreeResultsTools">
+              <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+              Ukryj narzędzia (wyszukiwanie itp.)
+            </label>
           </div>
           <div class="custom-scrollbar settings-information">
             <h2>Szczegóły</h2>
@@ -206,6 +208,8 @@
                 <strong>Pokaż ukryte nagłówki</strong>: identyfikuje i pokazuje
                 wszystkie nagłówki, niezależnie od tego, czy są ukryte czy
                 pokazane na stronie.
+              </li>
+              <li><strong>Ukryj narzędzia</strong>: ukrywa przyciski, upraszczając widok panelu.
               </li>
             </ul>
           </div>
@@ -297,6 +301,107 @@
           </div>
         </fieldset>
       </div>
+      <style>
+        #dialog-panel .content {
+          height: 100%;
+        }
+
+        #dialog-panel .settings-content {
+          overflow: hidden;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        #dialog-panel .settings-content > div {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+
+        #dialog-panel .settings-information {
+          overflow: auto;
+        }
+
+        #dialog-panel .tab-button {
+          width: 33.3%;
+        }
+
+        #dialog-panel .tabs {
+          margin-top: 30px;
+        }
+
+        #dialog-panel .tab-button {
+          max-width: none;
+        }
+
+        #dialog-panel .tab-button:not([aria-selected=true]) {
+          margin-bottom: 1px;
+        }
+
+        #dialog-panel div[role=tabpanel].active {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+
+        #dialog-panel .fieldset {
+          position: relative;
+          box-sizing: border-box;
+          border: none;
+          padding: 0 20px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+
+        #dialog-panel .fieldset legend {
+          font-weight: bold;
+          position: absolute;
+          top: -5000px;
+          left: -5000px;
+        }
+
+        #dialog-panel .fieldset label {
+          display: block;
+          float: left;
+          width: 50%;
+          box-sizing: border-box;
+          margin: 10px 0;
+          font-weight: bold;
+        }
+
+        #dialog-panel .fieldset p {
+          border-top: 1px dotted transparent;
+        }
+
+        #dialog-panel li {
+          font-size: .9rem;
+        }
+
+        #dialog-panel .fieldset p label {
+          float: none;
+          width: auto;
+          box-sizing: border-box;
+          margin: 10px 0 5px;
+          font-weight: bold;
+        }
+
+        #dialog-panel .fieldset legend label {
+          width: auto;
+          margin: auto;
+        }
+
+        #dialog-panel .fieldset select {
+          font-weight: normal;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n + 1) {
+          clear: left;
+        }
+      </style>
     </div>
   </body>
 </html>

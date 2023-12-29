@@ -16,15 +16,15 @@
     "description": ""
   },
   "releaseNotesMenuLink": {
-    "message": "Ultimos cambios",
+    "message": "últimos cambios",
     "description": ""
   },
   "privacyPolicyMenuLink": {
-    "message": "Privacidad",
+    "message": "privacidad",
     "description": ""
   },
-  "settingsMenuLabel": {
-    "message": "Configuración",
+  "settingsLabel": {
+    "message": "configuración",
     "description": ""
   },
   "helpLabel": {
@@ -55,8 +55,8 @@
     "message": "Análisis",
     "description": ""
   },
-  "infoMenuLabel": {
-    "message": "info",
+  "maniMenuLabel": {
+    "message": "Menu",
     "description": ""
   },
   "visible": {
@@ -73,6 +73,10 @@
   },
   "collapseLabel": {
     "message": "colapsar",
+    "description": ""
+  },
+  "collapserDescription": {
+    "message": "Botones para contraer/expandir el árbol de encabezados por nivel de encabezado. Use el atajo de teclado: alt + nivel de encabezado",
     "description": ""
   },
   "expandLabel": {
@@ -144,7 +148,7 @@
     "description": ""
   },
   "contributeMenuLink": {
-    "message": "Contribuir",
+    "message": "contribuir",
     "description": ""
   },
   "pinPanelLabel": {
@@ -171,8 +175,128 @@
     "message": "mover el panel a la derecha",
     "description": ""
   },
+  "switchPositionLabel": {
+    "message": "cambiar posición",
+    "description": ""
+  },
   "active": {
     "message": "activo",
+    "description": ""
+  },
+  "searchLabel": {
+    "message": "buscar encabezado",
+    "description": ""
+  },
+  "searchButtonLabel": {
+    "message": "búsqueda",
+    "description": ""
+  },
+  "closeSearchButtonLabel": {
+    "message": "cerrar búsqueda",
+    "description": ""
+  },
+  "resultsListLabel": {
+    "message": "encabezados",
+    "description": ""
+  },
+  "ariaLiveSwitchedToLeft": {
+    "message": "dispuesto a la izquierda de la vista",
+    "description": ""
+  },
+  "ariaLiveSwitchedToRight": {
+    "message": "dispuesto a la derecha de la vista",
+    "description": ""
+  },
+  "ariaLiveExpandedLevel": {
+    "message": "Encabezados en el árbol por debajo del nivel {level} expandidos",
+    "description": ""
+  },
+  "ariaLiveCollapsedLevel": {
+    "message": "Encabezados en el árbol por debajo del nivel {level} colapsados",
+    "description": ""
+  },
+  "ariaLiveHeadingsCopied": {
+    "message": "estructura copiada al portapapeles",
+    "description": ""
+  },
+  "shortcuts": {
+    "message": "atajos de teclado",
+    "description": ""
+  },
+  "shortcutEditLabel": {
+    "message": "pulsar cualquier tecla (se puede combinar con las teclas modificadoras 'control', 'shift', 'alt' o 'meta')",
+    "description": ""
+  },
+  "shortcutHintMessage": {
+    "message": "pulse cualquier tecla",
+    "description": ""
+  },
+  "shortcutErrorMessage": {
+    "message": "acceso directo ya utilizado",
+    "description": ""
+  },
+  "shortcutEditButton": {
+    "message": "editar acceso directo",
+    "description": ""
+  },
+  "shortcutResetButton": {
+    "message": "restablecer acceso directo al predeterminado",
+    "description": ""
+  },
+  "shortcutSaveButton": {
+    "message": "guardar acceso directo",
+    "description": ""
+  },
+  "shortcutCancelButton": {
+    "message": "cancelar edición",
+    "description": ""
+  },
+  "shortcutNotDefined": {
+    "message": "aun sin definir",
+    "description": ""
+  },
+  "saved": {
+    "message": "guardado",
+    "description": ""
+  },
+  "openShortcutsDialog": {
+    "message": "Abrir el diálogo de accesos directos",
+    "description": ""
+  },
+  "openSettingsDialog": {
+    "message": "Abrir el diálogo de ajustes",
+    "description": ""
+  },
+  "updatePanelPosition": {
+    "message": "Actualizar posición del panel (izquierda - derecha)",
+    "description": ""
+  },
+  "identifyHeadersInPage": {
+    "message": "Identificar cabeceras en página",
+    "description": ""
+  },
+  "searchInHeadingsTree": {
+    "message": "Buscar en el árbol de encabezados",
+    "description": ""
+  },
+  "focussHeadingsTree": {
+    "message": "Enfoca el árbol de encabezados",
+    "description": ""
+  },
+  "toggleTreeNodesByLevel": {
+    "message": "Contraer o expandir los nodos del árbol por nivel de encabezado",
+    "description": ""
+  },
+  "shortcutsPanelDescription": {
+    "message": "Esta es la lista de atajos de teclado asociados a las funciones de la extensión. Puede modificar los existentes y adaptarlos a sus necesidades. Se puede combinar más de una tecla en un atajo. Sólo se permiten letras, números, <kbd class='shortcut'>shift</kbd> y algunos caracteres: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>.",
+    "description": ""
+  },
+  "shortcutsPanelDescriptionBottom": {
+    "message": "Si tiene sugerencias sobre la función de accesos directos, envíelas a <a href='mailto:headingsmap@gmail.com'>headingsmap@gmail.com</a>.",
+    "description": ""
+  },
+  "number": {
+    "message": "número",
     "description": ""
   }
 }

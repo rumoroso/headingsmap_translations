@@ -1,10 +1,40 @@
 <html lang="en">
 <head><title>Changelog</title></head>
 <body>
-<div class="flex-grid dialog-content" id="release_notes">
-    <h1 id="release-notes-header">Release notes</h1>
+<div class="content" id="release_notes">
+    <h1 id="release-notes-header" class="headingsmap-exclude">Release notes</h1>
     <div class="contents custom-scrollbar">
         <dl>
+            <dt data-version="4.7.0">28/12/2023 (v 4.7.0)</dt>
+            <dd>New <strong>keyboard shortcuts to interact with the extension</strong>. Now it includes some shortcuts
+                to trigger actions like the search function, collapse nodes in the results, open the settings dialog,
+                and even open the dialog to show the shortcuts. Since using shortcuts could collide with some shortcuts
+                from assistive technology, I made them configurable. Some have a default value and others are not
+                defined yet, so users can configure them based on their needs.
+            </dd>
+            <dd>The buttons to change the panel position and access to the settings are now part of the main menu. The
+                main goal was to simplify the view and also to reduce the keystrokes when interacting with keyboard.
+            </dd>
+            <dd>Option to <strong>hide tools</strong> that the headings tab offers (buttons to collapse by levels,
+                search and copy buttons. The main goal, as already mentioned, was to simplify the view. Although the
+                search button is hidden, the shortcut key for the search still works and shows it. It is just visually
+                hidden and only available with keyboard.
+            </dd>
+            <dd>Accessibility improvements.</dd>
+            <dd>Improvements in the behavior of the dialog, menus, etc.</dd>
+
+            <dt data-version="4.6.3">13/12/2023 (v 4.6.3)</dt>
+            <dd>Improved accessibility.</dd>
+            <dd>Improved styles.</dd>
+
+            <dt data-version="4.6.2">11/12/2023 (v 4.6.2)</dt>
+            <dd>New search feature to find headers in the tree.</dd>
+            <dd>Improvements in the buttons to collapse/expand the tree by levels (improved accessibility, behavior,
+                keyboard interaction, etc.).
+            </dd>
+            <dd>Changed the trees to use the proper ARIA role and expected keyboard behavior.</dd>
+            <dd>Improved button sizes.</dd>
+
             <dt data-version="4.5.8">17/11/2023 (v 4.5.8)</dt>
             <dd>Fixed a bug that prevent having results when there were images without src attribute.</dd>
 

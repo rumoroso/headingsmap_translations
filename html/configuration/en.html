@@ -2,8 +2,8 @@
 <head><title>Options</title></head>
 <body>
 
-<div class="flex-grid dialog-content" id="settings_form">
-    <h1 id="settings-header">Settings</h1>
+<div class="content">
+    <h1 id="settings-header" class="headingsmap-exclude">Settings</h1>
 
     <div class="contents settings-content">
         <fieldset class="fieldset">
@@ -47,13 +47,14 @@
                     <input type="checkbox" name="viewportIndicator" id="viewportIndicator" data-callback="refresh"/>
                     Relate with viewport
                 </label>
-                <label for="language">
-                    Language
-                    <select name="language" id="language">
-                    </select>
-                </label>
+
                 <p class="note">
-                    The language change is applied after restarting the extension (closing and reopening).
+                    <label for="language">
+                        Language
+                        <select name="language" id="language">
+                        </select>
+                    </label>
+                    The change is applied after restarting the extension (closing and reopening).
                 </p>
                 <input type="hidden" name="initialPanelWidth" id="initialPanelWidth"/>
             </div>
@@ -115,6 +116,10 @@
                     <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" data-callback="refresh"/>
                     Consider hidden headers
                 </label>
+                <label for="hideTreeResultsTools">
+                    <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+                    Hide tools (search, etc.)
+                </label>
             </div>
             <div class="custom-scrollbar settings-information">
                 <h2>Details</h2>
@@ -123,6 +128,7 @@
                     <li><strong>Show header level</strong>: it shows in the tree the level of the header before its text.</li>
                     <li><strong>Consider empty headers</strong>: it makes the empty headers to be considered in the tree and its hierarchy.</li>
                     <li><strong>Consider hidden headers</strong>: it identifies and shows the information of all headers, no matter if they are hidden.</li>
+                    <li><strong>Hide tools</strong>: it hides buttons simplifying the view of the panel.</li>
                 </ul>
             </div>
 
@@ -169,7 +175,10 @@
             <div class="custom-scrollbar settings-information">
                 <h2>Details</h2>
                 <ul>
-                    <li><strong>Activate analysis</strong>: extract the document outline can impact in the performance, so its execution is optional and deactivated by default. When it is active, both analysis (headings and HTML 5 Outline) appear as tabs in the panel.</li>
+                    <li><strong>Activate analysis</strong>: extracting the document outline can impact in the
+                        performance, so its execution is optional and deactivated by default. When it is active, both
+                        analysis (headings and HTML 5 Outline) appear as tabs in the panel.
+                    </li>
                     <li><strong>Show section index</strong>: it shows in the section index before its text.</li>
                     <li><strong>Show section tag</strong>: it includes the section tag as part of the content in the tree.</li>
                     <li><strong>Consider hidden sections</strong>: it identifies and shows the information of all sections, no matter if they are hidden.</li>
@@ -178,6 +187,107 @@
             </div>
         </fieldset>
     </div>
+    <style>
+        #dialog-panel .content {
+            height: 100%;
+        }
+
+        #dialog-panel .settings-content {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #dialog-panel .settings-content > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .settings-information {
+            overflow: auto;
+        }
+
+        #dialog-panel .tab-button {
+            width: 33.3%;
+        }
+
+        #dialog-panel .tabs {
+            margin-top: 30px;
+        }
+
+        #dialog-panel .tab-button {
+            max-width: none;
+        }
+
+        #dialog-panel .tab-button:not([aria-selected=true]) {
+            margin-bottom: 1px;
+        }
+
+        #dialog-panel div[role=tabpanel].active {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #dialog-panel .fieldset {
+            position: relative;
+            box-sizing: border-box;
+            border: none;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .fieldset legend {
+            font-weight: bold;
+            position: absolute;
+            top: -5000px;
+            left: -5000px;
+        }
+
+        #dialog-panel .fieldset label {
+            display: block;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        #dialog-panel .fieldset p {
+            border-top: 1px dotted transparent;
+        }
+
+        #dialog-panel li {
+            font-size: .9rem;
+        }
+
+        #dialog-panel .fieldset p label {
+            float: none;
+            width: auto;
+            box-sizing: border-box;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        #dialog-panel .fieldset legend label {
+            width: auto;
+            margin: auto;
+        }
+
+        #dialog-panel .fieldset select {
+            font-weight: normal;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n + 1) {
+            clear: left;
+        }
+    </style>
 </div>
 </body>
 </html>

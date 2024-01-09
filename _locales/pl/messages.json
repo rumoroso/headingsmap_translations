@@ -76,7 +76,7 @@
     "description": ""
   },
   "collapserDescription": {
-    "message": "Aby zwinąć/rozwinąć drzewo nagłówków według poziomu nagłówka. Użyj skrótu klawiaturowego: alt + poziom nagłówka.",
+    "message": "Aby zwinąć/rozwinąć drzewo nagłówków według poziomu nagłówka",
     "description": ""
   },
   "expandLabel": {
@@ -280,7 +280,7 @@
     "description": ""
   },
   "focussHeadingsTree": {
-    "message": "Skoncentruj drzewo nagłówków",
+    "message": "Skupienie ostatniego skupionego elementu w drzewie wyników",
     "description": ""
   },
   "toggleTreeNodesByLevel": {

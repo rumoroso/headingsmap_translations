@@ -76,7 +76,7 @@
     "description": ""
   },
   "collapserDescription": {
-    "message": "Pour réduire/développer l'arborescence de l'en-tête par niveau d'en-tête. Utilisez le raccourci clavier : alt + niveau d'en-tête.",
+    "message": "Pour réduire/développer l'arborescence de l'en-tête par niveau d'en-tête",
     "description": ""
   },
   "expandLabel": {
@@ -280,7 +280,7 @@
     "description": ""
   },
   "focussHeadingsTree": {
-    "message": "Focaliser l'arbre des titres",
+    "message": "Focaliser le dernier élément focalisé dans l'arbre des résultats",
     "description": ""
   },
   "toggleTreeNodesByLevel": {

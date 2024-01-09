@@ -76,7 +76,7 @@
     "description": ""
   },
   "collapserDescription": {
-    "message": "Botones para contraer/expandir el árbol de encabezados por nivel de encabezado. Use el atajo de teclado: alt + nivel de encabezado",
+    "message": "Botones para contraer/expandir el árbol de encabezados por nivel de encabezado",
     "description": ""
   },
   "expandLabel": {
@@ -280,7 +280,7 @@
     "description": ""
   },
   "focussHeadingsTree": {
-    "message": "Enfoca el árbol de encabezados",
+    "message": "Enfocar el último elemento enfocado en el árbol de resultados",
     "description": ""
   },
   "toggleTreeNodesByLevel": {

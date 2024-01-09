@@ -76,7 +76,7 @@
     "description": ""
   },
   "collapserDescription": {
-    "message": "Buttons to collapse/expand the headings tree by heading level. Use the keyboard shortcut: alt + heading level",
+    "message": "Buttons to collapse/expand the headings tree by heading level",
     "description": ""
   },
   "expandLabel": {
@@ -280,7 +280,7 @@
     "description": ""
   },
   "focussHeadingsTree": {
-    "message": "Focus the headings tree",
+    "message": "Focus the last focused item in results tree",
     "description": ""
   },
   "toggleTreeNodesByLevel": {

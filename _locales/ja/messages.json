@@ -1,0 +1,302 @@
+{
+  "extensionName": {
+    "message": "HeadingsMap",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "見出し構造を表示、参照、監査する (アクセシビリティと SEO のため)",
+    "description": "Description of the extension."
+  },
+  "headersTab": {
+    "message": "ヘッダー構造",
+    "description": ""
+  },
+  "outlineTab": {
+    "message": "HTML5 Outline",
+    "description": ""
+  },
+  "releaseNotesMenuLink": {
+    "message": "リリースノート",
+    "description": ""
+  },
+  "privacyPolicyMenuLink": {
+    "message": "プライバシーポリシー",
+    "description": ""
+  },
+  "settingsLabel": {
+    "message": "設定",
+    "description": ""
+  },
+  "helpLabel": {
+    "message": "ヘルプ",
+    "description": ""
+  },
+  "refreshResultsMenuLink": {
+    "message": "結果を更新",
+    "description": ""
+  },
+  "closeButton": {
+    "message": "閉じる",
+    "description": ""
+  },
+  "closeButtonAriaLabel": {
+    "message": "パネルを閉じる",
+    "description": ""
+  },
+  "revealHeadingsButtonAriaLabel": {
+    "message": "ヘッダーを見せる",
+    "description": ""
+  },
+  "copyButtonLabel": {
+    "message": "結果をコピー",
+    "description": ""
+  },
+  "analysisAriaLabel": {
+    "message": "分析",
+    "description": ""
+  },
+  "maniMenuLabel": {
+    "message": "メニュー",
+    "description": ""
+  },
+  "potentiallyHiddenPlural": {
+    "message": "潜在的に隠されている",
+    "description": ""
+  },
+  "visible": {
+    "message": "見える",
+    "description": ""
+  },
+  "collapseTreeNode": {
+    "message": "入れ子の見出し",
+    "description": ""
+  },
+  "collapseLabel": {
+    "message": "折りたたむ",
+    "description": ""
+  },
+  "collapserDescription": {
+    "message": "見出しレベルごとに見出しツリーを折りたたむ/展開するボタン",
+    "description": ""
+  },
+  "expandLabel": {
+    "message": "展開する",
+    "description": ""
+  },
+  "expandTreeNode": {
+    "message": "入れ子の見出し",
+    "description": ""
+  },
+  "clickTheAnchor": {
+    "message": "アンカーアイコンをクリックして URL をコピー",
+    "description": ""
+  },
+  "headingLevel": {
+    "message": "見出しレベル",
+    "description": ""
+  },
+  "element": {
+    "message": "要素",
+    "description": ""
+  },
+  "emptyHeader": {
+    "message": "空の見出し",
+    "description": ""
+  },
+  "error": {
+    "message": "エラー",
+    "description": ""
+  },
+  "potentiallyHidden": {
+    "message": "潜在的に隠されている",
+    "description": ""
+  },
+  "missingH1": {
+    "message": "H1 がありません",
+    "description": ""
+  },
+  "wrongHierarchy": {
+    "message": "間違ったレベル階層",
+    "description": ""
+  },
+  "noHeadings": {
+    "message": "見出しなし",
+    "description": ""
+  },
+  "documents": {
+    "message": "ドキュメント",
+    "description": ""
+  },
+  "documentSelectorTitle": {
+    "message": "文書を選択して見出し/セクション構造を取得します",
+    "description": ""
+  },
+  "anchor": {
+    "message": "アンカー",
+    "description": ""
+  },
+  "generatedBy": {
+    "message": "によって生成されます",
+    "description": ""
+  },
+  "heading": {
+    "message": "見出し",
+    "description": ""
+  },
+  "errorNoHeadingSection": {
+    "message": "Error: 見出しのないセクション",
+    "description": ""
+  },
+  "contributeMenuLink": {
+    "message": "貢献する",
+    "description": ""
+  },
+  "pinPanelLabel": {
+    "message": "常に自動的に開く",
+    "description": ""
+  },
+  "pinPanelByDomainLabel": {
+    "message": "このドメインに対して常に開く",
+    "description": ""
+  },
+  "pinPanelByURLLabel": {
+    "message": "この URL に対して常に開く",
+    "description": ""
+  },
+  "pinMenuLabel": {
+    "message": "自動的に開く",
+    "description": ""
+  },
+  "switchToLeft": {
+    "message": "パネル位置を左に切り替え",
+    "description": ""
+  },
+  "switchToRight": {
+    "message": "パネル位置を右に切り替え",
+    "description": ""
+  },
+  "switchPositionLabel": {
+    "message": "パネルの位置を変更",
+    "description": ""
+  },
+  "active": {
+    "message": "アクティブ",
+    "description": ""
+  },
+  "searchLabel": {
+    "message": "見出しを検索",
+    "description": ""
+  },
+  "searchButtonLabel": {
+    "message": "見出し検索を開く",
+    "description": ""
+  },
+  "closeSearchButtonLabel": {
+    "message": "見出し検索を閉じる",
+    "description": ""
+  },
+  "resultsListLabel": {
+    "message": "見出し",
+    "description": ""
+  },
+  "ariaLiveSwitchedToLeft": {
+    "message": "ビューの左側に付属",
+    "description": ""
+  },
+  "ariaLiveSwitchedToRight": {
+    "message": "ビューの右側に付属",
+    "description": ""
+  },
+  "ariaLiveExpandedLevel": {
+    "message": "レベル {level} の下のツリーの見出しが展開されました",
+    "description": ""
+  },
+  "ariaLiveCollapsedLevel": {
+    "message": "レベル {level} の下のツリーの見出しが折りたたまれました",
+    "description": ""
+  },
+  "ariaLiveHeadingsCopied": {
+    "message": "構造はクリップボードにコピーされました",
+    "description": ""
+  },
+  "shortcuts": {
+    "message": "キーボードショートカット",
+    "description": ""
+  },
+  "shortcutEditLabel": {
+    "message": "任意のキーを押す（修飾キー 'control', 'shift', 'alt', または 'meta'と組み合わせることができます）",
+    "description": ""
+  },
+  "shortcutHintMessage": {
+    "message": "任意のキーを押す",
+    "description": ""
+  },
+  "shortcutErrorMessage": {
+    "message": "ショートカットはすでに使用済み",
+    "description": ""
+  },
+  "shortcutEditButton": {
+    "message": "ショートカットを編集",
+    "description": ""
+  },
+  "shortcutResetButton": {
+    "message": "ショートカットをデフォルトにリセット",
+    "description": ""
+  },
+  "shortcutSaveButton": {
+    "message": "ショートカットを保存",
+    "description": ""
+  },
+  "shortcutCancelButton": {
+    "message": "ショートカットの編集をキャンセル",
+    "description": ""
+  },
+  "shortcutNotDefined": {
+    "message": "未定義",
+    "description": ""
+  },
+  "saved": {
+    "message": "保存されました",
+    "description": ""
+  },
+  "openShortcutsDialog": {
+    "message": "ショートカットダイアログを開く",
+    "description": ""
+  },
+  "openSettingsDialog": {
+    "message": "設定ダイアログを開く",
+    "description": ""
+  },
+  "updatePanelPosition": {
+    "message": "パネルの位置を変更（左 - 右）",
+    "description": ""
+  },
+  "identifyHeadersInPage": {
+    "message": "ページ内のヘッダーを識別",
+    "description": ""
+  },
+  "searchInHeadingsTree": {
+    "message": "見出しツリー内を検索",
+    "description": ""
+  },
+  "focussHeadingsTree": {
+    "message": "結果ツリーで最後にフォーカスされた項目にフォーカス",
+    "description": ""
+  },
+  "toggleTreeNodesByLevel": {
+    "message": "見出しレベルごとにツリーノードを折りたたみ、または展開する",
+    "description": ""
+  },
+  "shortcutsPanelDescription": {
+    "message": "これは、拡張機能に関連付けられたキーボード ショートカットのリストです。既存のものを変更して、ニーズに合わせて調整することができます。複数のキーを 1 つのショートカットに組み合わせることができます。文字、数字、<kbd class='shortcut'>shift</kbd>、および一部の文字 <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd>, <kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd> のみが許可されます。",
+    "description": ""
+  },
+  "shortcutsPanelDescriptionBottom": {
+    "message": "ショートカット機能についてご提案がある場合、<a href='mailto:headingsmap@gmail.com'>headingsmap@gmail.com</a> までお送りください。",
+    "description": ""
+  },
+  "number": {
+    "message": "番号",
+    "description": ""
+  }
+}

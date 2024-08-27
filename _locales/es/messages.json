@@ -195,6 +195,10 @@
     "message": "cerrar búsqueda",
     "description": ""
   },
+  "clearText": {
+    "message": "resetear texto",
+    "description": ""
+  },
   "resultsListLabel": {
     "message": "encabezados",
     "description": ""
@@ -288,7 +292,7 @@
     "description": ""
   },
   "shortcutsPanelDescription": {
-    "message": "Esta es la lista de atajos de teclado asociados a las funciones de la extensión. Puede modificar los existentes y adaptarlos a sus necesidades. Se puede combinar más de una tecla en un atajo. Sólo se permiten letras, números, <kbd class='shortcut'>shift</kbd> y algunos caracteres: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>.",
+    "message": "Esta es la lista de atajos de teclado asociados a las funciones de la extensión. Puede modificar los existentes y adaptarlos a sus necesidades. Se puede combinar más de una tecla en un atajo. Sólo se permiten letras, números, <kbd class='shortcut'>shift</kbd> y algunos caracteres: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>.",
     "description": ""
   },
   "shortcutsPanelDescriptionBottom": {
@@ -297,6 +301,10 @@
   },
   "number": {
     "message": "número",
+    "description": ""
+  },
+  "resizePanelAriaLabel": {
+    "message": "utilice las teclas de flecha para aumentar o reducir la anchura del panel",
     "description": ""
   }
 }

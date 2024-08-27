@@ -195,6 +195,10 @@
     "message": "見出し検索を閉じる",
     "description": ""
   },
+  "clearText": {
+    "message": "テキストのリセット",
+    "description": ""
+  },
   "resultsListLabel": {
     "message": "見出し",
     "description": ""
@@ -288,7 +292,7 @@
     "description": ""
   },
   "shortcutsPanelDescription": {
-    "message": "これは、拡張機能に関連付けられたキーボード ショートカットのリストです。既存のものを変更して、ニーズに合わせて調整することができます。複数のキーを 1 つのショートカットに組み合わせることができます。文字、数字、<kbd class='shortcut'>shift</kbd>、および一部の文字 <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd>, <kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd> のみが許可されます。",
+    "message": "これは、拡張機能に関連付けられたキーボード ショートカットのリストです。既存のものを変更して、ニーズに合わせて調整することができます。複数のキーを 1 つのショートカットに組み合わせることができます。文字、数字、<kbd class='shortcut'>shift</kbd>、および一部の文字 <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd>, <kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd> のみが許可されます。",
     "description": ""
   },
   "shortcutsPanelDescriptionBottom": {
@@ -297,6 +301,10 @@
   },
   "number": {
     "message": "番号",
+    "description": ""
+  },
+  "resizePanelAriaLabel": {
+    "message": "矢印キーでパネル幅を増減する",
     "description": ""
   }
 }

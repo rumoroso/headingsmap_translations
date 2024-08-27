@@ -195,6 +195,10 @@
     "message": "close headings search",
     "description": ""
   },
+  "clearText": {
+    "message": "reset text",
+    "description": ""
+  },
   "resultsListLabel": {
     "message": "headings",
     "description": ""
@@ -288,7 +292,7 @@
     "description": ""
   },
   "shortcutsPanelDescription": {
-    "message": "This is the list of keyboard shortcuts associated to the extension features. You can modify the existing ones, adapt them to your needs. More than one key can be combined in one shortcut. Only letters, numbers, <kbd class='shortcut'>shift</kbd> and some characters are allowed: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>",
+    "message": "This is the list of keyboard shortcuts associated to the extension features. You can modify the existing ones, adapt them to your needs. More than one key can be combined in one shortcut. Only letters, numbers, <kbd class='shortcut'>shift</kbd> and some characters are allowed: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>",
     "description": ""
   },
   "shortcutsPanelDescriptionBottom": {
@@ -297,6 +301,10 @@
   },
   "number": {
     "message": "number",
+    "description": ""
+  },
+  "resizePanelAriaLabel": {
+    "message": "use arrow keys to increase or decrease the panel width",
     "description": ""
   }
 }

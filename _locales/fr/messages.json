@@ -195,6 +195,10 @@
     "message": "fermer la recherche",
     "description": ""
   },
+  "clearText": {
+    "message": "réinitialiser le texte",
+    "description": ""
+  },
   "resultsListLabel": {
     "message": "titres",
     "description": ""
@@ -288,7 +292,7 @@
     "description": ""
   },
   "shortcutsPanelDescription": {
-    "message": "Voici la liste des raccourcis clavier associés aux fonctionnalités de l'extension. Vous pouvez modifier les raccourcis existants et les adapter à vos besoins. Plusieurs touches peuvent être combinées dans un même raccourci. Seuls les lettres, les chiffres, la touche <kbd class='shortcut'>shift</kbd> et certains caractères: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>.",
+    "message": "Voici la liste des raccourcis clavier associés aux fonctionnalités de l'extension. Vous pouvez modifier les raccourcis existants et les adapter à vos besoins. Plusieurs touches peuvent être combinées dans un même raccourci. Seuls les lettres, les chiffres, la touche <kbd class='shortcut'>shift</kbd> et certains caractères: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>.",
     "description": ""
   },
   "shortcutsPanelDescriptionBottom": {
@@ -297,6 +301,10 @@
   },
   "number": {
     "message": "numéro",
+    "description": ""
+  },
+  "resizePanelAriaLabel": {
+    "message": "utiliser les touches fléchées pour augmenter ou diminuer la largeur du panneau",
     "description": ""
   }
 }

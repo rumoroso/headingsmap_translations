@@ -195,6 +195,10 @@
     "message": "zamknij wyszukiwanie",
     "description": ""
   },
+  "clearText": {
+    "message": "resetowanie tekstu",
+    "description": ""
+  },
   "resultsListLabel": {
     "message": "nagłówki",
     "description": ""
@@ -288,7 +292,7 @@
     "description": ""
   },
   "shortcutsPanelDescription": {
-    "message": "To jest lista skrótów klawiaturowych powiązanych z funkcjami rozszerzenia. Istniejące skróty można modyfikować i dostosowywać do własnych potrzeb. W jednym skrócie można połączyć więcej niż jeden klawisz. Dozwolone są tylko litery, cyfry, klawisz <kbd class='shortcut'>shift</kbd> i niektóre znaki: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>.",
+    "message": "To jest lista skrótów klawiaturowych powiązanych z funkcjami rozszerzenia. Istniejące skróty można modyfikować i dostosowywać do własnych potrzeb. W jednym skrócie można połączyć więcej niż jeden klawisz. Dozwolone są tylko litery, cyfry, klawisz <kbd class='shortcut'>shift</kbd> i niektóre znaki: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>.",
     "description": ""
   },
   "shortcutsPanelDescriptionBottom": {
@@ -297,6 +301,10 @@
   },
   "number": {
     "message": "numer",
+    "description": ""
+  },
+  "resizePanelAriaLabel": {
+    "message": "użyj klawiszy strzałek, aby zwiększyć lub zmniejszyć szerokość panelu",
     "description": ""
   }
 }

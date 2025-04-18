@@ -11,6 +11,10 @@
     "message": "ヘッダー構造",
     "description": ""
   },
+  "landmarksTab": {
+    "message": "Landmarks",
+    "description": ""
+  },
   "outlineTab": {
     "message": "HTML5 Outline",
     "description": ""
@@ -21,6 +25,14 @@
   },
   "privacyPolicyMenuLink": {
     "message": "プライバシーポリシー",
+    "description": ""
+  },
+  "helpWithAccessibility": {
+    "message": "アクセシビリティのヘルプが必要ですか？",
+    "description": ""
+  },
+  "helpWithAccessibilityOnLinkedIn": {
+    "message": "アクセシビリティのヘルプが必要ですか?（新しいウィンドウで開きます）",
     "description": ""
   },
   "settingsLabel": {
@@ -43,7 +55,7 @@
     "message": "パネルを閉じる",
     "description": ""
   },
-  "revealHeadingsButtonAriaLabel": {
+  "revealInViewButtonAriaLabel": {
     "message": "ヘッダーを見せる",
     "description": ""
   },
@@ -121,6 +133,18 @@
   },
   "noHeadings": {
     "message": "見出しなし",
+    "description": ""
+  },
+  "topLevelLandmarkError": {
+    "message": "must be at top level",
+    "description": ""
+  },
+  "repeatedUniqueLandmark": {
+    "message": "must be unique",
+    "description": ""
+  },
+  "repeatedLandmark": {
+    "message": "is repeated",
     "description": ""
   },
   "documents": {
@@ -279,11 +303,11 @@
     "message": "ページ内のヘッダーを識別",
     "description": ""
   },
-  "searchInHeadingsTree": {
-    "message": "見出しツリー内を検索",
+  "searchInTree": {
+    "message": "ツリー内検索",
     "description": ""
   },
-  "focussHeadingsTree": {
+  "focusHeadingsTree": {
     "message": "結果ツリーで最後にフォーカスされた項目にフォーカス",
     "description": ""
   },

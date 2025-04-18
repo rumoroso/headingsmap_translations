@@ -11,6 +11,10 @@
     "message": "Encabezados",
     "description": ""
   },
+  "landmarksTab": {
+    "message": "Landmarks",
+    "description": ""
+  },
   "outlineTab": {
     "message": "HTML5 Outline",
     "description": ""
@@ -21,6 +25,14 @@
   },
   "privacyPolicyMenuLink": {
     "message": "privacidad",
+    "description": ""
+  },
+  "helpWithAccessibility": {
+    "message": "ayuda con accesibilidad?",
+    "description": ""
+  },
+  "helpWithAccessibilityOnLinkedIn": {
+    "message": "ayuda con accesibilidad?, abre en nueva ventana",
     "description": ""
   },
   "settingsLabel": {
@@ -43,8 +55,8 @@
     "message": "cerrar panel",
     "description": ""
   },
-  "revealHeadingsButtonAriaLabel": {
-    "message": "mostrar encabezados",
+  "revealInViewButtonAriaLabel": {
+    "message": "mostrar",
     "description": ""
   },
   "copyButtonLabel": {
@@ -121,6 +133,18 @@
   },
   "noHeadings": {
     "message": "Sin encabezados",
+    "description": ""
+  },
+  "topLevelLandmarkError": {
+    "message": "must be at top level",
+    "description": ""
+  },
+  "repeatedUniqueLandmark": {
+    "message": "must be unique",
+    "description": ""
+  },
+  "repeatedLandmark": {
+    "message": "is repeated",
     "description": ""
   },
   "documents": {
@@ -279,11 +303,11 @@
     "message": "Identificar cabeceras en página",
     "description": ""
   },
-  "searchInHeadingsTree": {
-    "message": "Buscar en el árbol de encabezados",
+  "searchInTree": {
+    "message": "Buscar en el árbol",
     "description": ""
   },
-  "focussHeadingsTree": {
+  "focusHeadingsTree": {
     "message": "Enfocar el último elemento enfocado en el árbol de resultados",
     "description": ""
   },

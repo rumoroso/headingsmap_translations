@@ -11,6 +11,10 @@
     "message": "Struktura nagłówków",
     "description": ""
   },
+  "landmarksTab": {
+    "message": "Landmarks",
+    "description": ""
+  },
   "outlineTab": {
     "message": "HTML5 Outline",
     "description": ""
@@ -21,6 +25,14 @@
   },
   "privacyPolicyMenuLink": {
     "message": "polityka prywatności",
+    "description": ""
+  },
+  "helpWithAccessibility": {
+    "message": "Potrzebujesz pomocy z dostępnością?",
+    "description": ""
+  },
+  "helpWithAccessibilityOnLinkedIn": {
+    "message": "Potrzebujesz pomocy z dostępnością? (otwiera się w nowym oknie)",
     "description": ""
   },
   "settingsLabel": {
@@ -43,8 +55,8 @@
     "message": "Zamknij panel",
     "description": ""
   },
-  "revealHeadingsButtonAriaLabel": {
-    "message": "nagłówki ujawniające",
+  "revealInViewButtonAriaLabel": {
+    "message": "ujawniające",
     "description": ""
   },
   "copyButtonLabel": {
@@ -121,6 +133,18 @@
   },
   "noHeadings": {
     "message": "Brak nagłówków",
+    "description": ""
+  },
+  "topLevelLandmarkError": {
+    "message": "must be at top level",
+    "description": ""
+  },
+  "repeatedUniqueLandmark": {
+    "message": "must be unique",
+    "description": ""
+  },
+  "repeatedLandmark": {
+    "message": "is repeated",
     "description": ""
   },
   "documents": {
@@ -279,11 +303,11 @@
     "message": "Identyfikuj nagłówki na stronie",
     "description": ""
   },
-  "searchInHeadingsTree": {
-    "message": "Szukaj w drzewie nagłówków",
+  "searchInTree": {
+    "message": "Szukaj w drzewie",
     "description": ""
   },
-  "focussHeadingsTree": {
+  "focusHeadingsTree": {
     "message": "Skupienie ostatniego skupionego elementu w drzewie wyników",
     "description": ""
   },

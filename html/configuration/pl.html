@@ -20,15 +20,6 @@
               />
               Zaznacz po kliknięciu
             </label>
-            <label for="showAriaLabelContent">
-              <input
-                type="checkbox"
-                name="showAriaLabelContent"
-                id="showAriaLabelContent"
-                data-callback="refresh"
-              />
-              Dodaj informację o "aria"
-            </label>
             <label for="showAnchors">
               <input
                 type="checkbox"
@@ -78,11 +69,15 @@
               />
               Podświetl widoczne w oknie
             </label>
-            <label for="language">
-              Język
-              <select name="language" id="language"></select>
+            <label for="hideTreeResultsTools">
+              <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+              Ukryj narzędzia (wyszukiwanie itp.)
             </label>
             <p class="note">
+              <label for="language">
+                Język
+                <select name="language" id="language"></select>
+              </label>
               Zmiana języka jest stosowana po ponownym uruchomieniu rozszerzenia
               (zamknięciu i ponownym otwarciu).
             </p>
@@ -103,12 +98,6 @@
                 <strong>Zaznacz po kliknięciu</strong>: po kliknięciu elementu
                 drzewa wyświetli się ramka (przez kilka sekund) wokół nagłówka
                 na stronie internetowej.
-              </li>
-              <li>
-                <strong>Dodaj informację o "aria"</strong>: jeśli nagłówek używa
-                atrybutów <em>aria-label</em> lub <em>aria-labelledby</em>, to
-                zostaje wyświetlona "aria" (przesłanką jest dostęp technologii
-                asystujących do ARIA)
               </li>
               <li>
                 <strong>Znajdź kotwicę</strong>: Jeśli nagłówek ma ID to
@@ -139,6 +128,8 @@
                 pokazuje jasne tło w elementach na panelu, które odpowiadają
                 nagłówkom widocznym w oknie przeglądarki.
               </li>
+              <li><strong>Ukryj narzędzia</strong>: ukrywa przyciski, upraszczając widok panelu.
+              </li>
               <li>
                 <strong>Język</strong>: zmienia język. Nowy język nie jest
                 stosowany do czasu ponownego otwarcia rozszerzenia.
@@ -147,7 +138,7 @@
           </div>
         </fieldset>
         <fieldset class="fieldset">
-          <legend>Drzewo nagłówków</legend>
+          <legend>Struktury nagłówka</legend>
           <div>
             <label for="showHeadErrorH1">
               <input
@@ -183,9 +174,14 @@
               />
               Pokaż ukryte nagłówki
             </label>
-            <label for="hideTreeResultsTools">
-              <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
-              Ukryj narzędzia (wyszukiwanie itp.)
+            <label for="showAriaLabelContent">
+              <input
+                      type="checkbox"
+                      name="showAriaLabelContent"
+                      id="showAriaLabelContent"
+                      data-callback="refresh"
+              />
+              Dodaj informację o "aria"
             </label>
           </div>
           <div class="custom-scrollbar settings-information">
@@ -209,21 +205,61 @@
                 wszystkie nagłówki, niezależnie od tego, czy są ukryte czy
                 pokazane na stronie.
               </li>
-              <li><strong>Ukryj narzędzia</strong>: ukrywa przyciski, upraszczając widok panelu.
-              </li>
+                <li>
+                    <strong>Dodaj informację o "aria"</strong>: jeśli nagłówek używa
+                    atrybutów <em>aria-label</em> lub <em>aria-labelledby</em>, to
+                    zostaje wyświetlona "aria" (przesłanką jest dostęp technologii
+                    asystujących do ARIA)
+                </li>
             </ul>
           </div>
         </fieldset>
+        <fieldset class="fieldset" lang="en">
+          <p>This content was not translated yet. I am working on the that, but due to I don't speak Polish, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
+          <legend>Landmarks</legend>
+          <div>
+            <label for="isLandmarksTestActive">
+              <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
+                     data-callback="refresh disableFields"
+                     data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
+              Landmarks analysis active
+            </label>
+
+            <label></label>
+            <label for="showNonTopLevelLandmarksError">
+              <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
+              Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks
+            </label>
+            <label for="showRepeatedUniqueLandmarksError">
+              <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
+              Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code>
+            </label>
+            <label for="showRepeatedLandmarksError">
+              <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
+              Error if repeated landmarks without label, or with same label
+            </label>
+          </div>
+          <div class="custom-scrollbar settings-information">
+            <h2>Details</h2>
+            <ul>
+              <li><strong>Landmarks analysis active</strong>: It activates or deactivates the landmarks analysis. When the analysis is active, both headings and landmarks analysis appear as tabs.</li>
+              <li><strong>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks</strong>: These landmarks should be top-level landmarks.</li>
+              <li><strong>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></strong>: Each page may have at most one of each type.</li>
+              <li><strong>Error if repeated landmarks without label, or with same label</strong>: When there are more than one landmark with same role, they should include a label to differentiate them.</li>
+            </ul>
+          </div>
+
+        </fieldset>
         <fieldset class="fieldset">
-          <legend>Drzewo HTML5 Outline</legend>
+          <legend>HTML 5 Outline</legend>
           <div>
             <label for="isOutlineTestActive">
               <input
-                type="checkbox"
-                name="isOutlineTestActive"
-                id="isOutlineTestActive"
-                data-callback="refresh disableFields"
-                data-related-fields="showOutLevels showOutElem showHiddenSections considerHgroup"
+                      type="checkbox"
+                      name="isOutlineTestActive"
+                      id="isOutlineTestActive"
+                      data-callback="refresh disableFields"
+                      data-related-fields="showOutLevels showOutElem showHiddenSections"
               />
               Aktywuj analizę
             </label>
@@ -232,37 +268,28 @@
               implementację algorytmu W3C Outline. Dlatego nie można na nim
               polegać, aby przekazywać użytkownikom strukturę dokumentu, a
               autorzy powinni używać poziomu nagłówka do tego celu. (<a
-                href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
-                target="_blank"
-                >HTML 5.2 Tworzenie w oparciu o outline</a
-              >)
+                    href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                    target="_blank"
+            >HTML 5.2 Tworzenie w oparciu o outline</a
+            >)
             </p>
 
             <label for="showOutLevels">
-              <input type="checkbox" name="showOutLevels" id="showOutLevels" />
+              <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
               Pokaż indeks sekcji
             </label>
             <label for="showOutElem">
-              <input type="checkbox" name="showOutElem" id="showOutElem" />
+              <input type="checkbox" name="showOutElem" id="showOutElem"/>
               Pokaż tag sekcji
             </label>
             <label for="showHiddenSections">
               <input
-                type="checkbox"
-                name="showHiddenSections"
-                id="showHiddenSections"
-                data-callback="refresh"
+                      type="checkbox"
+                      name="showHiddenSections"
+                      id="showHiddenSections"
+                      data-callback="refresh updateActiveDocument"
               />
               Uwzględnij ukryte sekcje *
-            </label>
-            <label for="considerHgroup">
-              <input
-                type="checkbox"
-                name="considerHgroup"
-                id="considerHgroup"
-                data-callback="refresh"
-              />
-              Uwzględnij HGROUP
             </label>
           </div>
           <p class="note">
@@ -292,10 +319,6 @@
                 <strong>Uwzględnij ukryte sekcje</strong>: identyfikuje i
                 pokazuje informacje o wszystkich sekcjach, niezależnie od tego,
                 czy są ukryte czy pokazane na stronie.
-              </li>
-              <li>
-                <strong>Uwzględnij HGROUP</strong>: z tą opcją analiza traktuje
-                element HGROUP jako element sekcji.
               </li>
             </ul>
           </div>
@@ -370,7 +393,6 @@
           width: 50%;
           box-sizing: border-box;
           margin: 10px 0;
-          font-weight: bold;
         }
 
         #dialog-panel .fieldset p {

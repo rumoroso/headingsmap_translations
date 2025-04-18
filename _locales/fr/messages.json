@@ -11,6 +11,10 @@
     "message": "Titres",
     "description": ""
   },
+  "landmarksTab": {
+    "message": "Landmarks",
+    "description": ""
+  },
   "outlineTab": {
     "message": "Outline HTML5",
     "description": ""
@@ -21,6 +25,14 @@
   },
   "privacyPolicyMenuLink": {
     "message": "politique de confidentialité",
+    "description": ""
+  },
+  "helpWithAccessibility": {
+    "message": "Besoin d'aide pour l'accessibilité?",
+    "description": ""
+  },
+  "helpWithAccessibilityOnLinkedIn": {
+    "message": "Besoin d'aide pour l'accessibilité ? (s'ouvre dans une nouvelle fenêtre)",
     "description": ""
   },
   "settingsLabel": {
@@ -43,8 +55,8 @@
     "message": "Fermer le panneau",
     "description": ""
   },
-  "revealHeadingsButtonAriaLabel": {
-    "message": "Afficher les titres",
+  "revealInViewButtonAriaLabel": {
+    "message": "Afficher",
     "description": ""
   },
   "copyButtonLabel": {
@@ -121,6 +133,18 @@
   },
   "noHeadings": {
     "message": "Aucun titre",
+    "description": ""
+  },
+  "topLevelLandmarkError": {
+    "message": "must be at top level",
+    "description": ""
+  },
+  "repeatedUniqueLandmark": {
+    "message": "must be unique",
+    "description": ""
+  },
+  "repeatedLandmark": {
+    "message": "is repeated",
     "description": ""
   },
   "documents": {
@@ -279,11 +303,11 @@
     "message": "Identifier les en-têtes dans la page",
     "description": ""
   },
-  "searchInHeadingsTree": {
-    "message": "Recherche dans l'arbre des titres",
+  "searchInTree": {
+    "message": "Recherche dans l'arbre",
     "description": ""
   },
-  "focussHeadingsTree": {
+  "focusHeadingsTree": {
     "message": "Focaliser le dernier élément focalisé dans l'arbre des résultats",
     "description": ""
   },

@@ -8,7 +8,11 @@
     "description": "Description of the extension."
   },
   "headersTab": {
-    "message": "Headers Structure",
+    "message": "Headings",
+    "description": ""
+  },
+  "landmarksTab": {
+    "message": "Landmarks",
     "description": ""
   },
   "outlineTab": {
@@ -21,6 +25,14 @@
   },
   "privacyPolicyMenuLink": {
     "message": "privacy policy",
+    "description": ""
+  },
+  "helpWithAccessibility": {
+    "message": "need help with accessibility?",
+    "description": ""
+  },
+  "helpWithAccessibilityOnLinkedIn": {
+    "message": "need help with accessibility?, opens in new window",
     "description": ""
   },
   "settingsLabel": {
@@ -43,8 +55,8 @@
     "message": "close panel",
     "description": ""
   },
-  "revealHeadingsButtonAriaLabel": {
-    "message": "reveal headers",
+  "revealInViewButtonAriaLabel": {
+    "message": "reveal",
     "description": ""
   },
   "copyButtonLabel": {
@@ -123,6 +135,18 @@
     "message": "No headings",
     "description": ""
   },
+  "topLevelLandmarkError": {
+    "message": "must be at top level",
+    "description": ""
+  },
+  "repeatedUniqueLandmark": {
+    "message": "must be unique",
+    "description": ""
+  },
+  "repeatedLandmark": {
+    "message": "is repeated",
+    "description": ""
+  },
   "documents": {
     "message": "Documents",
     "description": ""
@@ -188,15 +212,15 @@
     "description": ""
   },
   "searchButtonLabel": {
-    "message": "open headings search",
+    "message": "search",
     "description": ""
   },
   "closeSearchButtonLabel": {
-    "message": "close headings search",
+    "message": "close search",
     "description": ""
   },
   "clearText": {
-    "message": "reset text",
+    "message": "clear search text",
     "description": ""
   },
   "resultsListLabel": {
@@ -276,14 +300,14 @@
     "description": ""
   },
   "identifyHeadersInPage": {
-    "message": "Identify headers in page",
+    "message": "Identify headings in page",
     "description": ""
   },
-  "searchInHeadingsTree": {
-    "message": "Search in the headings tree",
+  "searchInTree": {
+    "message": "Search in the tree",
     "description": ""
   },
-  "focussHeadingsTree": {
+  "focusHeadingsTree": {
     "message": "Focus the last focused item in results tree",
     "description": ""
   },

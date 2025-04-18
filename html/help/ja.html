@@ -8,10 +8,6 @@
             HeadingsMap は Web ページの見出し構造を表示するブラウザ拡張機能です。
             さらに、潜在的なエラー (ヘッダーレベルの欠落など) を特定できるため、アクセシビリティチェック、品質管理、SEO 監査などを実行するときに役立ちます。
         </p>
-        <p>
-            この拡張機能には、W3C によって記述された HTML アウトラインアルゴリズムに基づいてセクション構造を表示するオプション機能も含まれています。
-            見出しとセクションの両方結果が、ネストされたレベルをドキュメント階層に関連付けるツリーに表示されます。
-        </p>
         <h2>特徴</h2>
         <ul>
             <li>
@@ -35,9 +31,6 @@
             </li>
             <li>
                 ダークテーマ (オプション)
-            </li>
-            <li>
-                HTML 5 のアウトラインテストはオプションです。
             </li>
             <li>
                 オプションで、非表示のヘッダーとセクション (支援技術のために非表示) が表示されます。
@@ -84,6 +77,24 @@
                 アイコンをクリックすると、URL アドレスがクリップボードにコピーされます (ブラウザの "リンク アドレスをコピー" アクションと同じ)
             </dd>
         </dl>
+        <h2 lang="en">Landmarks analysis - settings</h2>
+        <p lang="en">This content was not translated yet. I am working on the that, but due to I don't speak Japanese, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
+        <dl lang="en">
+            <dt>Landmarks analysis active</dt>
+            <dd>It activates or deactivates the landmarks analysis. When the analysis is active, both headings and
+                landmarks analysis appear as tabs.</dd>
+
+            <dt>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code>
+                are not top level landmarks</dt>
+            <dd>These landmarks should be top-level landmarks.</dd>
+
+            <dt>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></dt>
+            <dd>Each page may have at most one of each type.</dd>
+
+            <dt>Error if repeated landmarks without label, or with same label</dt>
+            <dd>When there are more than one landmark with same role, they should include a label to differentiate
+                them.</dd>
+        </dl>
         <h2>HTML 5 outline - 設定</h2>
         <p>
             W3C によると、これをサポートするブラウザや支援技術は存在しないため、テストで良い結果を得ても、最終的なアクセシビリティにはほとんど影響しません。
@@ -104,25 +115,18 @@
                 この設定では、<a
                     href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
                     target="_blank">セクションを生成する</a>
-                    HTML タグがツリーに表示されます。
+                HTML タグがツリーに表示されます。
             </dd>
             <dt>
                 非表示のセクションの考慮
             </dt>
             <dd>
-                ドキュメントに非表示のセクション (視覚的に隠されているだけでなく、支援技術のためにも隠されている) が含まれている場合、それらはツリーには表示されません。
+                ドキュメントに非表示のセクション (視覚的に隠されているだけでなく、支援技術のためにも隠されている)
+                が含まれている場合、それらはツリーには表示されません。
                 このオプションを有効にすると、それらが表示されます。
                 長いドキュメントでは、DOM 内のすべての要素をチェックする必要があるため、パフォーマンスに影響する可能性があります。
             </dd>
-            <dt>
-                HGROUP の考慮
-            </dt>
-            <dd>
-                アクティブ化すると、HGROUP 要素が見出し要素と見なされます。
-                その動作によれば、レベルとして最高の見出しレベルが取られ、アウトラインでは、含まれる見出し要素は考慮されません。
-            </dd>
         </dl>
-
     </div>
 </div>
 </body>

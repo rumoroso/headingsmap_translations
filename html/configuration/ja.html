@@ -17,11 +17,6 @@
                     <input type="checkbox" name="highLightElements" id="highLightElements"/>
                     クリック時にハイライト表示
                 </label>
-                <label for="showAriaLabelContent">
-                    <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent"
-                           data-callback="refresh"/>
-                    "aria" コンテンツの考慮
-                </label>
                 <label for="showAnchors">
                     <input type="checkbox" name="showAnchors" id="showAnchors" data-callback="refresh"/>
                     アンカーの識別
@@ -47,6 +42,10 @@
                     <input type="checkbox" name="viewportIndicator" id="viewportIndicator" data-callback="refresh"/>
                     ビューポートと関連付ける
                 </label>
+                <label for="hideTreeResultsTools">
+                    <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+                    ツールを非表示にする (検索ほか)
+                </label>
 
                 <p class="note">
                     <label for="language">
@@ -67,8 +66,6 @@
                     <li><strong>クリック時にハイライト表示</strong>: ツリー項目をクリックすると、文書内のヘッダーのアウトラインが
                         (数秒間) ハイライト表示されます。
                     </li>
-                    <li><strong>"aria" コンテンツの考慮</strong>: ヘッダーで <em>aria-label</em> 属性または <em>aria-labelledby</em> 属性が使用されている場合、 ツールはその値を取得してテキスト コンテンツとして使用できます (その理由は、スクリーン リーダーがこれらの属性にアクセスしてコンテンツとして使用できるためです)。
-                    </li>
                     <li><strong>アンカーの識別</strong>: ヘッダーをアンカーとして使用できる場合、その情報が考慮されます。
                     </li>
                     <li><strong>ダークモード</strong>: 使用すると、ツールのスタイルが変更され、背景色が暗く、前景色が明るくなります。
@@ -81,13 +78,14 @@
                     </li>
                     <li><strong>ビューポートと関連付ける</strong>: アクティブな場合、ビューポート領域内のヘッダーに対応する項目に明るい背景が表示されます。
                     </li>
+                    <li><strong>ツールを非表示にする</strong>: ボタンを非表示にして、パネルの表示を簡素化します。</li>
                     <li><strong>言語</strong>: 言語を切り替えます。新しい言語は、次回拡張機能が再度開かれるまで適用されません。
                     </li>
                 </ul>
             </div>
         </fieldset>
         <fieldset class="fieldset">
-            <legend>ヘッダー構造ツリー</legend>
+            <legend>ヘッダー構造の分析</legend>
             <div>
                 <label for="showHeadErrorH1">
                     <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
@@ -105,9 +103,10 @@
                     <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" data-callback="refresh"/>
                     非表示のヘッダーを考慮
                 </label>
-                <label for="hideTreeResultsTools">
-                    <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
-                    ツールを非表示にする (検索ほか)
+                <label for="showAriaLabelContent">
+                    <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent"
+                           data-callback="refresh"/>
+                    "aria" コンテンツの考慮
                 </label>
             </div>
             <div class="custom-scrollbar settings-information">
@@ -117,25 +116,63 @@
                     <li><strong>ヘッダーレベルを表示</strong>: ツリーのヘッダーテキストの前にレベルを表示します。</li>
                     <li><strong>空のヘッダーを考慮</strong>: ツリーとその階層内で空のヘッダーが考慮されるようになります。</li>
                     <li><strong>非表示のヘッダーを考慮</strong>: ヘッダーが非表示かどうかに関係なく、すべてのヘッダーの情報を識別して表示します。</li>
-                    <li><strong>ツールを非表示にする</strong>: ボタンを非表示にして、パネルの表示を簡素化します。</li>
+                    <li><strong>"aria" コンテンツの考慮</strong>: ヘッダーで <em>aria-label</em> 属性または <em>aria-labelledby</em> 属性が使用されている場合、 ツールはその値を取得してテキスト コンテンツとして使用できます (その理由は、スクリーン リーダーがこれらの属性にアクセスしてコンテンツとして使用できるためです)。
+                    </li>
+                </ul>
+            </div>
+
+        </fieldset>
+        <fieldset class="fieldset" lang="en">
+            <p>This content was not translated yet. I am working on the that, but due to I don't speak Japanese, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
+            <legend>Landmarks</legend>
+            <div>
+                <label for="isLandmarksTestActive">
+                    <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
+                           data-callback="refresh disableFields"
+                           data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
+                    Landmarks analysis active
+                </label>
+
+                <label></label>
+                <label for="showNonTopLevelLandmarksError">
+                    <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
+                    Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks
+                </label>
+                <label for="showRepeatedUniqueLandmarksError">
+                    <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
+                    Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code>
+                </label>
+                <label for="showRepeatedLandmarksError">
+                    <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
+                    Error if repeated landmarks without label, or with same label
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Details</h2>
+                <ul>
+                    <li><strong>Landmarks analysis active</strong>: It activates or deactivates the landmarks analysis. When the analysis is active, both headings and landmarks analysis appear as tabs.</li>
+                    <li><strong>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks</strong>: These landmarks should be top-level landmarks.</li>
+                    <li><strong>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></strong>: Each page may have at most one of each type.</li>
+                    <li><strong>Error if repeated landmarks without label, or with same label</strong>: When there are more than one landmark with same role, they should include a label to differentiate them.</li>
                 </ul>
             </div>
 
         </fieldset>
         <fieldset class="fieldset">
             <legend>
-                HTML 5 Outline ツリー
+                HTML 5 Outline
             </legend>
             <div>
                 <label for="isOutlineTestActive">
                     <input type="checkbox" name="isOutlineTestActive" id="isOutlineTestActive"
                            data-callback="refresh disableFields"
-                           data-related-fields="showOutLevels showOutElem showHiddenSections considerHgroup"/>
+                           data-related-fields="showOutLevels showOutElem showHiddenSections"/>
                     分析のアクティブ化
                 </label>
                 <p class="note">W3C アウトライン アルゴリズムのネイティブ実装を備えたブラウザや支援テクノロジはありません。
                     したがって、文書構造をユーザーに伝えるのに依存することはできず、作成者はそれを行うために見出しランクを使用する必要があります
-                    (<a href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline" target="_blank">HTML 5.2 Creating an outline</a>)
+                    (<a href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                        target="_blank">HTML 5.2 Creating an outline</a>)
                 </p>
 
                 <label for="showOutLevels">
@@ -148,26 +185,26 @@
                 </label>
                 <label for="showHiddenSections">
                     <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
-                           data-callback="refresh"/>
+                           data-callback="refresh updateActiveDocument"/>
                     非表示のセクションを考慮 *
                 </label>
-                <label for="considerHgroup">
-                    <input type="checkbox" name="considerHgroup" id="considerHgroup" data-callback="refresh"/>
-                    HGROUP を考慮
-                </label>
             </div>
-            <p class="note">* "非表示のセクションを考慮" オプションがアクティブな場合、長いドキュメントは分析のパフォーマンスに影響を与える可能性があります。</p>
+            <p class="note">* "非表示のセクションを考慮"
+                オプションがアクティブな場合、長いドキュメントは分析のパフォーマンスに影響を与える可能性があります。</p>
 
             <div class="custom-scrollbar settings-information">
                 <h2>詳細</h2>
                 <ul>
-                    <li><strong>分析のアクティブ化</strong>: ドキュメントのアウトラインの抽出はパフォーマンスに影響を与える可能性があるため、その実行はオプションであり、デフォルトでは非アクティブ化されています。
+                    <li><strong>分析のアクティブ化</strong>:
+                        ドキュメントのアウトラインの抽出はパフォーマンスに影響を与える可能性があるため、その実行はオプションであり、デフォルトでは非アクティブ化されています。
                         アクティブな場合、両方の分析 (見出しと HTML 5 アウトライン) がパネル内のタブとして表示されます。
                     </li>
-                    <li><strong>セクションインデックスを表示</strong>: テキストの前にセクションインデックスを表示します。</li>
-                    <li><strong>セクションタグを表示</strong>: ツリー内のコンテンツの一部としてセクションタグが含まれます。</li>
-                    <li><strong>非表示のセクションを考慮</strong>: 非表示かどうかに関係なく、すべてのセクションの情報が識別されて表示されます。</li>
-                    <li><strong>HGROUP を考慮</strong>: このオプションを使用すると、分析では HGROUP 要素がセクション要素として考慮されます。</li>
+                    <li><strong>セクションインデックスを表示</strong>: テキストの前にセクションインデックスを表示します。
+                    </li>
+                    <li><strong>セクションタグを表示</strong>: ツリー内のコンテンツの一部としてセクションタグが含まれます。
+                    </li>
+                    <li><strong>非表示のセクションを考慮</strong>: 非表示かどうかに関係なく、すべてのセクションの情報が識別されて表示されます。
+                    </li>
                 </ul>
             </div>
         </fieldset>
@@ -241,7 +278,6 @@
             width: 50%;
             box-sizing: border-box;
             margin: 10px 0;
-            font-weight: bold;
         }
 
         #dialog-panel .fieldset p {

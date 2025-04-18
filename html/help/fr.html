@@ -5,7 +5,6 @@
     <h1 id="help-header" class="headingsmap-exclude">Aide</h1>
     <div class="contents custom-scrollbar">
         <p>HeadingsMap est une extension de navigateur qui affiche la structure des titres des pages web. De plus, elle peut identifier les erreurs potentielles (telles que les niveaux de titres manquants), ce qui facilite la réalisation d’audit d’accessibilité, de contrôles qualité, d'audits SEO, ….</p>
-         <p>L'extension inclut également la fonctionnalité optionnelle d'affichage de la structure des sections basée sur l'algorithme d'arborescence HTML décrit par le W3C. Les deux résultats, les titres et les sections, sont affichés dans une arborescence qui relie les niveaux d'imbrication à la hiérarchie du document.</p>
         <h2>Fonctionnalités</h2>
         <ul>
             <li>Affiche une liste de titres avec des informations sur leur niveau et les ruptures dans la hiérarchie de titres.
@@ -19,8 +18,7 @@
             </li>
             <li>Détecte les changements dans le DOM et, une fois terminés, met à jour les arbres.</li>
             <li>Thème sombre (option)</li>
-            <li>Le test de l'arborescence HTML 5 est facultatif.</li>
-            <li>Optionnellement, il affiche les titres et les sections masqués (masqués pour les technologies d'assistance). 
+            <li>Optionnellement, il affiche les titres et les sections masqués (masqués pour les technologies d'assistance).
                 Lorsqu'ils sont affichés, une icône est ajoutée aux éléments de l'arborescence pour identifier ceux qui ont été détectés comme étant visibles ou masqués.
             </li>
             <li>Si le titre (ou la section) est une ancre, le lien dans les résultats possède l'attribut "href" qui pointe vers celui-ci (utile pour être copié directement à partir de l'arborescence avec l'option du menu contextuel du navigateur).
@@ -44,26 +42,46 @@
             <dd>Lorsque les titres incluent des ancres, ils affichent une icône dans l'arborescence. En cliquant sur l'icône, l'adresse URL est copiée dans le presse-papiers (comme l'action "copier l'adresse du lien" du navigateur).
             </dd>
         </dl>
+        <h2 lang="en">Landmarks analysis - settings</h2>
+        <p lang="en">This content was not translated yet. I am working on the that, but due to I don't speak French, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
+        <dl lang="en">
+            <dt>Landmarks analysis active</dt>
+            <dd>It activates or deactivates the landmarks analysis. When the analysis is active, both headings and
+                landmarks analysis appear as tabs.</dd>
+
+            <dt>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code>
+                are not top level landmarks</dt>
+            <dd>These landmarks should be top-level landmarks.</dd>
+
+            <dt>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></dt>
+            <dd>Each page may have at most one of each type.</dd>
+
+            <dt>Error if repeated landmarks without label, or with same label</dt>
+            <dd>When there are more than one landmark with same role, they should include a label to differentiate
+                them.</dd>
+        </dl>
         <h2>HTML 5 outline - Paramètres</h2>
-        <p>Selon le W3C, aucun navigateur ou technologie d'assistance ne le prend en charge, donc obtenir un bon résultat dans le test a à peine un impact sur l'accessibilité finale. 
-            Selon le W3C, toute mise en œuvre et utilisation de ces différentes propositions sera suivie et pourra entraîner des changements importants dans l'algorithme de la structure.
+        <p>Selon le W3C, aucun navigateur ou technologie d'assistance ne le prend en charge, donc obtenir un bon
+            résultat dans le test a à peine un impact sur l'accessibilité finale.
+            Selon le W3C, toute mise en œuvre et utilisation de ces différentes propositions sera suivie et pourra
+            entraîner des changements importants dans l'algorithme de la structure.
         </p>
         <dl>
             <dt>Afficher l'index de la section</dt>
-            <dd>Selon l'algorithme, chaque section aurait un index dans l'arborescence. Ce paramètre affiche/masque cette valeur.
+            <dd>Selon l'algorithme, chaque section aurait un index dans l'arborescence. Ce paramètre affiche/masque
+                cette valeur.
             </dd>
             <dt>Afficher la balise section</dt>
             <dd>Avec ce paramètre, l'arborescence affiche la balise HTML qui <a
-                href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
-                target="_blank">génère les sections</a>.
+                    href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
+                    target="_blank">génère les sections</a>.
             </dd>
             <dt>Afficher les sections masquées</dt>
-            <dd>Lorsque le document inclut des sections masquées (non seulement visuellement masquées, mais également masquées pour les technologies d'assistance), elles ne sont pas affichées dans l'arborescence. 
-                Lors de l'activation de cette option, elles sont affichées. 
-                Dans les documents longs, cela pourrait affecter les performances car cela nécessite de vérifier tous les éléments du DOM.
-            </dd>
-            <dt>Afficher les HGROUP</dt>
-            <dd>Lorsque l'option est activée, l'élément HGROUP est considéré comme un élément de titre. Selon son comportement, il prend le niveau de titre le plus élevé comme niveau et les éléments de titre qu'il contient ne sont pas pris en compte dans la structure.
+            <dd>Lorsque le document inclut des sections masquées (non seulement visuellement masquées, mais également
+                masquées pour les technologies d'assistance), elles ne sont pas affichées dans l'arborescence.
+                Lors de l'activation de cette option, elles sont affichées.
+                Dans les documents longs, cela pourrait affecter les performances car cela nécessite de vérifier tous
+                les éléments du DOM.
             </dd>
         </dl>
     </div>

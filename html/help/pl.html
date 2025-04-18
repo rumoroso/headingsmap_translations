@@ -13,12 +13,6 @@
           błędy (np. brakujące poziomy nagłówków), wspierając sprawdzanie
           dostępności, kontrolę jakości, audyty SEO...
         </p>
-        <p>
-          Rozszerzenie zawiera również opcjonalną funkcjonalność wyświetlania
-          sekcji opartej o algorytm HTML5 outline opisany przez W3C. Oba
-          elementy, nagłówki i sekcje są wyświetlane w drzewie, z którym
-          powiązane są poziomy zagnieżdżenia elementów.
-        </p>
         <h2>Funkcjonalności</h2>
         <ul>
           <li>
@@ -44,7 +38,6 @@
           </li>
           <li>Po wykryciu zmian w DOM aktualizuje drzewo.</li>
           <li>Ciemny motyw (opcjonalnie).</li>
-          <li>HTML5 Outline jest opcjonalny.</li>
           <li>
             Opcjonalnie pokazuje ukryte nagłówki i sekcje (ukryte dla
             technologii asystujących). Gdy opcja jest włączona, do elementów w
@@ -92,45 +85,56 @@
             nagłówka (można też użyć opcji “Kopiuj odnośnik” z przeglądarki).
           </dd>
         </dl>
-        <h2>HTML5 outline - ustawienia</h2>
-        <p>
-          Według W3C, nie ma przeglądarek ani technologii które to wspierają,
-          więc uzyskanie dobrego wyniku w teście ma niewielki wpływ na
-          ostateczną dostępność. Każda implementacja i użycie tych różnych
-          propozycji będzie śledzona i może doprowadzić do znaczących przyszłych
-          zmian w algorytmie.
-        </p>
-        <dl>
-          <dt>Pokaż indeks sekcji</dt>
-          <dd>
-            Według algorytmu, każda sekcja ma indeks w drzewie. To ustawienie
-            pokazuje/ukrywa tę wartość.
-          </dd>
-          <dt>Pokaż tag sekcji</dt>
-          <dd>
-            Z tym ustawieniem, drzewo pokazuje tag HTML, który
-            <a
-              href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
-              target="_blank"
-              >generuje sekcje</a
-            >.
-          </dd>
-          <dt>Uwzględnij ukryte sekcje</dt>
-          <dd>
-            Gdy dokument zawiera ukryte sekcje (nie tylko wizualnie ukryte, ale
-            także ukryte dla technologii asystujących), nie są one pokazywane w
-            drzewie. Po aktywacji tej opcji są one pokazywane. W dużych stronach
-            internetowych może to wpłynąć na wydajność, ponieważ wymaga
-            sprawdzenia wszystkich elementów w DOM.
-          </dd>
-          <dt>Uwzględnij HGROUP</dt>
-          <dd>
-            Gdy opcja jest zaznaczona, traktuje element HGROUP jako element
-            nagłówka. Zgodnie z jego zachowaniem, bierze najwyższy poziom
-            nagłówka jako swój poziom (nagłówki, które zawiera, nie są
-            uwzględniane).
-          </dd>
+        <h2 lang="en">Landmarks analysis - settings</h2>
+        <p lang="en">This content was not translated yet. I am working on the that, but due to I don't speak Polish, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
+        <dl lang="en">
+          <dt>Landmarks analysis active</dt>
+          <dd>It activates or deactivates the landmarks analysis. When the analysis is active, both headings and
+            landmarks analysis appear as tabs.</dd>
+
+          <dt>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code>
+            are not top level landmarks</dt>
+          <dd>These landmarks should be top-level landmarks.</dd>
+
+          <dt>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></dt>
+          <dd>Each page may have at most one of each type.</dd>
+
+          <dt>Error if repeated landmarks without label, or with same label</dt>
+          <dd>When there are more than one landmark with same role, they should include a label to differentiate
+            them.</dd>
         </dl>
+          <h2>HTML5 outline - ustawienia</h2>
+          <p>
+              Według W3C, nie ma przeglądarek ani technologii które to wspierają,
+              więc uzyskanie dobrego wyniku w teście ma niewielki wpływ na
+              ostateczną dostępność. Każda implementacja i użycie tych różnych
+              propozycji będzie śledzona i może doprowadzić do znaczących przyszłych
+              zmian w algorytmie.
+          </p>
+          <dl>
+              <dt>Pokaż indeks sekcji</dt>
+              <dd>
+                  Według algorytmu, każda sekcja ma indeks w drzewie. To ustawienie
+                  pokazuje/ukrywa tę wartość.
+              </dd>
+              <dt>Pokaż tag sekcji</dt>
+              <dd>
+                  Z tym ustawieniem, drzewo pokazuje tag HTML, który
+                  <a
+                          href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
+                          target="_blank"
+                  >generuje sekcje</a
+                  >.
+              </dd>
+              <dt>Uwzględnij ukryte sekcje</dt>
+              <dd>
+                  Gdy dokument zawiera ukryte sekcje (nie tylko wizualnie ukryte, ale
+                  także ukryte dla technologii asystujących), nie są one pokazywane w
+                  drzewie. Po aktywacji tej opcji są one pokazywane. W dużych stronach
+                  internetowych może to wpłynąć na wydajność, ponieważ wymaga
+                  sprawdzenia wszystkich elementów w DOM.
+              </dd>
+          </dl>
       </div>
     </div>
   </body>

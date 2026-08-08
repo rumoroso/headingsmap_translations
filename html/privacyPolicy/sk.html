@@ -1,0 +1,71 @@
+<html lang="sk">
+<head><title>Zásady ochrany súkromia</title></head>
+<body>
+<div class="content">
+    <h1 id="privacy-policy-header" class="headingsmap-exclude">Zásady ochrany súkromia</h1>
+    <div class="contents custom-scrollbar">
+        <p>Tieto zásady ochrany súkromia sa vzťahujú na rozšírenie prehliadača <strong>HeadingsMap</strong> a ich
+            cieľom je informovať používateľov o oprávneniach, ktoré rozšírenie potrebuje na svoju činnosť,
+            a o dôvodoch, prečo sú tieto oprávnenia potrebné.</p>
+        <h2>Žiadny zber údajov</h2>
+        <p><strong>HeadingsMap</strong> nezbiera žiadne údaje z žiadnej webovej stránky. Vykonáva iba
+            analýzu HTML na strane prehliadača (na strane klienta) pomocou čistého (vanilla) javascriptu (bez
+            použitia knižníc alebo frameworkov tretích strán) a nezbiera, neukladá ani nezdieľa žiadne údaje
+            z webových dokumentov.</p>
+        <p>Bolo vyvinuté a je udržiavané s cieľom pomáhať a podporovať vývojárov, konzultantov, audítorov kvality
+            alebo akéhokoľvek iného koncového používateľa pri ich každodennom používaní/práci. Neobsahuje žiadne
+            skryté zámery.</p>
+        <h2>Oprávnenia prehliadača</h2>
+        <p><strong>HeadingsMap</strong> pristupuje k HTML stránky, ktorá je v danej chvíli
+            zobrazená v prehliadači, a to tak k obsahu priamo pochádzajúcemu zo značky html, ako aj k
+            dokumentom, ktoré sú zahrnuté prostredníctvom iframe-ov. Z tohto dôvodu, a tiež preto, že poskytuje
+            používateľovi sadu možností a preferencií, ktoré je možné uložiť (motív, poloha panela, typ analýzy,
+            identifikácia chýb atď.), vyžaduje niekoľko konkrétnych oprávnení od prehliadača, aby mohlo
+            fungovať.</p>
+
+        <p>Žiadne z oprávnení, ktoré rozšírenie vyžaduje, nezbiera údaje zo žiadnej webovej stránky. Sú potrebné
+            na vykonávanie analýzy HTML, poskytovanie informácií o HTML a štýloch aplikovaných na jeho prvky
+            a na poskytnutie sady možností, ktorými si používateľ môže určiť spôsob vykonávania analýzy a
+            zobrazovania výsledkov. Neexistuje žiadny zber údajov z obsahu ani žiadny zber údajov o stránkach,
+            na ktorých používateľ rozšírenie používa. Rozšírenie navyše nevykonáva žiadnu akciu, keď nie je
+            v prevádzke.</p>
+
+        <p>Toto je zoznam oprávnení prehliadača a dôvody, prečo sú potrebné:</p>
+        <dl>
+            <dt>all_urls</dt>
+            <dd>Toto oprávnenie umožňuje rozšíreniu fungovať na akejkoľvek URL adrese, pretože sa zhoduje s
+                akoukoľvek URL adresou, ktorá používa povolenú schému
+            </dd>
+            <dt>activeTab</dt>
+            <dd>Oprávnenie <code>activeTab</code> udeľuje dočasný prístup k stránke, na ktorej sa používateľ
+                nachádza, a umožňuje rozšíreniu použiť oprávnenie "tabs" na aktuálnej karte. Toto oprávnenie
+                nezobrazuje pri inštalácii žiadne upozornenie. Rozšírenie ho používa na:
+                <ul>
+                    <li>Volanie <code>tabs.executeScript</code> a <code>tabs.insertCSS</code> na aktuálnej karte.
+                        Spustenie skriptu je potrebné na analýzu DOM-u a vloženie CSS je potrebné na štylizáciu
+                        panela a na zvýrazňovanie prvkov (funkcia, ktorú rozšírenie má a ktorá spočíva v zvýraznení
+                        prvkov na stránke pri výbere ich informácií v paneli)
+                    </li>
+                    <li>Získanie URL adresy a názvu karty pomocou API, ktoré vracia objekt <code>tabs.Tab</code>.
+                        Jediným dôvodom získavania týchto informácií je zobraziť používateľovi HTML dokumenty,
+                        ktoré si prezerá, a umožniť mu rozhodnúť sa (výberom vo vlastnom selektore, ktorý zobrazuje
+                        ich názov), pre ktorý z nich sa má vykonať analýza.
+                    </li>
+                </ul>
+            </dd>
+            <dt>storage</dt>
+            <dd>Umožňuje rozšíreniam ukladať a načítavať údaje v prehliadači (nie na žiadnom vzdialenom mieste
+                ani serveri) a sledovať zmeny uložených položiek. Túto funkciu rozšírenie používa na uloženie a
+                načítanie používateľských preferencií, ako je usporiadanie panela, motív, upozornenia na chyby
+                atď.
+            </dd>
+            <dt>webNavigation</dt>
+            <dd>Pridáva poslucháčov udalostí pre rôzne fázy navigácie. Navigácia predstavuje prechod rámca
+                v prehliadači z jednej URL adresy na inú, zvyčajne (nie však vždy) v reakcii na akciu
+                používateľa, ako je kliknutie na odkaz alebo zadanie URL adresy do panela s adresou.
+            </dd>
+        </dl>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<html lang="sk">
+<head><title>Možnosti</title></head>
+<body>
+
+<div class="content">
+    <h1 id="settings-header" class="headingsmap-exclude">Nastavenia</h1>
+
+    <div class="contents settings-content">
+        <fieldset class="fieldset">
+            <legend>Všeobecné</legend>
+            <div>
+                <label for="showHeadError">
+                    <input type="checkbox" name="showHeadError" id="showHeadError"/>
+                    Identifikovať chyby
+                </label>
+                <label for="highLightElements">
+                    <input type="checkbox" name="highLightElements" id="highLightElements"/>
+                    Zvýrazniť po kliknutí
+                </label>
+                <label for="showAnchors">
+                    <input type="checkbox" name="showAnchors" id="showAnchors" data-callback="refresh"/>
+                    Identifikovať kotvy
+                </label>
+                <label for="darkTheme">
+                    <input type="checkbox" name="darkTheme" id="darkTheme" data-callback="setTheme"/>
+                    Tmavý režim
+                </label>
+                <label for="savePanelWidthOnResize">
+                    <input type="checkbox" name="savePanelWidthOnResize" id="savePanelWidthOnResize"
+                           data-callback="updateInitialPanelWidth"/>
+                    Uložiť šírku pri zmene veľkosti
+                </label>
+                <label for="normalWrap">
+                    <input type="checkbox" name="normalWrap" id="normalWrap"/>
+                    Zalamovať dlhý text
+                </label>
+                <label for="showTooltip">
+                    <input type="checkbox" name="showTooltip" id="showTooltip" data-callback="setLinksBehavior"/>
+                    Zobraziť informačný popis (tooltip)
+                </label>
+                <label for="viewportIndicator">
+                    <input type="checkbox" name="viewportIndicator" id="viewportIndicator" data-callback="refresh"/>
+                    Prepojiť s viditeľnou oblasťou (viewport)
+                </label>
+                <label for="hideTreeResultsTools">
+                    <input type="checkbox" name="hideTreeResultsTools" id="hideTreeResultsTools"/>
+                    Skryť nástroje (vyhľadávanie a pod.)
+                </label>
+
+                <p class="note">
+                    <label for="language">
+                        Jazyk
+                        <select name="language" id="language">
+                        </select>
+                    </label>
+                    Zmena sa prejaví po reštartovaní rozšírenia (zatvorení a opätovnom otvorení).
+                </p>
+                <input type="hidden" name="initialPanelWidth" id="initialPanelWidth"/>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Podrobnosti</h2>
+                <ul>
+                    <li><strong>Identifikovať chyby</strong>: keď je aktívne, zvýrazní v strome položku, ktorá
+                        zodpovedá nadpisu obsahujúcemu chybu.
+                    </li>
+                    <li><strong>Zvýrazniť po kliknutí</strong>: po kliknutí na položku v strome sa na pár sekúnd
+                        zvýrazní obrysom príslušný nadpis v dokumente.
+                    </li>
+                    <li><strong>Identifikovať kotvy</strong>: ak sa nadpis dá použiť ako kotva, táto informácia sa
+                        zohľadní.
+                    </li>
+                    <li><strong>Tmavý režim</strong>: pri použití zmení štýl nástroja na tmavé pozadie
+                        a svetlú farbu popredia.
+                    </li>
+                    <li><strong>Uložiť šírku pri zmene veľkosti</strong>: ak je zaškrtnuté a panel sa zmení
+                        veľkosťou, nová
+                        šírka sa uloží, takže pri ďalšom použití nástroja zostane zachovaná.
+                    </li>
+                    <li><strong>Zalamovať dlhý text</strong>: predvolene sa text v položkách stromu skracuje. Po
+                        aktivácii tejto možnosti sa text v prípade potreby zalomí na viac riadkov.
+                    </li>
+                    <li><strong>Zobraziť informačný popis (tooltip)</strong>: keď je aktívne, pri presune kurzora nad
+                        strom sa zobrazí popis s informáciami.
+                    </li>
+                    <li><strong>Prepojiť s viditeľnou oblasťou (viewport)</strong>: keď je aktívne, zobrazí svetlé
+                        pozadie pri položkách, ktoré zodpovedajú nadpisom nachádzajúcim sa vo viditeľnej oblasti
+                        stránky.
+                    </li>
+                    <li><strong>Skryť nástroje</strong>: skryje tlačidlá a zjednoduší tak zobrazenie panela.</li>
+                    <li><strong>Jazyk</strong>: prepne jazyk. Nový jazyk sa použije až po opätovnom otvorení
+                        rozšírenia.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Štruktúra nadpisov</legend>
+            <div>
+                <label for="showHeadErrorH1">
+                    <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
+                    Chyba, ak prvý nadpis nie je h1
+                </label>
+                <label for="showHeadLevels">
+                    <input type="checkbox" name="showHeadLevels" id="showHeadLevels"/>
+                    Zobraziť úroveň nadpisu
+                </label>
+                <label for="showEmptyHeadings">
+                    <input type="checkbox" name="showEmptyHeadings" id="showEmptyHeadings" data-callback="refresh"/>
+                    Zohľadniť prázdne nadpisy
+                </label>
+                <label for="showHiddenHeaders">
+                    <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" data-callback="refresh"/>
+                    Zohľadniť skryté nadpisy
+                </label>
+                <label for="showAriaLabelContent">
+                    <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent"
+                           data-callback="refresh"/>
+                    Zohľadniť obsah "aria"
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Podrobnosti</h2>
+                <ul>
+                    <li><strong>Chyba, ak prvý nadpis nie je h1</strong>: keď je aktívne, zvýrazní ako chybu
+                        situáciu, keď prvý nadpis nie je h1. Vyžaduje, aby bola aktívna aj možnosť "Identifikovať
+                        chyby".</li>
+                    <li><strong>Zobraziť úroveň nadpisu</strong>: v strome zobrazí úroveň nadpisu pred jeho textom.</li>
+                    <li><strong>Zohľadniť prázdne nadpisy</strong>: prázdne nadpisy sa začnú zohľadňovať v strome aj
+                        v jeho hierarchii.</li>
+                    <li><strong>Zohľadniť skryté nadpisy</strong>: identifikuje a zobrazí informácie o všetkých
+                        nadpisoch bez ohľadu na to, či sú skryté.</li>
+                    <li><strong>Zohľadniť obsah "aria"</strong>: ak nadpisy používajú atribúty <em>aria-label</em>
+                        alebo <em>aria-labelledby</em>, nástroj môže prevziať ich hodnotu a použiť ju ako textový
+                        obsah (dôvodom je, že čítačky obrazovky k nim môžu pristupovať a používať ich ako obsah).
+                    </li>
+                </ul>
+            </div>
+
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>Landmarks</legend>
+            <div>
+                <label for="isLandmarksTestActive">
+                    <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
+                           data-callback="refresh disableFields"
+                           data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
+                    Analýza landmarks aktívna
+                </label>
+
+                <label></label>
+                <label for="showNonTopLevelLandmarksError">
+                    <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
+                    Chyba, ak <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> alebo <code>main</code> nie sú na najvyššej úrovni
+                </label>
+                <label for="showRepeatedUniqueLandmarksError">
+                    <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
+                    Chyba, ak je viac ako jeden <code>banner</code>, <code>contentinfo</code> alebo <code>main</code>
+                </label>
+                <label for="showRepeatedLandmarksError">
+                    <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
+                    Chyba pri opakovaných landmarks bez popisu alebo s rovnakým popisom
+                </label>
+            </div>
+            <div class="custom-scrollbar settings-information">
+                <h2>Podrobnosti</h2>
+                <ul>
+                    <li><strong>Analýza landmarks aktívna</strong>: aktivuje alebo deaktivuje analýzu landmarks. Keď je analýza aktívna, ako karty sa zobrazia nadpisy aj landmarks.</li>
+                    <li><strong>Chyba, ak <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> alebo <code>main</code> nie sú na najvyššej úrovni</strong>: tieto landmarks by mali byť na najvyššej úrovni.</li>
+                    <li><strong>Chyba, ak je viac ako jeden <code>banner</code>, <code>contentinfo</code> alebo <code>main</code></strong>: každá stránka môže obsahovať najviac jeden z každého typu.</li>
+                    <li><strong>Chyba pri opakovaných landmarks bez popisu alebo s rovnakým popisom</strong>: ak existuje viac landmarks s rovnakou úlohou (role), mali by obsahovať popis, ktorý ich odlíši.</li>
+                </ul>
+            </div>
+
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend>
+                HTML 5 Outline
+            </legend>
+            <div>
+                <label for="isOutlineTestActive">
+                    <input type="checkbox" name="isOutlineTestActive" id="isOutlineTestActive"
+                           data-callback="refresh disableFields"
+                           data-related-fields="showOutLevels showOutElem showHiddenSections"/>
+                    Aktivovať analýzu
+                </label>
+                <p class="note">Neexistujú prehliadače ani asistenčné technológie s natívnou implementáciou W3C
+                    Outline algoritmu. Preto sa naň nedá spoliehať pri sprostredkovaní štruktúry dokumentu
+                    používateľom a autori by mali na tento účel používať úroveň nadpisov (<a
+                            href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
+                            target="_blank">HTML 5.2 Creating an outline</a>)
+                </p>
+
+                <label for="showOutLevels">
+                    <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
+                    Zobraziť index sekcie
+                </label>
+                <label for="showOutElem">
+                    <input type="checkbox" name="showOutElem" id="showOutElem"/>
+                    Zobraziť značku sekcie
+                </label>
+                <label for="showHiddenSections">
+                    <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
+                           data-callback="refresh updateActiveDocument"/>
+                    Zohľadniť skryté sekcie *
+                </label>
+            </div>
+            <p class="note">* Keď je aktívna možnosť "zohľadniť skryté sekcie", analýza môže mať výkonnostné
+                problémy pri dlhých dokumentoch</p>
+
+            <div class="custom-scrollbar settings-information">
+                <h2>Podrobnosti</h2>
+                <ul>
+                    <li><strong>Aktivovať analýzu</strong>: získavanie osnovy (outline) dokumentu môže mať vplyv na
+                        výkon, preto je jej vykonávanie voliteľné a predvolene deaktivované. Keď je aktívna, obe
+                        analýzy (nadpisy a HTML 5 Outline) sa zobrazia ako karty v paneli.
+                    </li>
+                    <li><strong>Zobraziť index sekcie</strong>: zobrazí index sekcie pred jej textom.</li>
+                    <li><strong>Zobraziť značku sekcie</strong>: do obsahu v strome zahrnie aj značku sekcie.
+                    </li>
+                    <li><strong>Zohľadniť skryté sekcie</strong>: identifikuje a zobrazí informácie o všetkých
+                        sekciách bez ohľadu na to, či sú skryté.
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+
+    </div>
+    <style>
+        #dialog-panel .content {
+            height: 100%;
+        }
+
+        #dialog-panel .settings-content {
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #dialog-panel .settings-content > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .settings-information {
+            overflow: auto;
+        }
+
+        #dialog-panel .tab-button {
+            width: 33.3%;
+        }
+
+        #dialog-panel .tabs {
+            margin-top: 30px;
+        }
+
+        #dialog-panel .tab-button {
+            max-width: none;
+        }
+
+        #dialog-panel .tab-button:not([aria-selected=true]) {
+            margin-bottom: 1px;
+        }
+
+        #dialog-panel div[role=tabpanel].active {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #dialog-panel .fieldset {
+            position: relative;
+            box-sizing: border-box;
+            border: none;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #dialog-panel .fieldset legend {
+            font-weight: bold;
+            position: absolute;
+            top: -5000px;
+            left: -5000px;
+        }
+
+        #dialog-panel .fieldset label {
+            display: block;
+            float: left;
+            width: 49%;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n+1) {
+            margin-right: 2%;
+        }
+
+        #dialog-panel .fieldset p {
+            border-top: 1px dotted transparent;
+        }
+
+        #dialog-panel li {
+            font-size: .9rem;
+        }
+
+        #dialog-panel .fieldset p label {
+            float: none;
+            width: auto;
+            box-sizing: border-box;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        #dialog-panel .fieldset legend label {
+            width: auto;
+            margin: auto;
+        }
+
+
+        #dialog-panel label:has([disabled]) {
+            opacity: .5;
+        }
+
+        #dialog-panel .fieldset select {
+            font-weight: normal;
+        }
+
+        #dialog-panel .fieldset label:nth-child(2n + 1) {
+            clear: left;
+        }
+
+        #dialog-panel code {
+            font-family: monospace;
+            font-size: .8em;
+            opacity: .8;
+        }
+    </style>
+</div>
+</body>
+</html>

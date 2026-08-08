@@ -1,0 +1,107 @@
+<html lang="sk">
+<head><title>Pomoc a informácie</title></head>
+<body>
+<div class="content">
+    <h1 id="help-header">Pomoc</h1>
+    <div class="contents custom-scrollbar">
+        <p>HeadingsMap je rozšírenie prehliadača, ktoré zobrazuje štruktúru nadpisov webových stránok. Okrem toho
+            dokáže identifikovať potenciálne chyby (napríklad chýbajúce úrovne nadpisov), čo pomáha pri
+            kontrolách prístupnosti,
+            kontrole kvality,
+            SEO auditoch...</p>
+        <p>Rozšírenie tiež obsahuje voliteľnú funkciu na zobrazenie štruktúry landmarks.
+            Oba výsledky, nadpisy aj landmarks, sa zobrazujú v strome, ktorý
+            prepája úrovne vnorenia s hierarchiou dokumentu.</p>
+        <h2>Funkcie</h2>
+        <ul>
+            <li>Zobrazuje zoznam nadpisov s informáciou o ich úrovni a o tom, či narúšajú hierarchickú
+                štruktúru.
+            </li>
+            <li>Ak existujú prvky, ktoré používajú atribút <em>role</em> s hodnotou <em>heading</em>, sú tiež
+                zaradené do zoznamu. Ich úroveň vychádza z hodnoty atribútu <em>aria-level</em> (ak nie je
+                definovaný, predvolená hodnota je 2).
+            </li>
+            <li>Zoznam sekcií s informáciami o nadpisoch a upozorneniami na chyby v štruktúre</li>
+            <li>Získava informácie z hlavného dokumentu, ako aj z dokumentov vo vnútri iframe-ov
+            </li>
+            <li>Po kliknutí na nadpisy sa dokument posunie na pozíciu nadpisu/sekcie a zvýrazní
+                ju
+            </li>
+            <li>Deteguje zmeny v DOM-e a po ich dokončení aktualizuje stromy</li>
+            <li>Tmavý motív (voliteľné)</li>
+            <li>Voliteľne zobrazuje skryté nadpisy a sekcie (skryté pre asistenčné technológie). Keď sú
+                zobrazené, k položkám v strome sa pridá ikona, ktorá označuje, či ich rozšírenie rozpoznalo ako
+                viditeľné, alebo skryté
+            </li>
+            <li>Ak je nadpis (alebo sekcia) kotvou, odkaz vo výsledkoch má href smerujúci na ňu (užitočné pri
+                kopírovaní priamo zo stromu pomocou možnosti v kontextovej ponuke prehliadača)
+            </li>
+            <li>Ak obsah nadpisu/sekcie používa aria-label, jeho hodnota sa môže zobraziť (voliteľná vlastnosť
+                nastaviteľná v sekcii nastavení)
+            </li>
+            <li>Verzia pre viacero prehliadačov. Používa "browserExtensions API", takže je kompatibilné s Chrome,
+                Firefoxom, Microsoft Edge...
+            </li>
+        </ul>
+        <h2>Analýza HeadingsMap - nastavenia</h2>
+        <dl>
+            <dt>Chyba, ak prvý nadpis nie je h1</dt>
+            <dd>Bežne sa uznáva, že prvým nadpisom v dokumente by mal byť h1. Keď je táto možnosť aktívna,
+                spolu s "identifikovať chyby", porušenie tohto pravidla sa považuje za chybu
+            </dd>
+            <dt>Úroveň nadpisu</dt>
+            <dd>Zahŕňa úroveň nadpisu (1 až 6), ktorá sa použije ako značka (h1 až h6)</dd>
+            <dt>Zohľadniť skryté nadpisy</dt>
+            <dd>Keď dokument obsahuje nadpisy, ktoré sú skryté pre akýkoľvek nástroj (nielen vizuálne skryté,
+                ale aj skryté pre asistenčné technológie), v strome sa nezobrazujú. Po aktivácii
+                tejto možnosti sa zobrazia aj tieto
+            </dd>
+            <dt>Identifikovať kotvy</dt>
+            <dd>Keď nadpisy obsahujú kotvy, v strome sa zobrazí ikona. Kliknutím na ikonu sa URL adresa
+                skopíruje do schránky (rovnako ako pri akcii "kopírovať adresu odkazu" z prehliadača)
+            </dd>
+        </dl>
+        <h2>Analýza landmarks - nastavenia</h2>
+        <dl>
+            <dt>Analýza landmarks aktívna</dt>
+            <dd>Aktivuje alebo deaktivuje analýzu landmarks. Keď je analýza aktívna, ako karty sa zobrazia
+                nadpisy aj landmarks.</dd>
+
+            <dt>Chyba, ak <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> alebo <code>main</code>
+                nie sú na najvyššej úrovni</dt>
+            <dd>Tieto landmarks by mali byť na najvyššej úrovni.</dd>
+
+            <dt>Chyba, ak je viac ako jeden <code>banner</code>, <code>contentinfo</code> alebo <code>main</code></dt>
+            <dd>Každá stránka môže obsahovať najviac jeden z každého typu.</dd>
+
+            <dt>Chyba pri opakovaných landmarks bez popisu alebo s rovnakým popisom</dt>
+            <dd>Ak existuje viac landmarks s rovnakou úlohou (role), mali by obsahovať popis, ktorý ich
+                odlíši.</dd>
+        </dl>
+
+        <h2>HTML 5 outline - nastavenia</h2>
+        <p>Podľa W3C neexistujú prehliadače ani asistenčné technológie, ktoré túto funkciu podporujú, takže
+            dobrý výsledok tohto testu má na výslednú prístupnosť len minimálny vplyv. Podľa W3C sa bude
+            sledovať akákoľvek implementácia a použitie týchto rôznych návrhov, čo môže v budúcnosti viesť
+            k významným zmenám v algoritme osnovy (outline).
+        </p>
+        <dl>
+            <dt>Zobraziť index sekcie</dt>
+            <dd>Podľa algoritmu by každá sekcia mala mať v strome svoj index. Toto nastavenie zobrazuje/skrýva
+                túto hodnotu
+            </dd>
+            <dt>Zobraziť značku sekcie</dt>
+            <dd>Pri tomto nastavení strom zobrazuje HTML značku, ktorá <a
+                    href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
+                    target="_blank">vytvára sekcie</a>.
+            </dd>
+            <dt>Zohľadniť skryté sekcie</dt>
+            <dd>Keď dokument obsahuje skryté sekcie (nielen vizuálne skryté, ale aj skryté pre asistenčné
+                technológie), v strome sa nezobrazujú. Po aktivácii tejto možnosti sa zobrazia. Pri dlhých
+                dokumentoch to môže ovplyvniť výkon, keďže je potrebné skontrolovať všetky prvky v DOM-e
+            </dd>
+        </dl>
+    </div>
+</div>
+</body>
+</html>

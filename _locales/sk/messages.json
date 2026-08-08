@@ -1,0 +1,334 @@
+{
+  "extensionName": {
+    "message": "HeadingsMap",
+    "description": "Názov rozšírenia."
+  },
+  "extensionDescription": {
+    "message": "Na zobrazenie, prehliadanie a kontrolu (z hľadiska prístupnosti a SEO) štruktúry nadpisov",
+    "description": "Popis rozšírenia."
+  },
+  "headersTab": {
+    "message": "Nadpisy",
+    "description": ""
+  },
+  "landmarksTab": {
+    "message": "Landmarks",
+    "description": ""
+  },
+  "outlineTab": {
+    "message": "HTML5 Outline",
+    "description": ""
+  },
+  "releaseNotesMenuLink": {
+    "message": "poznámky k vydaniu",
+    "description": ""
+  },
+  "privacyPolicyMenuLink": {
+    "message": "zásady ochrany súkromia",
+    "description": ""
+  },
+  "helpWithAccessibility": {
+    "message": "potrebujete pomoc s prístupnosťou?",
+    "description": ""
+  },
+  "helpWithAccessibilityOnLinkedIn": {
+    "message": "potrebujete pomoc s prístupnosťou?, otvorí sa v novom okne",
+    "description": ""
+  },
+  "settingsLabel": {
+    "message": "nastavenia",
+    "description": ""
+  },
+  "helpLabel": {
+    "message": "pomoc",
+    "description": ""
+  },
+  "refreshResultsMenuLink": {
+    "message": "obnoviť výsledky",
+    "description": ""
+  },
+  "closeButton": {
+    "message": "zavrieť",
+    "description": ""
+  },
+  "closeButtonAriaLabel": {
+    "message": "zavrieť panel",
+    "description": ""
+  },
+  "revealInViewButtonAriaLabel": {
+    "message": "zobraziť",
+    "description": ""
+  },
+  "copyButtonLabel": {
+    "message": "kopírovať výsledky",
+    "description": ""
+  },
+  "analysisAriaLabel": {
+    "message": "Analýza",
+    "description": ""
+  },
+  "maniMenuLabel": {
+    "message": "Menu",
+    "description": ""
+  },
+  "potentiallyHiddenPlural": {
+    "message": "potenciálne skryté",
+    "description": ""
+  },
+  "visible": {
+    "message": "viditeľné",
+    "description": ""
+  },
+  "collapseTreeNode": {
+    "message": "vnorené nadpisy",
+    "description": ""
+  },
+  "collapseLabel": {
+    "message": "zbaliť",
+    "description": ""
+  },
+  "collapserDescription": {
+    "message": "Tlačidlá na zbalenie/rozbalenie stromu nadpisov podľa úrovne nadpisu",
+    "description": ""
+  },
+  "expandLabel": {
+    "message": "rozbaliť",
+    "description": ""
+  },
+  "expandTreeNode": {
+    "message": "vnorené nadpisy",
+    "description": ""
+  },
+  "clickTheAnchor": {
+    "message": "Kliknutím na ikonu kotvy skopírujete URL adresu",
+    "description": ""
+  },
+  "headingLevel": {
+    "message": "Úroveň nadpisu",
+    "description": ""
+  },
+  "element": {
+    "message": "Prvok",
+    "description": ""
+  },
+  "emptyHeader": {
+    "message": "Prázdny nadpis",
+    "description": ""
+  },
+  "error": {
+    "message": "Chyba",
+    "description": ""
+  },
+  "potentiallyHidden": {
+    "message": "Potenciálne skryté",
+    "description": ""
+  },
+  "missingH1": {
+    "message": "Chýbajúci H1",
+    "description": ""
+  },
+  "wrongHierarchy": {
+    "message": "Nesprávna hierarchia úrovní",
+    "description": ""
+  },
+  "noHeadings": {
+    "message": "Žiadne nadpisy",
+    "description": ""
+  },
+  "topLevelLandmarkError": {
+    "message": "musí byť na najvyššej úrovni",
+    "description": ""
+  },
+  "repeatedUniqueLandmark": {
+    "message": "musí byť jedinečný",
+    "description": ""
+  },
+  "repeatedLandmark": {
+    "message": "je opakovaný",
+    "description": ""
+  },
+  "documents": {
+    "message": "Dokumenty",
+    "description": ""
+  },
+  "documentSelectorTitle": {
+    "message": "vyberte dokument, z ktorého sa má získať jeho štruktúra nadpisov/sekcií",
+    "description": ""
+  },
+  "anchor": {
+    "message": "Kotva",
+    "description": ""
+  },
+  "generatedBy": {
+    "message": "Vygenerované pomocou",
+    "description": ""
+  },
+  "heading": {
+    "message": "Nadpis",
+    "description": ""
+  },
+  "errorNoHeadingSection": {
+    "message": "Chyba: sekcia bez nadpisu",
+    "description": ""
+  },
+  "contributeMenuLink": {
+    "message": "prispieť",
+    "description": ""
+  },
+  "pinPanelLabel": {
+    "message": "otvárať automaticky vždy",
+    "description": ""
+  },
+  "pinPanelByDomainLabel": {
+    "message": "vždy otvoriť pre túto doménu",
+    "description": ""
+  },
+  "pinPanelByURLLabel": {
+    "message": "vždy otvoriť pre túto URL adresu",
+    "description": ""
+  },
+  "pinMenuLabel": {
+    "message": "otvoriť automaticky",
+    "description": ""
+  },
+  "switchToLeft": {
+    "message": "presunúť panel doľava",
+    "description": ""
+  },
+  "switchToRight": {
+    "message": "presunúť panel doprava",
+    "description": ""
+  },
+  "switchPositionLabel": {
+    "message": "zmeniť polohu panelu",
+    "description": ""
+  },
+  "active": {
+    "message": "aktívne",
+    "description": ""
+  },
+  "searchLabel": {
+    "message": "hľadať nadpis",
+    "description": ""
+  },
+  "searchButtonLabel": {
+    "message": "hľadať",
+    "description": ""
+  },
+  "closeSearchButtonLabel": {
+    "message": "zavrieť vyhľadávanie",
+    "description": ""
+  },
+  "clearText": {
+    "message": "vymazať hľadaný text",
+    "description": ""
+  },
+  "resultsListLabel": {
+    "message": "nadpisy",
+    "description": ""
+  },
+  "ariaLiveSwitchedToLeft": {
+    "message": "pripojené k ľavej strane zobrazenia",
+    "description": ""
+  },
+  "ariaLiveSwitchedToRight": {
+    "message": "pripojené k pravej strane zobrazenia",
+    "description": ""
+  },
+  "ariaLiveExpandedLevel": {
+    "message": "nadpisy v strome pod úrovňou {level} rozbalené",
+    "description": ""
+  },
+  "ariaLiveCollapsedLevel": {
+    "message": "nadpisy v strome pod úrovňou {level} zbalené",
+    "description": ""
+  },
+  "ariaLiveHeadingsCopied": {
+    "message": "štruktúra skopírovaná do schránky",
+    "description": ""
+  },
+  "shortcuts": {
+    "message": "klávesové skratky",
+    "description": ""
+  },
+  "shortcutEditLabel": {
+    "message": "stlačte ľubovoľnú klávesu (dá sa kombinovať s klávesmi modifikátormi 'control', 'shift', 'alt' alebo 'meta')",
+    "description": ""
+  },
+  "shortcutHintMessage": {
+    "message": "stlačte ľubovoľnú klávesu",
+    "description": ""
+  },
+  "shortcutErrorMessage": {
+    "message": "skratka sa už používa",
+    "description": ""
+  },
+  "shortcutEditButton": {
+    "message": "upraviť skratku",
+    "description": ""
+  },
+  "shortcutResetButton": {
+    "message": "obnoviť predvolenú skratku",
+    "description": ""
+  },
+  "shortcutSaveButton": {
+    "message": "uložiť skratku",
+    "description": ""
+  },
+  "shortcutCancelButton": {
+    "message": "zrušiť úpravu skratky",
+    "description": ""
+  },
+  "shortcutNotDefined": {
+    "message": "zatiaľ nedefinované",
+    "description": ""
+  },
+  "saved": {
+    "message": "uložené",
+    "description": ""
+  },
+  "openShortcutsDialog": {
+    "message": "Otvoriť dialógové okno so skratkami",
+    "description": ""
+  },
+  "openSettingsDialog": {
+    "message": "Otvoriť dialógové okno nastavení",
+    "description": ""
+  },
+  "updatePanelPosition": {
+    "message": "Zmeniť polohu panelu (vľavo - vpravo)",
+    "description": ""
+  },
+  "identifyHeadersInPage": {
+    "message": "Identifikovať nadpisy na stránke",
+    "description": ""
+  },
+  "searchInTree": {
+    "message": "Hľadať v strome",
+    "description": ""
+  },
+  "focusHeadingsTree": {
+    "message": "Presunúť fokus na naposledy vybratú položku v strome výsledkov",
+    "description": ""
+  },
+  "toggleTreeNodesByLevel": {
+    "message": "Zbaliť alebo rozbaliť uzly stromu podľa úrovne nadpisu",
+    "description": ""
+  },
+  "shortcutsPanelDescription": {
+    "message": "Toto je zoznam klávesových skratiek priradených k funkciám rozšírenia. Existujúce skratky môžete upraviť a prispôsobiť svojim potrebám. V jednej skratke je možné kombinovať viac klávesov. Povolené sú iba písmená, čísla, <kbd class='shortcut'>shift</kbd> a niektoré znaky: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>",
+    "description": ""
+  },
+  "shortcutsPanelDescriptionBottom": {
+    "message": "Ak máte návrhy týkajúce sa funkcie klávesových skratiek, napíšte prosím na <a href='mailto:headingsmap@gmail.com'>headingsmap@gmail.com</a>.",
+    "description": ""
+  },
+  "number": {
+    "message": "číslo",
+    "description": ""
+  },
+  "resizePanelAriaLabel": {
+    "message": "pomocou kurzorových klávesov zväčšite alebo zmenšite šírku panelu",
+    "description": ""
+  }
+}

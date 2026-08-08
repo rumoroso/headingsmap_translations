@@ -5,8 +5,51 @@
     <h1 id="release-notes-header" class="headingsmap-exclude">Poznámky k vydaniu</h1>
     <div class="contents custom-scrollbar">
         <dl>
-            <dt data-version="4.9.9">8/8/2026 (v 4.9.9)</dt>
+            <dt data-version="4.10.8">8/8/2026 (v 4.10.8)</dt>
             <dd>Pridaný preklad do slovenčiny od Radoslava Ďuraču (GitHub: <a href="https://github.com/rraddatch" target="_blank">rraddatch</a>). Ďakujem veľmi pekne za túto dobrovoľnú spoluprácu, naozaj si to vážim.</dd>
+
+            <dt data-version="4.10.7">8/4/2026 (v4.10.7)</dt>
+            <dd>Ošetrené neplatné CSS selektory (napr. s menným priestorom) pri vyhodnocovaní štýlov, aby sa predišlo
+                chybám za behu.</dd>
+
+            <dt data-version="4.10.6">19/1/2026 (v4.10.6)</dt>
+            <dd>Pri kliknutí na strom a posúvaní stránky zostáva hore malý okraj, ak sa na stránke nachádza pevne
+                umiestnený (fixed) obsah.</dd>
+            <dd>Pridané ďalšie spôsoby vizuálnej identifikácie nadpisov, keď dokument obsahuje Shadow DOM.
+            </dd>
+
+            <dt data-version="4.10.5">16/1/2026 (v4.10.5)</dt>
+            <dd>Opravená chyba, kvôli ktorej rozšírenie ignorovalo vnorený (nested) obsah Shadow DOM.
+            </dd>
+
+            <dt data-version="4.10.4">15/1/2026 (v4.10.4)</dt>
+            <dd>Opravená regresná chyba, ktorá bránila rozšíreniu kontrolovať obsah vo vnútri Shadow DOM.
+            </dd>
+
+            <dt data-version="4.10.3">26/12/2025 (v4.10.3)</dt>
+            <dd>Vylepšený výkon pri reagovaní na zmeny v DOM-e, ako je vkladanie prvkov, ich odstraňovanie alebo
+                rozbaľovanie panela, s najvýraznejším zlepšením v scenároch, ktoré spúšťajú veľa mutation observerov.
+            </dd>
+
+            <dt data-version="4.10.2">23/7/2025 (v4.10.2)</dt>
+            <dd>Opravené správanie, keď má nadpis atribút inert alebo je potomkom prvku, ktorý ho má.
+                Takéto prvky by sa nemali zobrazovať v zozname, keďže sú neaktívne pre používateľskú interakciu
+                a skryté pre asistenčné technológie. Ešte raz ďakujem Erikovi Kroesovi, že si to všimol a dal mi
+                vedieť.
+            </dd>
+
+            <dt data-version="4.10.1">23/5/2025 (v4.10.1)</dt>
+            <dd>Pridaná klávesová skratka (shift + c) na kopírovanie výsledkov zo stromu. Erik Kroes, ďakujem za
+                tento návrh.
+            </dd>
+            <dd>Opravená chyba v skratke na zobrazenie nadpisov na stránke.</dd>
+
+            <dt data-version="4.9.10">25/4/2025 (v4.9.10)</dt>
+            <dd>Pridaný poľský preklad od Adama (D53 Visual Design). Veľmi pekne ďakujem, Adam.</dd>
+            <dd>Opravená chyba súvisiaca s indexom zoznamu.</dd>
+
+            <dt data-version="4.9.9">22/4/2025 (v4.9.9)</dt>
+            <dd>Opravená chyba, ktorá bránila správnemu fungovaniu nastavenia pre HTML5 Outline.</dd>
 
             <dt data-version="4.9.8">18/4/2025 (v4.9.8)</dt>
             <dd>Opravená chyba, ktorá bránila zobrazeniu výsledkov po zatvorení a opätovnom otvorení panela.</dd>

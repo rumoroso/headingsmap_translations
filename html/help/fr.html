@@ -4,7 +4,10 @@
 <div class="content">
     <h1 id="help-header" class="headingsmap-exclude">Aide</h1>
     <div class="contents custom-scrollbar">
-        <p>HeadingsMap est une extension de navigateur qui affiche la structure des titres des pages web. De plus, elle peut identifier les erreurs potentielles (telles que les niveaux de titres manquants), ce qui facilite la réalisation d’audit d’accessibilité, de contrôles qualité, d'audits SEO, ….</p>
+        <p>HeadingsMap est une extension de navigateur qui affiche la structure des titres des pages web. De plus, elle peut identifier les erreurs potentielles (telles que les niveaux de titres manquants), ce qui facilite la réalisation d’audits d’accessibilité, de contrôles qualité, d'audits SEO, ….</p>
+        <p>L’extension propose également, en option, l’affichage de la structure des landmarks.
+            Les deux résultats, titres et landmarks, sont affichés dans une arborescence qui relie les niveaux
+            d’imbrication à la hiérarchie du document.</p>
         <h2>Fonctionnalités</h2>
         <ul>
             <li>Affiche une liste de titres avec des informations sur leur niveau et les ruptures dans la hiérarchie de titres.
@@ -28,43 +31,39 @@
             <li>Version pour plusieurs navigateurs. Elle utilise l'API "browserExtensions", ce qui la rend compatible avec Chrome, Firefox, Microsoft Edge, …
             </li>
         </ul>
-        <h2>Arborescence de HeadingsMap - Paramètres</h2>
+        <h2>Analyse HeadingsMap - paramètres</h2>
         <dl>
-            <dt>Erreur si pas de h1 initial</dt>
+            <dt>Afficher une erreur si pas de H1 initial</dt>
             <dd>Il est communément accepté que le premier titre du document doit être un h1. Avec cette option activée, ainsi que "identifier les erreurs", le non-respect de cette règle est considéré comme une erreur.
             </dd>
-            <dt>Niveau de titre</dt>
+            <dt>Afficher le niveau de titre</dt>
             <dd>Affiche le niveau du titre (de 1 à 6) qui est utilisé comme balise (h1 à h6).</dd>
-            <dt>Afficher les titres masqués</dt>
+            <dt>Prendre en compte les titres masqués</dt>
             <dd>Lorsque le document comprend des titres masqués pour n'importe quel outil (non seulement visuellement masqués, mais également masqués pour les technologies d'assistance), ils ne sont pas affichés dans l'arborescence. Lors de l'activation de cette option, ils sont également affichés.
             </dd>
             <dt>Afficher les ancres</dt>
             <dd>Lorsque les titres incluent des ancres, ils affichent une icône dans l'arborescence. En cliquant sur l'icône, l'adresse URL est copiée dans le presse-papiers (comme l'action "copier l'adresse du lien" du navigateur).
             </dd>
         </dl>
-        <h2 lang="en">Landmarks analysis - settings</h2>
-        <p lang="en">This content was not translated yet. I am working on the that, but due to I don't speak French, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
-        <dl lang="en">
-            <dt>Landmarks analysis active</dt>
-            <dd>It activates or deactivates the landmarks analysis. When the analysis is active, both headings and
-                landmarks analysis appear as tabs.</dd>
+        <h2>Analyse des landmarks - paramètres</h2>
+        <dl>
+            <dt>Analyse des landmarks activée</dt>
+            <dd>active ou désactive l'analyse des landmarks. Lorsque l'analyse est activée, les analyses des titres et des landmarks apparaissent toutes deux sous forme d'onglets.</dd>
 
-            <dt>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code>
-                are not top level landmarks</dt>
-            <dd>These landmarks should be top-level landmarks.</dd>
+            <dt>Erreur si <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> ou <code>main</code> ne sont pas des landmarks de premier niveau</dt>
+            <dd>ces landmarks doivent être des landmarks de premier niveau.</dd>
 
-            <dt>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></dt>
-            <dd>Each page may have at most one of each type.</dd>
+            <dt>Erreur s'il y a plus d'un <code>banner</code>, <code>contentinfo</code> ou <code>main</code></dt>
+            <dd>chaque page ne peut en contenir qu'un seul de chaque type.</dd>
 
-            <dt>Error if repeated landmarks without label, or with same label</dt>
-            <dd>When there are more than one landmark with same role, they should include a label to differentiate
-                them.</dd>
+            <dt>Erreur si des landmarks répétés n'ont pas de nom, ou ont le même nom</dt>
+            <dd>lorsque plusieurs landmarks ont le même rôle, ils doivent avoir un nom qui permet de les distinguer.</dd>
         </dl>
         <h2>HTML 5 outline - Paramètres</h2>
         <p>Selon le W3C, aucun navigateur ou technologie d'assistance ne le prend en charge, donc obtenir un bon
             résultat dans le test a à peine un impact sur l'accessibilité finale.
             Selon le W3C, toute mise en œuvre et utilisation de ces différentes propositions sera suivie et pourra
-            entraîner des changements importants dans l'algorithme de la structure.
+            entraîner des changements importants dans l'algorithme d'outline.
         </p>
         <dl>
             <dt>Afficher l'index de la section</dt>
@@ -76,7 +75,7 @@
                     href="https://www.w3.org/TR/2011/WD-html5-author-20110809/headings-and-sections.html#outlines"
                     target="_blank">génère les sections</a>.
             </dd>
-            <dt>Afficher les sections masquées</dt>
+            <dt>Prendre en compte les sections masquées</dt>
             <dd>Lorsque le document inclut des sections masquées (non seulement visuellement masquées, mais également
                 masquées pour les technologies d'assistance), elles ne sont pas affichées dans l'arborescence.
                 Lors de l'activation de cette option, elles sont affichées.

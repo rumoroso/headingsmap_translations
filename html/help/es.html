@@ -4,7 +4,7 @@
 <div class="content">
     <h1 id="help-header" class="headingsmap-exclude">Ayuda</h1>
     <div class="contents custom-scrollbar">
-        <p>HeadingsMap es una extensión del navegador que muestra la estructura de encabezados de las páginas web. Además, puede identificar errores potenciales (como niveles de encabezado omitidos), ayudando al realizar revisiones de accesibilidad
+        <p>HeadingsMap es una extensión del navegador que muestra la estructura de encabezados de las páginas web. Además, puede identificar errores potenciales (como niveles de encabezado omitidos), ayudando al realizar revisiones de accesibilidad,
             controles de calidad, auditorías SEO,...</p>
         <p>La extensión también incluye la función opcional de mostrar la estructura de landmarks. Ambos resultados, los encabezados y los landmarks se muestran en un árbol que
             relaciona los niveles de anidamiento con la jerarquía del documento.</p>
@@ -16,6 +16,8 @@
             <li>Si hay elementos que utilizan el atributo <em>role</em> con valor <em>heading</em>, también son
                 listados. Su nivel es definido por el valor del atributo <em>aria-level</em>, y por defecto es 2 cuando
                 no se utiliza
+            </li>
+            <li>Lista de secciones con información sobre sus encabezados y avisos de los errores en la estructura
             </li>
             <li>Cuando la página incluye más de un documento, extrae la información de cada uno de ellos
             </li>
@@ -53,13 +55,13 @@
             <dt>Identificar anclas</dt>
             <dd>Cuando los encabezados incluyen anclas, éstas muestran un icono en el árbol. Al hacer clic en el icono
                 se
-                copia la dirección URL dirección al portapapeles (igual que la acción "copiar dirección de enlace" del
+                copia la dirección URL al portapapeles (igual que la acción "copiar dirección de enlace" del
                 navegador)
             </dd>
         </dl>
         <h2>Análisis de landmarks - configuración</h2>
         <dl>
-            <dt>Landmarks análisis activo</dt>
+            <dt>Análisis de landmarks activo</dt>
             <dd>Activa y desactiva el análisis. Cuando está activo, ambos análisis se muestran como pestañas.</dd>
 
             <dt>Error si <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> o <code>main</code>
@@ -70,13 +72,13 @@
             <dd>Cada página puede tener como máximo un <code>banner</code>, <code>contentinfo</code>, o
                 <code>main</code>.</dd>
 
-            <dt>Error si hay multiples instancias del mismo landmark sin label, o con el mismo label</dt>
-            <dd>Cuando una página tiene el mismo landmark repetido, deben tener un nombre y ser diferentes.</dd>
+            <dt>Error si hay múltiples instancias del mismo landmark sin label, o con el mismo label</dt>
+            <dd>Cuando hay más de un landmark con el mismo rol, deben incluir un nombre que permita diferenciarlos.</dd>
         </dl>
         <h2>HTML 5 outline - configuración</h2>
         <p>Según el W3C, no hay navegadores ni tecnologías de asistencia que lo soporten, por lo que tener un buen
             resultado en el test apenas repercute en la accesibilidad final. Según el W3C, cualquier implementación y
-            uso será rastreada, y puede dar lugar a cambios significativos en el futuro del algoritmo.
+            uso serán rastreados, y puede dar lugar a cambios significativos en el futuro del algoritmo.
         </p>
         <dl>
             <dt>Mostrar índice de sección</dt>

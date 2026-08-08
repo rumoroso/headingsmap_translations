@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extensionDescription": {
-    "message": "To show, browse and audit (for accessibility and SEO) the headings structure",
+    "message": "Mostrar, explorar y auditar (para accesibilidad y SEO) la estructura de encabezados",
     "description": "Description of the extension."
   },
   "headersTab": {
@@ -28,11 +28,11 @@
     "description": ""
   },
   "helpWithAccessibility": {
-    "message": "ayuda con accesibilidad?",
+    "message": "¿ayuda con accesibilidad?",
     "description": ""
   },
   "helpWithAccessibilityOnLinkedIn": {
-    "message": "ayuda con accesibilidad?, abre en nueva ventana",
+    "message": "¿ayuda con accesibilidad?, abre en nueva ventana",
     "description": ""
   },
   "settingsLabel": {
@@ -68,7 +68,7 @@
     "description": ""
   },
   "maniMenuLabel": {
-    "message": "Menu",
+    "message": "Menú",
     "description": ""
   },
   "visible": {
@@ -84,7 +84,7 @@
     "description": ""
   },
   "collapseLabel": {
-    "message": "colapsar",
+    "message": "contraer",
     "description": ""
   },
   "collapserDescription": {
@@ -136,15 +136,15 @@
     "description": ""
   },
   "topLevelLandmarkError": {
-    "message": "must be at top level",
+    "message": "debe estar en el nivel superior",
     "description": ""
   },
   "repeatedUniqueLandmark": {
-    "message": "must be unique",
+    "message": "debe ser único",
     "description": ""
   },
   "repeatedLandmark": {
-    "message": "is repeated",
+    "message": "está repetido",
     "description": ""
   },
   "documents": {
@@ -240,7 +240,7 @@
     "description": ""
   },
   "ariaLiveCollapsedLevel": {
-    "message": "Encabezados en el árbol por debajo del nivel {level} colapsados",
+    "message": "Encabezados en el árbol por debajo del nivel {level} contraídos",
     "description": ""
   },
   "ariaLiveHeadingsCopied": {
@@ -260,19 +260,19 @@
     "description": ""
   },
   "shortcutErrorMessage": {
-    "message": "acceso directo ya utilizado",
+    "message": "atajo ya utilizado",
     "description": ""
   },
   "shortcutEditButton": {
-    "message": "editar acceso directo",
+    "message": "editar atajo",
     "description": ""
   },
   "shortcutResetButton": {
-    "message": "restablecer acceso directo al predeterminado",
+    "message": "restablecer el atajo al valor predeterminado",
     "description": ""
   },
   "shortcutSaveButton": {
-    "message": "guardar acceso directo",
+    "message": "guardar atajo",
     "description": ""
   },
   "shortcutCancelButton": {
@@ -280,7 +280,7 @@
     "description": ""
   },
   "shortcutNotDefined": {
-    "message": "aun sin definir",
+    "message": "aún sin definir",
     "description": ""
   },
   "saved": {
@@ -288,11 +288,11 @@
     "description": ""
   },
   "openShortcutsDialog": {
-    "message": "Abrir el diálogo de accesos directos",
+    "message": "Abrir el diálogo de atajos de teclado",
     "description": ""
   },
   "openSettingsDialog": {
-    "message": "Abrir el diálogo de ajustes",
+    "message": "Abrir el diálogo de configuración",
     "description": ""
   },
   "updatePanelPosition": {
@@ -300,7 +300,7 @@
     "description": ""
   },
   "identifyHeadersInPage": {
-    "message": "Identificar cabeceras en página",
+    "message": "Identificar encabezados en la página",
     "description": ""
   },
   "searchInTree": {

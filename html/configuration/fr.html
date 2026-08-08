@@ -1,5 +1,5 @@
 <html lang="fr">
-<head><title>Options</title></head>
+<head><title>Paramètres</title></head>
 <body>
 
 <div class="content">
@@ -63,11 +63,11 @@
                     </li>
                     <li><strong>Mettre en évidence</strong>&nbsp;: entoure (pendant quelques secondes) le titre dans la page lorsqu’un élément de l’arborescence est sélectionné.
                     </li>
-                    <li><strong>Afficher les ancres</strong>&nbsp;: affiche une ancre sur les titres qui le sont.
+                    <li><strong>Afficher les ancres</strong>&nbsp;: affiche une ancre sur les titres qui peuvent servir d'ancre.
                     </li>
                     <li><strong>Thème sombre</strong>&nbsp;: lorsque l’option est cochée, les styles de l’extension sont modifiés. Le fond est sombre et la couleur de texte claire.
                     </li>
-                    <li><strong>Enregistrer la largeur lors du redimensionnement</strong>&nbsp;: enregistre la nouvelle largeur après un redimensionnement, de sorte que la prochaine fois que l’extension est utilisée, il conserve cette largeur.
+                    <li><strong>Enregistrer la largeur lors du redimensionnement</strong>&nbsp;: enregistre la nouvelle largeur après un redimensionnement, de sorte que la prochaine fois que l’extension est utilisée, elle conserve cette largeur.
                     </li>
                     <li><strong>Renvoyer à la ligne</strong>&nbsp;: par défaut, le texte des éléments de l'arborescence est tronqué. Lorsque cette option est activée, le texte est affiché sur plusieurs lignes si nécessaire.
                     </li>
@@ -75,15 +75,13 @@
                     </li>
                     <li><strong>Lier à la fenêtre d'affichage</strong>&nbsp;: affiche un fond clair sur les titres visibles dans la zone affichée par le navigateur.
                     </li>
-                    <li><strong>Masquer les outils</strong>: il masque les boutons, ce qui simplifie l'affichage du panneau.
-                    </li>
-                    <li><strong>Simplified view</strong>: it hides buttons simplifying the view of the panel.
+                    <li><strong>Masquer les outils</strong> : il masque les boutons, ce qui simplifie l'affichage du panneau.
                     </li>
                 </ul>
             </div>
         </fieldset>
         <fieldset class="fieldset">
-            <legend>Structure de l'en-tête</legend>
+            <legend>Structure des titres</legend>
             <div>
                 <label for="showHeadErrorH1">
                     <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
@@ -95,64 +93,63 @@
                 </label>
                 <label for="showEmptyHeadings">
                     <input type="checkbox" name="showEmptyHeadings" id="showEmptyHeadings" data-callback="refresh"/>
-                    Afficher les titres vides
+                    Prendre en compte les titres vides
                 </label>
                 <label for="showHiddenHeaders">
                     <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" data-callback="refresh"/>
-                    Afficher les titres masqués
+                    Prendre en compte les titres masqués
                 </label>
                 <label for="showAriaLabelContent">
                     <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent"
                            data-callback="refresh"/>
-                    Afficher les attributs ARIA
+                    Prendre en compte le contenu ARIA
                 </label>
             </div>
             <div class="custom-scrollbar settings-information">
                 <h2>Détails</h2>
                 <ul>
-                    <li><strong>Afficher une erreur si pas de H1 au début</strong>&nbsp;: affiche une erreur si le premier titre n’est pas un H1. L’option «&nbsp;Afficher les erreurs&nbsp;» doit être cochée.</li>
+                    <li><strong>Afficher une erreur si pas de H1 initial</strong>&nbsp;: affiche une erreur si le premier titre n’est pas un H1. L’option «&nbsp;Afficher les erreurs&nbsp;» doit être cochée.</li>
                     <li><strong>Afficher le niveau de titre</strong>&nbsp;: affiche le niveau de titre avant le texte.</li>
-                    <li><strong>Afficher les titres vides</strong>&nbsp;: affiche les titres vides dans la hiérarchie de titres.</li>
-                    <li><strong>Afficher les titres masqués</strong>&nbsp;: affiche tous les titres même ceux qui sont masqués.</li>
-                    <li><strong>Afficher les attributs ARIA</strong>&nbsp;: si des attributs <em>aria-label</em> ou <em>aria-labelledby</em> sont présents sur les titres,
-                        l’outil affiche l’attribut et la valeur (car les lecteurs d’écran y accèdent et les utilisent).
+                    <li><strong>Prendre en compte les titres vides</strong>&nbsp;: affiche les titres vides dans la hiérarchie de titres.</li>
+                    <li><strong>Prendre en compte les titres masqués</strong>&nbsp;: affiche tous les titres même ceux qui sont masqués.</li>
+                    <li><strong>Prendre en compte le contenu ARIA</strong>&nbsp;: si des attributs <em>aria-label</em> ou <em>aria-labelledby</em> sont présents sur les titres,
+                        l’outil peut reprendre leur valeur comme contenu textuel du titre (le raisonnement étant que les lecteurs d’écran peuvent y accéder et l’utiliser comme contenu).
                     </li>
                 </ul>
             </div>
 
         </fieldset>
-        <fieldset class="fieldset" lang="en">
-            <p>This content was not translated yet. I am working on the that, but due to I don't speak French, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
+        <fieldset class="fieldset">
             <legend>Landmarks</legend>
             <div>
                 <label for="isLandmarksTestActive">
                     <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
                            data-callback="refresh disableFields"
                            data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
-                    Landmarks analysis active
+                    Analyse des landmarks activée
                 </label>
 
                 <label></label>
                 <label for="showNonTopLevelLandmarksError">
                     <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
-                    Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks
+                    Erreur si <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> ou <code>main</code> ne sont pas des landmarks de premier niveau
                 </label>
                 <label for="showRepeatedUniqueLandmarksError">
                     <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
-                    Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code>
+                    Erreur s'il y a plus d'un <code>banner</code>, <code>contentinfo</code> ou <code>main</code>
                 </label>
                 <label for="showRepeatedLandmarksError">
                     <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
-                    Error if repeated landmarks without label, or with same label
+                    Erreur si des landmarks répétés n'ont pas de nom, ou ont le même nom
                 </label>
             </div>
             <div class="custom-scrollbar settings-information">
-                <h2>Details</h2>
+                <h2>Détails</h2>
                 <ul>
-                    <li><strong>Landmarks analysis active</strong>: It activates or deactivates the landmarks analysis. When the analysis is active, both headings and landmarks analysis appear as tabs.</li>
-                    <li><strong>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks</strong>: These landmarks should be top-level landmarks.</li>
-                    <li><strong>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></strong>: Each page may have at most one of each type.</li>
-                    <li><strong>Error if repeated landmarks without label, or with same label</strong>: When there are more than one landmark with same role, they should include a label to differentiate them.</li>
+                    <li><strong>Analyse des landmarks activée</strong> : active ou désactive l'analyse des landmarks. Lorsque l'analyse est activée, les analyses des titres et des landmarks apparaissent toutes deux sous forme d'onglets.</li>
+                    <li><strong>Erreur si <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> ou <code>main</code> ne sont pas des landmarks de premier niveau</strong> : ces landmarks doivent être des landmarks de premier niveau.</li>
+                    <li><strong>Erreur s'il y a plus d'un <code>banner</code>, <code>contentinfo</code> ou <code>main</code></strong> : chaque page ne peut en contenir qu'un seul de chaque type.</li>
+                    <li><strong>Erreur si des landmarks répétés n'ont pas de nom, ou ont le même nom</strong> : lorsque plusieurs landmarks ont le même rôle, ils doivent avoir un nom qui permet de les distinguer.</li>
                 </ul>
             </div>
 
@@ -169,11 +166,11 @@
                     Activer l’analyse
                 </label>
                 <p class="note">Il n'existe aucun navigateur ou technologie d'assistance doté d'implémentations natives
-                    de l'algorithme de l'arborescence W3C.
+                    de l'algorithme d'outline du W3C.
                     Par conséquent, on ne peut pas l’utiliser pour transmettre la structure du document aux
                     utilisateurs, et les auteurs devraient utiliser le niveau des titres pour le faire (<a
                             href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
-                            target="_blank">HTML 5.2 Création d'une arborescence</a>).
+                            target="_blank" lang="en">HTML 5.2 Creating an outline</a>).
                 </p>
 
                 <label for="showOutLevels">
@@ -187,18 +184,18 @@
                 <label for="showHiddenSections">
                     <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
                            data-callback="refresh updateActiveDocument"/>
-                    Afficher les sections masquées *
+                    Prendre en compte les sections masquées *
                 </label>
             </div>
-            <p class="note">*Lorsque l'option «&nbsp;Afficher les sections masquées&nbsp;» est activée, l'analyse peut
+            <p class="note">* Lorsque l'option «&nbsp;Prendre en compte les sections masquées&nbsp;» est activée, l'analyse peut
                 avoir des impacts sur les performances dans les documents longs.</p>
 
             <div class="custom-scrollbar settings-information">
                 <h2>Détails</h2>
                 <ul>
-                    <li><strong>Activer l’analyse</strong>&nbsp;: l'extraction de l'arborescence du document peut avoir
+                    <li><strong>Activer l’analyse</strong>&nbsp;: l'extraction de l'outline du document peut avoir
                         un impact sur les performances, donc son exécution est facultative et désactivée par défaut.
-                        Lorsqu'elle est activée, les deux analyses (titres et arborescence HTML 5) apparaissent comme
+                        Lorsqu'elle est activée, les deux analyses (titres et outline HTML 5) apparaissent comme
                         des onglets dans le panneau.
                     </li>
                     <li><strong>Afficher l'index de section</strong>&nbsp;: affiche l'index de section avant son texte.
@@ -206,7 +203,7 @@
                     <li><strong>Afficher la balise section</strong>&nbsp;: inclut la balise de section en tant que
                         partie du contenu dans l'arborescence.
                     </li>
-                    <li><strong>Afficher les sections masquées</strong>&nbsp;: identifie et affiche les informations de
+                    <li><strong>Prendre en compte les sections masquées</strong>&nbsp;: identifie et affiche les informations de
                         toutes les sections, qu'elles soient masquées ou non.
                     </li>
                 </ul>

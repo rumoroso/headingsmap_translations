@@ -16,16 +16,17 @@
             calidad, o a cualquier otro usuario en su trabajo diario. No hay intenciones ocultas.</p>
 
         <h2>Permisos del navegador</h2>
-        <p><strong>HeadingsMap</strong> accede al HTML de la página que muestra el navegador. Por esta razón, y también
+        <p><strong>HeadingsMap</strong> accede al HTML de la página que muestra el navegador, tanto al contenido que
+            desciende directamente de la etiqueta html como a los documentos incluidos mediante iframes. Por esta razón, y también
             porque ofrece al usuario un conjunto de opciones y preferencias que pueden ser guardadas (tema, posición del
             panel, tipo de análisis, identificación de errores, etc.), requiere algunos permisos específicos del
             navegador para funcionar.</p>
 
         <p>Ninguno de los permisos que se requieren recoge datos o contenido web. Se requieren para
             realizar el análisis, dar al usuario información sobre el html y los estilos que ha aplicado a sus
-            elementos, y ofrecer un conjunto de opciones para definir la forma en que realizar el análisis, así cómo la
-            forma demostrar los resultados. No se recogen datos de los contenidos ni de los sitios en los que el usuario
-            utiliza la extensión. Además, la extensión no ejecuta ninguna acción mientras no están en
+            elementos, y ofrecer un conjunto de opciones para definir la forma en que realizar el análisis, así como la
+            forma de mostrar los resultados. No se recogen datos de los contenidos ni de los sitios en los que el usuario
+            utiliza la extensión. Además, la extensión no ejecuta ninguna acción mientras no está en
             ejecución.</p>
 
         <p>Esta es la lista de permisos del navegador y las razones por las que son necesarios:</p>
@@ -39,7 +40,7 @@
                 <ul>
                     <li>Llamar a <code>tabs.executeScript</code> y <code>tabs.insertCSS</code> en la pestaña actual. La
                         ejecución de script es necesaria para analizar el DOM. La inserción de CSS es necesaria para
-                        dar estilo al panel y resaltar elementos (característica que tienen la extensión que
+                        dar estilo al panel y resaltar elementos (característica que tiene la extensión que
                         consiste en resaltar los elementos de la página al seleccionar su información en el panel)
                     </li>
                     <li>Identificar la URL y el título de la pestaña a través de una API que devuelve un objeto tabs. La

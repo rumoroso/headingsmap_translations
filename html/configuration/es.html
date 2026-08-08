@@ -1,5 +1,5 @@
 <html lang="es">
-<head><title>Options</title></head>
+<head><title>Configuración</title></head>
 <body>
 <div class="content">
     <h1 id="settings-header" class="headingsmap-exclude">Configuración</h1>
@@ -14,7 +14,7 @@
                 </label>
                 <label for="highLightElements">
                     <input type="checkbox" name="highLightElements" id="highLightElements"/>
-                    Resaltar al hacer click
+                    Resaltar al hacer clic
                 </label>
                 <label for="showAnchors">
                     <input type="checkbox" name="showAnchors" id="showAnchors" data-callback="refresh"/>
@@ -31,7 +31,7 @@
                 </label>
                 <label for="normalWrap">
                     <input type="checkbox" name="normalWrap" id="normalWrap"/>
-                    Cortar texto largo
+                    Ajustar texto largo
                 </label>
                 <label for="showTooltip">
                     <input type="checkbox" name="showTooltip" id="showTooltip" data-callback="setLinksBehavior"/>
@@ -56,14 +56,14 @@
                 <input type="hidden" name="initialPanelWidth" id="initialPanelWidth"/>
             </div>
             <div class="custom-scrollbar settings-information">
-                <h2>Details</h2>
+                <h2>Detalles</h2>
                 <ul>
                     <li><strong>Identificar errores</strong>: resalta en el árbol los encabezados que tienen algún error.
                     </li>
-                    <li><strong>Resaltar al hacer click</strong>: hace que al hacer click en el árbol, el encabezado correspondiente
+                    <li><strong>Resaltar al hacer clic</strong>: hace que al hacer clic en el árbol, el encabezado correspondiente
                         se resalte por unos segundos.
                     </li>
-                    <li><strong>Identificar anclas</strong>: si el encabezado puede utilizarse como ancha para navegación, la extensión
+                    <li><strong>Identificar anclas</strong>: si el encabezado puede utilizarse como ancla para navegación, la extensión
                         puede obtener dicha información.
                     </li>
                     <li><strong>Modo oscuro</strong>: cambia los estilos haciendo que el fondo sea un todo oscuro y los colores de
@@ -72,7 +72,7 @@
                     <li><strong>Guardar ancho del panel</strong>: cuando se cambia del ancho del panel, dicha información puede ser
                         guardada, con lo que la próxima vez que se abra la extensión, el panel tendrá el mismo ancho.
                     </li>
-                    <li><strong>Cortar texto largo</strong>: cuando no hay espacio suficiente para el texto, este es truncado. Con
+                    <li><strong>Ajustar texto largo</strong>: cuando no hay espacio suficiente para el texto, este es truncado. Con
                         esta opción se puede desactivar dicho estilo y hacer que pase a ser multi-línea.
                     </li>
                     <li><strong>Mostrar tooltip</strong>: cuando se activa, al mover el puntero sobre el árbol se muestra
@@ -119,8 +119,8 @@
                     <li><strong>Mostrar nivel de encabezado</strong>: muestra el nivel de encabezado antes de su texto.</li>
                     <li><strong>Considerar encabezados vacíos</strong>: hace que los encabezados vacíos se consideren.</li>
                     <li><strong>Considerar encabezados ocultos</strong>: hace que todos los encabezados sean considerados, independientemente de si están visibles o no.</li>
-                    <li><strong>Considerar ARIA</strong>: si los encabezados utilizan <em>aria-label</em> or <em>aria-labelledby</em>,
-                        la extensión puede utilizar uss valores como texto del encabezado (esto se debe a que en algunos casos, los
+                    <li><strong>Considerar ARIA</strong>: si los encabezados utilizan <em>aria-label</em> o <em>aria-labelledby</em>,
+                        la extensión puede utilizar sus valores como texto del encabezado (esto se debe a que en algunos casos, los
                         lectores de pantalla podrían acceder a esa información y utilizarla como contenido).
                     </li>
                 </ul>
@@ -133,7 +133,7 @@
                     <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
                            data-callback="refresh disableFields"
                            data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
-                    análisis activo
+                    Análisis de landmarks activo
                 </label>
 
                 <label></label>
@@ -147,16 +147,16 @@
                 </label>
                 <label for="showRepeatedLandmarksError">
                     <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
-                    Error si hay multiples instancias del mismo landmark sin label, o con el mismo label.
+                    Error si hay múltiples instancias del mismo landmark sin label, o con el mismo label
                 </label>
             </div>
             <div class="custom-scrollbar settings-information">
                 <h2>Detalles</h2>
                 <ul>
-                    <li><strong>Landmarks análisis activo</strong>: Activa y desactiva el análisis. Cuando está activo, ambos análisis se muestran como pestañas.</li>
+                    <li><strong>Análisis de landmarks activo</strong>: Activa y desactiva el análisis. Cuando está activo, ambos análisis se muestran como pestañas.</li>
                     <li><strong>Error si <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> o <code>main</code> no son top-level landmarks</strong>: Estos landmarks deben ser top-level landmarks.</li>
                     <li><strong>Error si hay más de un <code>banner</code>, <code>contentinfo</code>, o <code>main</code></strong>: Cada página puede tener como máximo un <code>banner</code>, <code>contentinfo</code>, o <code>main</code>.</li>
-                    <li><strong>Error si hay multiples instancias del mismo landmark sin label, o con el mismo label</strong>: Cuando una página tiene el mismo landmark repetido, deben tener un nombre y ser diferentes.</li>
+                    <li><strong>Error si hay múltiples instancias del mismo landmark sin label, o con el mismo label</strong>: Cuando hay más de un landmark con el mismo rol, deben incluir un nombre que permita diferenciarlos.</li>
                 </ul>
             </div>
 
@@ -168,7 +168,7 @@
                     <input type="checkbox" name="isOutlineTestActive" id="isOutlineTestActive"
                            data-callback="refresh disableFields"
                            data-related-fields="showOutLevels showOutElem showHiddenSections"/>
-                    Activar analysis
+                    Activar análisis
                 </label>
                 <p class="note">Actualmente no hay navegadores ni tecnología asistiva con soporte nativo para el
                     algoritmo
@@ -176,24 +176,25 @@
                     Por ese motivo, no se puede confiar plenamente en él para transmitir la estructura de los documentos
                     a
                     los usuarios
-                    y usuaria. Los autores de contenido deberçian seguir utilizando los niveles de encabezado (1 to 6)
+                    y usuarias. Los autores de contenido deberían seguir utilizando los niveles de encabezado (1 a 6)
                     para
                     hacerlo (<a href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
                                 target="_blank" lang="en">HTML 5.2 Creating an outline</a>)
+                </p>
 
-                    <label for="showOutLevels">
-                        <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
-                        Mostrar índice de sección
-                    </label>
-                    <label for="showOutElem">
-                        <input type="checkbox" name="showOutElem" id="showOutElem"/>
-                        Mostrar etiqueta de sección
-                    </label>
-                    <label for="showHiddenSections">
-                        <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
-                               data-callback="refresh updateActiveDocument"/>
-                        Considerar secciones ocultas *
-                    </label>
+                <label for="showOutLevels">
+                    <input type="checkbox" name="showOutLevels" id="showOutLevels"/>
+                    Mostrar índice de sección
+                </label>
+                <label for="showOutElem">
+                    <input type="checkbox" name="showOutElem" id="showOutElem"/>
+                    Mostrar etiqueta de sección
+                </label>
+                <label for="showHiddenSections">
+                    <input type="checkbox" name="showHiddenSections" id="showHiddenSections"
+                           data-callback="refresh updateActiveDocument"/>
+                    Considerar secciones ocultas *
+                </label>
             </div>
             <p class="note">* Cuando la opción "considerar secciones ocultas" está activa, el análisis puede impactar en
                 el
@@ -201,11 +202,11 @@
                 muy larga y compleja.</p>
 
             <div class="custom-scrollbar settings-information">
-                <h2>Details</h2>
+                <h2>Detalles</h2>
                 <ul>
-                    <li><strong>Activar analysis</strong>: extraer esta información puede impactar en el rendimiento,
+                    <li><strong>Activar análisis</strong>: extraer esta información puede impactar en el rendimiento,
                         por lo que su ejecución es opcional y está desactivada por defecto. Cuando está activo, ambos
-                        análisis (encabezados y HTML 5 Ourline) aparecen como pestañas en el panel.
+                        análisis (encabezados y HTML 5 Outline) aparecen como pestañas en el panel.
                     </li>
                     <li><strong>Mostrar índice de sección</strong>: muestra el índice de la sección.</li>
                     <li><strong>Mostrar etiqueta de sección</strong>: incluye la etiqueta utilizada para generar la

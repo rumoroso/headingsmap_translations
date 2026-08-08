@@ -1,5 +1,5 @@
 <html lang="ja">
-<head><title>Options</title></head>
+<head><title>設定</title></head>
 <body>
 
 <div class="content">
@@ -61,12 +61,11 @@
                 <h2>詳細</h2>
                 <ul>
                     <li><strong>エラーの識別</strong>: アクティブにすると、
-                        エラーのあるヘッダーに対応するツリー項目が強調表示されます。
+                        エラーのある見出しに対応するツリー項目が強調表示されます。
                     </li>
-                    <li><strong>クリック時にハイライト表示</strong>: ツリー項目をクリックすると、文書内のヘッダーのアウトラインが
-                        (数秒間) ハイライト表示されます。
+                    <li><strong>クリック時にハイライト表示</strong>: ツリー項目をクリックすると、ドキュメント内の見出しが枠線で (数秒間) ハイライト表示されます。
                     </li>
-                    <li><strong>アンカーの識別</strong>: ヘッダーをアンカーとして使用できる場合、その情報が考慮されます。
+                    <li><strong>アンカーの識別</strong>: 見出しをアンカーとして使用できる場合、その情報が考慮されます。
                     </li>
                     <li><strong>ダークモード</strong>: 使用すると、ツールのスタイルが変更され、背景色が暗く、前景色が明るくなります。
                     </li>
@@ -76,7 +75,7 @@
                     </li>
                     <li><strong>ツールチップ情報を表示</strong>: アクティブな場合、ポインタをツリー上に移動すると、情報を含むツールチップが表示されます。
                     </li>
-                    <li><strong>ビューポートと関連付ける</strong>: アクティブな場合、ビューポート領域内のヘッダーに対応する項目に明るい背景が表示されます。
+                    <li><strong>ビューポートと関連付ける</strong>: アクティブな場合、ビューポート領域内の見出しに対応する項目に明るい背景が表示されます。
                     </li>
                     <li><strong>ツールを非表示にする</strong>: ボタンを非表示にして、パネルの表示を簡素化します。</li>
                     <li><strong>言語</strong>: 言語を切り替えます。新しい言語は、次回拡張機能が再度開かれるまで適用されません。
@@ -85,7 +84,7 @@
             </div>
         </fieldset>
         <fieldset class="fieldset">
-            <legend>ヘッダー構造の分析</legend>
+            <legend>見出し構造の分析</legend>
             <div>
                 <label for="showHeadErrorH1">
                     <input type="checkbox" name="showHeadErrorH1" id="showHeadErrorH1"/>
@@ -93,67 +92,66 @@
                 </label>
                 <label for="showHeadLevels">
                     <input type="checkbox" name="showHeadLevels" id="showHeadLevels"/>
-                    ヘッダーレベルを表示
+                    見出しレベルを表示
                 </label>
                 <label for="showEmptyHeadings">
                     <input type="checkbox" name="showEmptyHeadings" id="showEmptyHeadings" data-callback="refresh"/>
-                    空のヘッダーを考慮
+                    空の見出しを考慮
                 </label>
                 <label for="showHiddenHeaders">
                     <input type="checkbox" name="showHiddenHeaders" id="showHiddenHeaders" data-callback="refresh"/>
-                    非表示のヘッダーを考慮
+                    非表示の見出しを考慮
                 </label>
                 <label for="showAriaLabelContent">
                     <input type="checkbox" name="showAriaLabelContent" id="showAriaLabelContent"
                            data-callback="refresh"/>
-                    "aria" コンテンツの考慮
+                    「aria」コンテンツの考慮
                 </label>
             </div>
             <div class="custom-scrollbar settings-information">
                 <h2>詳細</h2>
                 <ul>
-                    <li><strong>h1 タグが初めにない場合エラー</strong>: アクティブな場合、最初のヘッダーが h1 でない場合はエラーとして強調表示されます。"エラーの識別" を有効にする必要があります。</li>
-                    <li><strong>ヘッダーレベルを表示</strong>: ツリーのヘッダーテキストの前にレベルを表示します。</li>
-                    <li><strong>空のヘッダーを考慮</strong>: ツリーとその階層内で空のヘッダーが考慮されるようになります。</li>
-                    <li><strong>非表示のヘッダーを考慮</strong>: ヘッダーが非表示かどうかに関係なく、すべてのヘッダーの情報を識別して表示します。</li>
-                    <li><strong>"aria" コンテンツの考慮</strong>: ヘッダーで <em>aria-label</em> 属性または <em>aria-labelledby</em> 属性が使用されている場合、 ツールはその値を取得してテキスト コンテンツとして使用できます (その理由は、スクリーン リーダーがこれらの属性にアクセスしてコンテンツとして使用できるためです)。
+                    <li><strong>h1 タグが初めにない場合エラー</strong>: アクティブな場合、最初の見出しが h1 でない場合はエラーとして強調表示されます。「エラーの識別」を有効にする必要があります。</li>
+                    <li><strong>見出しレベルを表示</strong>: ツリーの見出しテキストの前にレベルを表示します。</li>
+                    <li><strong>空の見出しを考慮</strong>: ツリーとその階層内で空の見出しが考慮されるようになります。</li>
+                    <li><strong>非表示の見出しを考慮</strong>: 見出しが非表示かどうかに関係なく、すべての見出しの情報を識別して表示します。</li>
+                    <li><strong>「aria」コンテンツの考慮</strong>: 見出しで <em>aria-label</em> 属性または <em>aria-labelledby</em> 属性が使用されている場合、 ツールはその値を取得してテキスト コンテンツとして使用できます (その理由は、スクリーン リーダーがこれらの属性にアクセスしてコンテンツとして使用できるためです)。
                     </li>
                 </ul>
             </div>
 
         </fieldset>
-        <fieldset class="fieldset" lang="en">
-            <p>This content was not translated yet. I am working on the that, but due to I don't speak Japanese, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
+        <fieldset class="fieldset">
             <legend>Landmarks</legend>
             <div>
                 <label for="isLandmarksTestActive">
                     <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
                            data-callback="refresh disableFields"
                            data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
-                    Landmarks analysis active
+                    ランドマーク分析を有効にする
                 </label>
 
                 <label></label>
                 <label for="showNonTopLevelLandmarksError">
                     <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
-                    Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks
+                    <code>banner</code>、<code>complementary</code>、<code>contentinfo</code>、<code>main</code> が最上位レベルのランドマークでない場合エラー
                 </label>
                 <label for="showRepeatedUniqueLandmarksError">
                     <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
-                    Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code>
+                    <code>banner</code>、<code>contentinfo</code>、<code>main</code> が複数ある場合エラー
                 </label>
                 <label for="showRepeatedLandmarksError">
                     <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
-                    Error if repeated landmarks without label, or with same label
+                    ラベルのない、または同じラベルを持つランドマークが繰り返されている場合エラー
                 </label>
             </div>
             <div class="custom-scrollbar settings-information">
-                <h2>Details</h2>
+                <h2>詳細</h2>
                 <ul>
-                    <li><strong>Landmarks analysis active</strong>: It activates or deactivates the landmarks analysis. When the analysis is active, both headings and landmarks analysis appear as tabs.</li>
-                    <li><strong>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks</strong>: These landmarks should be top-level landmarks.</li>
-                    <li><strong>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></strong>: Each page may have at most one of each type.</li>
-                    <li><strong>Error if repeated landmarks without label, or with same label</strong>: When there are more than one landmark with same role, they should include a label to differentiate them.</li>
+                    <li><strong>ランドマーク分析を有効にする</strong>: ランドマークの分析を有効または無効にします。分析が有効な場合、見出しとランドマークの両方の分析がタブとして表示されます。</li>
+                    <li><strong><code>banner</code>、<code>complementary</code>、<code>contentinfo</code>、<code>main</code> が最上位レベルのランドマークでない場合エラー</strong>: これらのランドマークは最上位レベルのランドマークである必要があります。</li>
+                    <li><strong><code>banner</code>、<code>contentinfo</code>、<code>main</code> が複数ある場合エラー</strong>: 各ページに含められるのは、それぞれ 1 つまでです。</li>
+                    <li><strong>ラベルのない、または同じラベルを持つランドマークが繰り返されている場合エラー</strong>: 同じロールのランドマークが複数ある場合は、区別できるようにラベルを付ける必要があります。</li>
                 </ul>
             </div>
 
@@ -170,7 +168,7 @@
                     分析のアクティブ化
                 </label>
                 <p class="note">W3C アウトライン アルゴリズムのネイティブ実装を備えたブラウザや支援テクノロジはありません。
-                    したがって、文書構造をユーザーに伝えるのに依存することはできず、作成者はそれを行うために見出しランクを使用する必要があります
+                    したがって、ドキュメント構造をユーザーに伝えるのに依存することはできず、作成者はそれを行うために見出しレベルを使用する必要があります
                     (<a href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
                         target="_blank">HTML 5.2 Creating an outline</a>)
                 </p>
@@ -189,14 +187,13 @@
                     非表示のセクションを考慮 *
                 </label>
             </div>
-            <p class="note">* "非表示のセクションを考慮"
-                オプションがアクティブな場合、長いドキュメントは分析のパフォーマンスに影響を与える可能性があります。</p>
+            <p class="note">*「非表示のセクションを考慮」オプションがアクティブな場合、長いドキュメントでは分析のパフォーマンスが低下する可能性があります。</p>
 
             <div class="custom-scrollbar settings-information">
                 <h2>詳細</h2>
                 <ul>
                     <li><strong>分析のアクティブ化</strong>:
-                        ドキュメントのアウトラインの抽出はパフォーマンスに影響を与える可能性があるため、その実行はオプションであり、デフォルトでは非アクティブ化されています。
+                        ドキュメントのアウトラインの抽出はパフォーマンスに影響を与える可能性があるため、その実行はオプションであり、デフォルトでは無効になっています。
                         アクティブな場合、両方の分析 (見出しと HTML 5 アウトライン) がパネル内のタブとして表示されます。
                     </li>
                     <li><strong>セクションインデックスを表示</strong>: テキストの前にセクションインデックスを表示します。

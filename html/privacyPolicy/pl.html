@@ -17,10 +17,10 @@
 
             <h2>Brak zbierania danych</h2>
             <p>
-                <strong>HeadingsMap</strong> nie zbiera żadnych danych ze strony
+                <strong>HeadingsMap</strong> nie zbiera żadnych danych z żadnej strony
                 internetowej. Wykonuje tylko analizę HTML po stronie przeglądarki (po
                 stronie klienta) za pomocą zwykłego JavaScriptu (bez użycia bibliotek
-                lub frameworków stron trzecich) i nie zbiera, nie zapise ani nie
+                lub frameworków stron trzecich) i nie zbiera, nie zapisuje ani nie
                 udostępnia żadnych danych ze stron internetowych.
             </p>
             <p>
@@ -41,23 +41,24 @@
             </p>
 
             <p>
-                Żadne z uprawnień, których wymaga rozszerzenie, nie zbierają danych z
+                Żadne z uprawnień, których wymaga rozszerzenie, nie zbiera danych z
                 żadnej strony internetowej. Są one wymagane do wykonania analizy HTML,
-                udzielenia użytkownikowi informacji o HTML  oraz udzielenia użytkownikowi zestawu
+                udzielenia użytkownikowi informacji o HTML i stylach zastosowanych do jego
+                elementów oraz udzielenia użytkownikowi zestawu
                 opcji do zdefiniowania sposobu, w jaki chce wykonać analizę i jak
                 wyświetlić wyniki. Nie ma zbierania danych z treści i nie ma zbierania
                 danych o stronach, na których użytkownik korzysta z rozszerzenia.
-                Ponadto rozszerzenie nie wykonuje żadnych działań podczas gdy jest nieaktywne.
+                Ponadto rozszerzenie nie wykonuje żadnych działań, podczas gdy jest nieaktywne.
             </p>
 
-            <p>To jest lista uprawnień przeglądarki</p>
+            <p>To jest lista uprawnień przeglądarki i powodów, dla których są wymagane:</p>
             <dl>
                 <dt>all_urls</dt>
                 <dd> To uprawnienie pozwala rozszerzeniu działać na dowolnym adresie URL, ponieważ pasuje do dowolnego
                     adresu URL, który używa dozwolonego schematu </dd>
                 <dt>activeTab</dt>
                 <dd> Uprawnienie <code>activeTab</code> przyznaje tymczasowy dostęp do strony, na której znajduje się
-                    użytkownik i pozwala rozszerzeniu używać uprawnienia “tabs” na bieżącej karcie. To uprawnienie nie
+                    użytkownik i pozwala rozszerzeniu używać uprawnienia „tabs” na bieżącej karcie. To uprawnienie nie
                     wyświetla żadnego ostrzeżenia podczas instalacji. Jest ono wykorzystywane przez rozszerzenie do:
                     <ul>
                         <li> Wywołania <code>tabs.executeScript</code> i
@@ -69,7 +70,7 @@
                         <li> Pobrania adresu URL i tytułu karty za pomocą API, które zwraca obiekt
                             <code>tabs.Tab</code>.
                             Jedynym powodem pobierania tych informacji jest pokazanie użytkownikowi strony HTML wraz z ramkami,
-                            który ogląda i danie możliwości zdecydowania (poprzez wybranie go w liście rozwijanej), którą stronę/ramkę ma podać analizie. </li>
+                            którą ogląda, i danie możliwości zdecydowania (poprzez wybranie go w liście rozwijanej), którą stronę/ramkę ma poddać analizie. </li>
                     </ul>
                 </dd>
                 <dt>storage</dt>

@@ -56,7 +56,7 @@
     "description": ""
   },
   "revealInViewButtonAriaLabel": {
-    "message": "ujawniające",
+    "message": "pokaż",
     "description": ""
   },
   "copyButtonLabel": {
@@ -84,7 +84,7 @@
     "description": ""
   },
   "collapseLabel": {
-    "message": "upadek",
+    "message": "zwiń",
     "description": ""
   },
   "collapserDescription": {
@@ -92,7 +92,7 @@
     "description": ""
   },
   "expandLabel": {
-    "message": "rozwinąć",
+    "message": "rozwiń",
     "description": ""
   },
   "expandTreeNode": {
@@ -136,15 +136,15 @@
     "description": ""
   },
   "topLevelLandmarkError": {
-    "message": "must be at top level",
+    "message": "musi być na najwyższym poziomie",
     "description": ""
   },
   "repeatedUniqueLandmark": {
-    "message": "must be unique",
+    "message": "musi być unikalny",
     "description": ""
   },
   "repeatedLandmark": {
-    "message": "is repeated",
+    "message": "jest powtórzony",
     "description": ""
   },
   "documents": {
@@ -152,11 +152,11 @@
     "description": ""
   },
   "documentSelectorTitle": {
-    "message": "Wybierz stronę/ramkę, aby uzyskać jego strukturę nagłówków",
+    "message": "Wybierz stronę/ramkę, aby uzyskać jej strukturę nagłówków",
     "description": ""
   },
   "anchor": {
-    "message": "Link",
+    "message": "Kotwica",
     "description": ""
   },
   "generatedBy": {
@@ -208,7 +208,7 @@
     "description": ""
   },
   "searchLabel": {
-    "message": "nagłówek wyszukiwania",
+    "message": "szukaj nagłówka",
     "description": ""
   },
   "searchButtonLabel": {
@@ -284,7 +284,7 @@
     "description": ""
   },
   "saved": {
-    "message": "zapisany",
+    "message": "zapisano",
     "description": ""
   },
   "openShortcutsDialog": {

@@ -13,6 +13,11 @@
           błędy (np. brakujące poziomy nagłówków), wspierając sprawdzanie
           dostępności, kontrolę jakości, audyty SEO...
         </p>
+        <p>
+          Rozszerzenie oferuje również opcjonalną funkcję wyświetlania struktury
+          landmarków. Oba wyniki, nagłówki i landmarki, są pokazywane w drzewie,
+          które odwzorowuje poziomy zagnieżdżenia na hierarchię dokumentu.
+        </p>
         <h2>Funkcjonalności</h2>
         <ul>
           <li>
@@ -26,7 +31,7 @@
             zdefiniowana, to wartość domyślna wynosi 2).
           </li>
           <li>
-            Lista nagłówków z informacją o ostrzeżeniach i błędach w strukturze.
+            Lista sekcji z informacją o nagłówkach oraz ostrzeżeniami o błędach w strukturze.
           </li>
           <li>
             Pobiera informacje ze strony internetowej, a także z ramek iframe.
@@ -58,57 +63,52 @@
             jest kompatybilna z Chrome, Firefox, Microsoft Edge.
           </li>
         </ul>
-        <h2>HeadingsMap drzewo - ustawienia</h2>
+        <h2>Analiza HeadingsMap - ustawienia</h2>
         <dl>
-          <dt>Błąd, brak nagłówka H1</dt>
+          <dt>Błąd, jeśli pierwszy nagłówek nie jest H1</dt>
           <dd>
-            Błąd, jeśli brak początkowego nagłówka H1. Powszechnie przyjmuje
-            się, że pierwszy nagłówek w dokumencie musi być H1. Z tą opcją
-            aktywną, a także “zidentyfikuj błędy” brak H1 będzie zwracany jako
-            błąd.
+            Powszechnie przyjmuje się, że pierwszy nagłówek w dokumencie musi
+            być H1. Gdy ta opcja jest zaznaczona, a także „Pokaż błędy”,
+            złamanie tej zasady jest zgłaszane jako błąd.
           </dd>
-          <dt>Poziom nagłówka</dt>
+          <dt>Pokaż poziom nagłówków</dt>
           <dd>
             Zawiera poziom nagłówka (od 1 do 6), który wynika z użytego tagu (H1
             do H6).
           </dd>
-          <dt>Uwzględnij ukryte nagłówki</dt>
+          <dt>Pokaż ukryte nagłówki</dt>
           <dd>
             Gdy dokument zawiera nagłówki, które są ukryte (nie tylko wizualnie,
             ale także ukryte dla technologii asystujących), nie są one
             pokazywane w drzewie. Po aktywacji tej opcji są pokazywane w panelu.
           </dd>
-          <dt>Zidentyfikuj kotwice</dt>
+          <dt>Znajdź kotwicę</dt>
           <dd>
             Gdy nagłówki zawierają atrybut ID, w panelu przy nagłówku pojawia
             się ikona spinacza. Kliknięcie ikony kopiuje link z kratką # i ID
-            nagłówka (można też użyć opcji “Kopiuj odnośnik” z przeglądarki).
+            nagłówka (można też użyć opcji „Kopiuj odnośnik” z przeglądarki).
           </dd>
         </dl>
-        <h2 lang="en">Landmarks analysis - settings</h2>
-        <p lang="en">This content was not translated yet. I am working on the that, but due to I don't speak Polish, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
-        <dl lang="en">
-          <dt>Landmarks analysis active</dt>
-          <dd>It activates or deactivates the landmarks analysis. When the analysis is active, both headings and
-            landmarks analysis appear as tabs.</dd>
+        <h2>Analiza landmarków - ustawienia</h2>
+        <dl>
+          <dt>Analiza landmarków aktywna</dt>
+          <dd>włącza lub wyłącza analizę landmarków. Gdy analiza jest aktywna, analizy nagłówków i landmarków pojawiają się jako karty.</dd>
 
-          <dt>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code>
-            are not top level landmarks</dt>
-          <dd>These landmarks should be top-level landmarks.</dd>
+          <dt>Błąd, jeśli <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> lub <code>main</code> nie są landmarkami najwyższego poziomu</dt>
+          <dd>te landmarki powinny być landmarkami najwyższego poziomu.</dd>
 
-          <dt>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></dt>
-          <dd>Each page may have at most one of each type.</dd>
+          <dt>Błąd, jeśli jest więcej niż jeden <code>banner</code>, <code>contentinfo</code> lub <code>main</code></dt>
+          <dd>każda strona może zawierać najwyżej jeden landmark każdego typu.</dd>
 
-          <dt>Error if repeated landmarks without label, or with same label</dt>
-          <dd>When there are more than one landmark with same role, they should include a label to differentiate
-            them.</dd>
+          <dt>Błąd, jeśli powtarzające się landmarki nie mają etykiety lub mają tę samą etykietę</dt>
+          <dd>gdy istnieje więcej niż jeden landmark o tej samej roli, powinny mieć etykietę pozwalającą je rozróżnić.</dd>
         </dl>
           <h2>HTML5 outline - ustawienia</h2>
           <p>
-              Według W3C, nie ma przeglądarek ani technologii które to wspierają,
+              Według W3C, nie ma przeglądarek ani technologii asystujących, które to wspierają,
               więc uzyskanie dobrego wyniku w teście ma niewielki wpływ na
               ostateczną dostępność. Każda implementacja i użycie tych różnych
-              propozycji będzie śledzona i może doprowadzić do znaczących przyszłych
+              propozycji będą śledzone i mogą doprowadzić do znaczących przyszłych
               zmian w algorytmie.
           </p>
           <dl>
@@ -130,7 +130,7 @@
               <dd>
                   Gdy dokument zawiera ukryte sekcje (nie tylko wizualnie ukryte, ale
                   także ukryte dla technologii asystujących), nie są one pokazywane w
-                  drzewie. Po aktywacji tej opcji są one pokazywane. W dużych stronach
+                  drzewie. Po aktywacji tej opcji są one pokazywane. Na dużych stronach
                   internetowych może to wpłynąć na wydajność, ponieważ wymaga
                   sprawdzenia wszystkich elementów w DOM.
               </dd>

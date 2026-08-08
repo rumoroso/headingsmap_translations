@@ -45,7 +45,7 @@
                 id="savePanelWidthOnResize"
                 data-callback="updateInitialPanelWidth"
               />
-              Zachowaj szerokość po zmianie wielkości okna
+              Zachowaj szerokość po zmianie rozmiaru panelu
             </label>
             <label for="normalWrap">
               <input type="checkbox" name="normalWrap" id="normalWrap" />
@@ -109,9 +109,9 @@
                 ciemne tło i jasne litery.
               </li>
               <li>
-                <strong>Zachowaj szerokość po zmianie wielkości okna</strong>:
-                jeśli jest zaznaczone, a okno zmieniło rozmiar, zachowana jest
-                szerokość panelu.
+                <strong>Zachowaj szerokość po zmianie rozmiaru panelu</strong>:
+                jeśli jest zaznaczone, po zmianie rozmiaru panelu jego nowa
+                szerokość zostaje zapisana i użyta przy następnym otwarciu.
               </li>
               <li>
                 <strong>Zawijaj długi tekst</strong>: domyślnie tekst w
@@ -138,7 +138,7 @@
           </div>
         </fieldset>
         <fieldset class="fieldset">
-          <legend>Struktury nagłówka</legend>
+          <legend>Struktura nagłówków</legend>
           <div>
             <label for="showHeadErrorH1">
               <input
@@ -146,7 +146,7 @@
                 name="showHeadErrorH1"
                 id="showHeadErrorH1"
               />
-              Błąd, jeśli nie ma nagłówka H1
+              Błąd, jeśli pierwszy nagłówek nie jest H1
             </label>
             <label for="showHeadLevels">
               <input
@@ -181,16 +181,16 @@
                       id="showAriaLabelContent"
                       data-callback="refresh"
               />
-              Dodaj informację o "aria"
+              Uwzględnij treść „aria”
             </label>
           </div>
           <div class="custom-scrollbar settings-information">
             <h2>Szczegóły</h2>
             <ul>
               <li>
-                <strong>Błąd, jeśli nie ma nagłówka H1</strong>: kiedy jest
+                <strong>Błąd, jeśli pierwszy nagłówek nie jest H1</strong>: kiedy jest
                 zaznaczone, wyświetla błąd, jeśli pierwszy nagłówek nie jest H1.
-                Potrzebuje zaznaczoną opcje “Pokaż błędy”, aby być działać.
+                Wymaga zaznaczonej opcji „Pokaż błędy”.
               </li>
               <li>
                 <strong>Pokaż poziom nagłówków</strong>: pokazuje poziom
@@ -206,46 +206,45 @@
                 pokazane na stronie.
               </li>
                 <li>
-                    <strong>Dodaj informację o "aria"</strong>: jeśli nagłówek używa
-                    atrybutów <em>aria-label</em> lub <em>aria-labelledby</em>, to
-                    zostaje wyświetlona "aria" (przesłanką jest dostęp technologii
-                    asystujących do ARIA)
+                    <strong>Uwzględnij treść „aria”</strong>: jeśli nagłówek używa
+                    atrybutów <em>aria-label</em> lub <em>aria-labelledby</em>, ich
+                    wartość może zostać użyta jako tekst nagłówka (przesłanką jest to, że
+                    technologie asystujące mogą po nią sięgać i traktować ją jako treść)
                 </li>
             </ul>
           </div>
         </fieldset>
-        <fieldset class="fieldset" lang="en">
-          <p>This content was not translated yet. I am working on the that, but due to I don't speak Polish, it will take some time. If you would want to collaborate with the translation, you are more than welcome (<a href="mailto:headingsmap@gmail.com?subject=Translation for headingsMap extension">headingsmap@gmail.com</a>).</p>
+        <fieldset class="fieldset">
           <legend>Landmarks</legend>
           <div>
             <label for="isLandmarksTestActive">
               <input type="checkbox" name="isLandmarksTestActive" id="isLandmarksTestActive"
                      data-callback="refresh disableFields"
                      data-related-fields="showNonTopLevelLandmarksError showRepeatedLandmarksError showRepeatedUniqueLandmarksError"/>
-              Landmarks analysis active
+              Analiza landmarków aktywna
             </label>
 
             <label></label>
             <label for="showNonTopLevelLandmarksError">
               <input type="checkbox" name="showNonTopLevelLandmarksError" id="showNonTopLevelLandmarksError" data-callback="refresh"/>
-              Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks
+              Błąd, jeśli <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> lub <code>main</code> nie są landmarkami najwyższego poziomu
             </label>
             <label for="showRepeatedUniqueLandmarksError">
               <input type="checkbox" name="showRepeatedUniqueLandmarksError" id="showRepeatedUniqueLandmarksError" data-callback="refresh"/>
-              Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code>
+              Błąd, jeśli jest więcej niż jeden <code>banner</code>, <code>contentinfo</code> lub <code>main</code>
             </label>
             <label for="showRepeatedLandmarksError">
               <input type="checkbox" name="showRepeatedLandmarksError" id="showRepeatedLandmarksError" data-callback="refresh"/>
-              Error if repeated landmarks without label, or with same label
+              Błąd, jeśli powtarzające się landmarki nie mają etykiety lub mają tę samą etykietę
             </label>
           </div>
           <div class="custom-scrollbar settings-information">
-            <h2>Details</h2>
+            <h2>Szczegóły</h2>
             <ul>
-              <li><strong>Landmarks analysis active</strong>: It activates or deactivates the landmarks analysis. When the analysis is active, both headings and landmarks analysis appear as tabs.</li>
-              <li><strong>Error if <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> or <code>main</code> are not top level landmarks</strong>: These landmarks should be top-level landmarks.</li>
-              <li><strong>Error if more than one <code>banner</code>, <code>contentinfo</code>, or <code>main</code></strong>: Each page may have at most one of each type.</li>
-              <li><strong>Error if repeated landmarks without label, or with same label</strong>: When there are more than one landmark with same role, they should include a label to differentiate them.</li>
+              <li><strong>Analiza landmarków aktywna</strong>: włącza lub wyłącza analizę landmarków. Gdy analiza jest aktywna, analizy nagłówków i landmarków pojawiają się jako karty.</li>
+              <li><strong>Błąd, jeśli <code>banner</code>, <code>complementary</code>, <code>contentinfo</code> lub <code>main</code> nie są landmarkami najwyższego poziomu</strong>: te landmarki powinny być landmarkami najwyższego poziomu.</li>
+              <li><strong>Błąd, jeśli jest więcej niż jeden <code>banner</code>, <code>contentinfo</code> lub <code>main</code></strong>: każda strona może zawierać najwyżej jeden landmark każdego typu.</li>
+              <li><strong>Błąd, jeśli powtarzające się landmarki nie mają etykiety lub mają tę samą etykietę</strong>: gdy istnieje więcej niż jeden landmark o tej samej roli, powinny mieć etykietę pozwalającą je rozróżnić.</li>
             </ul>
           </div>
 
@@ -264,13 +263,13 @@
               Aktywuj analizę
             </label>
             <p class="note">
-              Nie ma przeglądarek ani technologii wspierających natywnie
-              implementację algorytmu W3C Outline. Dlatego nie można na nim
+              Nie ma przeglądarek ani technologii asystujących, które natywnie
+              implementują algorytm W3C Outline. Dlatego nie można na nim
               polegać, aby przekazywać użytkownikom strukturę dokumentu, a
               autorzy powinni używać poziomu nagłówka do tego celu. (<a
                     href="https://www.w3.org/TR/2017/REC-html52-20171214/sections.html#creating-an-outline"
                     target="_blank"
-            >HTML 5.2 Tworzenie w oparciu o outline</a
+            lang="en">HTML 5.2 Creating an outline</a
             >)
             </p>
 
@@ -293,7 +292,7 @@
             </label>
           </div>
           <p class="note">
-            * Gdy opcja "uwzględnij ukryte sekcje" jest zaznaczona, analiza może
+            * Gdy opcja „Uwzględnij ukryte sekcje” jest zaznaczona, analiza może
             mieć wpływ na wydajność na dużych stronach internetowych.
           </p>
 

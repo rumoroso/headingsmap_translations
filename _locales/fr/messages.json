@@ -4,7 +4,7 @@
     "description": "Nom de l’extension."
   },
   "extensionDescription": {
-    "message": "Montrer, parcourir et auditer la hiérarchie de titres",
+    "message": "Afficher, parcourir et auditer (pour l'accessibilité et le SEO) la structure des titres",
     "description": "Description de l’extension."
   },
   "headersTab": {
@@ -28,7 +28,7 @@
     "description": ""
   },
   "helpWithAccessibility": {
-    "message": "Besoin d'aide pour l'accessibilité?",
+    "message": "Besoin d'aide pour l'accessibilité ?",
     "description": ""
   },
   "helpWithAccessibilityOnLinkedIn": {
@@ -72,7 +72,7 @@
     "description": ""
   },
   "potentiallyHiddenPlural": {
-    "message": "peut-être masqué",
+    "message": "potentiellement masqués",
     "description": ""
   },
   "visible": {
@@ -84,11 +84,11 @@
     "description": ""
   },
   "collapseLabel": {
-    "message": "s'effondrer",
+    "message": "réduire",
     "description": ""
   },
   "collapserDescription": {
-    "message": "Pour réduire/développer l'arborescence de l'en-tête par niveau d'en-tête",
+    "message": "Boutons pour réduire/développer l'arborescence des titres par niveau de titre",
     "description": ""
   },
   "expandLabel": {
@@ -120,7 +120,7 @@
     "description": ""
   },
   "potentiallyHidden": {
-    "message": "Peut-être masqué",
+    "message": "Potentiellement masqué",
     "description": ""
   },
   "missingH1": {
@@ -136,15 +136,15 @@
     "description": ""
   },
   "topLevelLandmarkError": {
-    "message": "must be at top level",
+    "message": "doit être au premier niveau",
     "description": ""
   },
   "repeatedUniqueLandmark": {
-    "message": "must be unique",
+    "message": "doit être unique",
     "description": ""
   },
   "repeatedLandmark": {
-    "message": "is repeated",
+    "message": "est répété",
     "description": ""
   },
   "documents": {
@@ -208,7 +208,7 @@
     "description": ""
   },
   "searchLabel": {
-    "message": "Titre de la recherche",
+    "message": "Rechercher un titre",
     "description": ""
   },
   "searchButtonLabel": {
@@ -228,19 +228,19 @@
     "description": ""
   },
   "ariaLiveSwitchedToLeft": {
-    "message": "attachée à la gauche de la vue",
+    "message": "panneau attaché à gauche de la vue",
     "description": ""
   },
   "ariaLiveSwitchedToRight": {
-    "message": "attachée à la droite de la vue",
+    "message": "panneau attaché à droite de la vue",
     "description": ""
   },
   "ariaLiveExpandedLevel": {
-    "message": "titres dans l'arbre sous le niveau {level} développé",
+    "message": "titres de l'arbre sous le niveau {level} développés",
     "description": ""
   },
   "ariaLiveCollapsedLevel": {
-    "message": "les titres de l'arbre sous le niveau {level} sont réduits",
+    "message": "titres de l'arbre sous le niveau {level} réduits",
     "description": ""
   },
   "ariaLiveHeadingsCopied": {
@@ -268,7 +268,7 @@
     "description": ""
   },
   "shortcutResetButton": {
-    "message": "réinitialiser le raccourci par défaut",
+    "message": "réinitialiser le raccourci à sa valeur par défaut",
     "description": ""
   },
   "shortcutSaveButton": {
@@ -284,7 +284,7 @@
     "description": ""
   },
   "saved": {
-    "message": "sauvé",
+    "message": "enregistré",
     "description": ""
   },
   "openShortcutsDialog": {
@@ -296,15 +296,15 @@
     "description": ""
   },
   "updatePanelPosition": {
-    "message": "Mise à jour de la position du panneau (gauche - droite)",
+    "message": "Changer la position du panneau (gauche - droite)",
     "description": ""
   },
   "identifyHeadersInPage": {
-    "message": "Identifier les en-têtes dans la page",
+    "message": "Identifier les titres dans la page",
     "description": ""
   },
   "searchInTree": {
-    "message": "Recherche dans l'arbre",
+    "message": "Rechercher dans l'arbre",
     "description": ""
   },
   "focusHeadingsTree": {
@@ -312,11 +312,11 @@
     "description": ""
   },
   "toggleTreeNodesByLevel": {
-    "message": "Réduire ou développer les nœuds de l'arbre par niveau d'en-tête",
+    "message": "Réduire ou développer les nœuds de l'arbre par niveau de titre",
     "description": ""
   },
   "shortcutsPanelDescription": {
-    "message": "Voici la liste des raccourcis clavier associés aux fonctionnalités de l'extension. Vous pouvez modifier les raccourcis existants et les adapter à vos besoins. Plusieurs touches peuvent être combinées dans un même raccourci. Seuls les lettres, les chiffres, la touche <kbd class='shortcut'>shift</kbd> et certains caractères: <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>.",
+    "message": "Voici la liste des raccourcis clavier associés aux fonctionnalités de l'extension. Vous pouvez modifier les raccourcis existants et les adapter à vos besoins. Plusieurs touches peuvent être combinées dans un même raccourci. Seules les lettres, les chiffres, la touche <kbd class='shortcut'>shift</kbd> et certains caractères sont autorisés : <kbd class='shortcut'>.</kbd>, <kbd class='shortcut'>,</kbd>, <kbd class='shortcut'>:</kbd>, <kbd class='shortcut'>;</kbd> ,<kbd class='shortcut'>/</kbd>, <kbd class='shortcut'><</kbd>, <kbd class='shortcut'>></kbd>, <kbd class='shortcut'>arrowLeft</kbd>, <kbd class='shortcut'>arrowRight</kbd>, <kbd class='shortcut'>arrowUp</kbd>, <kbd class='shortcut'>arrowDown</kbd>.",
     "description": ""
   },
   "shortcutsPanelDescriptionBottom": {

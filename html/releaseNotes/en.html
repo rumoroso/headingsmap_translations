@@ -5,6 +5,54 @@
     <h1 id="release-notes-header" class="headingsmap-exclude">Release notes</h1>
     <div class="contents custom-scrollbar">
         <dl>
+            <dt data-version="4.10.8">15/9/2026 (v4.10.8)</dt>
+            <dd>Added a "Locate heading in HeadingsMap" option to the right-click menu on any heading in the page. It scrolls to and highlights that heading in the results tree, which is useful for seeing where it sits within the overall structure. Thank you to Jon Brown for suggesting this feature.</dd>
+            <dd>Added the translation to Slovak provided by Radoslav Ďurač (GitHub: <a href="https://github.com/rraddatch" target="_blank">rraddatch</a>). Thank you very much for this voluntary collaboration, I really appreciate it.</dd>
+            <dd>Fixed an issue that made the dialog title show in English again on later openings, since it was removed from the cached content instead of hidden.</dd>
+            <dd>The settings dialog now synchronises its fields every time it is opened, not only when created, so changes made outside of it (such as the panel position) are reflected.</dd>
+
+            <dt data-version="4.10.7">8/4/2026 (v4.10.7)</dt>
+            <dd>Handled invalid CSS selectors (e.g., namespaced selectors) when evaluating styles to prevent runtime
+                errors.</dd>
+
+            <dt data-version="4.10.6">19/1/2026 (v4.10.6)</dt>
+            <dd>When clicking the tree and scrolling the page, some margin is left at the top in case there is fixed
+                content.</dd>
+            <dd>Include additional ways to identify visually the headers when the document includes Shadow DOM.
+            </dd>
+
+            <dt data-version="4.10.5">16/1/2026 (v4.10.5)</dt>
+            <dd>Fixed an issue that made the extension ignore nested Shadow DOM content.
+            </dd>
+
+            <dt data-version="4.10.4">15/1/2026 (v4.10.4)</dt>
+            <dd>Fixed a regression bug that prevented the extension for checking inside of Shadow DOM.
+            </dd>
+
+            <dt data-version="4.10.3">26/12/2025 (v4.10.3)</dt>
+            <dd>Improved performance when responding to DOM changes such as element insertion, removal, or panel
+                expansion, with the most noticeable gains occurring in scenarios that trigger many mutation observers.
+            </dd>
+
+            <dt data-version="4.10.2">23/7/2025 (v4.10.2)</dt>
+            <dd>Fixed the behavior when a heading has the inert attribute or is a descendant of an element that does.
+                Such elements should not be listed, as they are inert to user interaction and hidden from assistive
+                technologies. Thank you again to Erik Kroes for spotting this and letting me know.
+            </dd>
+
+            <dt data-version="4.10.1">23/5/2025 (v4.10.1)</dt>
+            <dd>A keyboard shortcut (shift + c) was added to copy the results from the tree. Erik Kroes, thank you for
+                suggesting it.
+            </dd>
+            <dd>Fixed one bug with the shortcut to reveal the elements in the page.</dd>
+
+            <dt data-version="4.9.10">25/4/2025 (v4.9.10)</dt>
+            <dd>Added Polish translations provided by Adam (D53 Visual Design). Thank you very much for that Adam.</dd>
+            <dd>Fixed bug related with the list index.</dd>
+
+            <dt data-version="4.9.9">22/4/2025 (v4.9.9)</dt>
+            <dd>Fixed bug that prevented the setting from the HTML5 Outline work properly.</dd>
+
             <dt data-version="4.9.8">18/4/2025 (v4.9.8)</dt>
             <dd>Fixed bug that prevented showing the results when closing and opening the panel again.</dd>
 
@@ -180,10 +228,10 @@
             <dd>Improved the code that generates the menus, so now they are real buttons.</dd>
             <dd>It includes some accessibility improvements.</dd>
 
-            <dt data-version="4.2.3">29/3/2023 (v 4.2.3)</dt>
+            <dt data-version="4.2.3">23/3/2023 (v 4.2.3)</dt>
             <dd>Updated the way in which it can be kept open.</dd>
 
-            <dt data-version="4.2.2">23/3/2023 (v 4.2.2)</dt>
+            <dt data-version="4.2.2">29/3/2023 (v 4.2.2)</dt>
             <dd>Improved the way in which the panel takes space from the body when opening and resizing.</dd>
 
             <dt data-version="4.2.1">21/3/2023 (v 4.2.1)</dt>

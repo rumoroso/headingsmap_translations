@@ -5,6 +5,60 @@
     <h1 id="release-notes-header" class="headingsmap-exclude">Últimos cambios</h1>
     <div class="contents custom-scrollbar">
         <dl>
+            <dt data-version="4.10.8">15/9/2026 (v4.10.8)</dt>
+            <dd>Se ha añadido la opción "Localizar encabezado en HeadingsMap" al menú contextual (clic derecho) de cualquier encabezado de la página. Desplaza el árbol de resultados hasta ese encabezado y lo resalta, lo cual resulta útil para ver dónde se encuentra dentro de la estructura general. Gracias a Jon Brown por sugerir esta funcionalidad.</dd>
+            <dd>Se ha añadido la traducción al eslovaco, facilitada por Radoslav Ďurač (GitHub: <a href="https://github.com/rraddatch" target="_blank">rraddatch</a>). Muchas gracias por esta colaboración voluntaria, la aprecio de verdad.</dd>
+            <dd>Se corrigió un problema que hacía que el título del diálogo volviera a mostrarse en inglés en aperturas posteriores, ya que se eliminaba del contenido en caché en lugar de ocultarse.</dd>
+            <dd>El diálogo de ajustes ahora sincroniza sus campos cada vez que se abre, no solo al crearse, de modo que los cambios realizados fuera de él (como la posición del panel) se reflejan correctamente.</dd>
+
+            <dt data-version="4.10.7">8/4/2026 (v4.10.7)</dt>
+            <dd>Se gestionan selectores CSS no válidos (por ejemplo, selectores con espacio de nombres) al evaluar
+                estilos para evitar errores en tiempo de ejecución.</dd>
+
+            <dt data-version="4.10.6">19/1/2026 (v4.10.6)</dt>
+            <dd>Al hacer clic en el árbol y desplazarse por la página, se deja un margen en la parte superior por si
+                hay contenido fijo.</dd>
+            <dd>Se han incluido formas adicionales de identificar visualmente los encabezados cuando el documento
+                incluye Shadow DOM.
+            </dd>
+
+            <dt data-version="4.10.5">16/1/2026 (v4.10.5)</dt>
+            <dd>Se corrigió un problema que hacía que la extensión ignorara el contenido Shadow DOM anidado.
+            </dd>
+
+            <dt data-version="4.10.4">15/1/2026 (v4.10.4)</dt>
+            <dd>Se corrigió un error de regresión que impedía que la extensión verificara dentro del Shadow DOM.
+            </dd>
+
+            <dt data-version="4.10.3">26/12/2025 (v4.10.3)</dt>
+            <dd>Mejora del rendimiento al responder a cambios en el DOM, como la inserción o eliminación de elementos
+                o la expansión de paneles, con mejoras especialmente notables cuando se producen muchos cambios
+                al mismo tiempo.
+            </dd>
+
+            <dt data-version="4.10.2">23/7/2025 (v4.10.2)</dt>
+            <dd>Se corrigió el comportamiento cuando un encabezado tiene el atributo <code>inert</code> o es
+                descendiente de un elemento que lo tiene. Estos elementos no deben incluirse en la lista, ya que son
+                inertes a la interacción del usuario y están ocultos para las tecnologías de asistencia. Gracias de
+                nuevo a Erik Kroes por detectarlo y avisarme.
+            </dd>
+
+            <dt data-version="4.10.1">23/5/2025 (v4.10.1)</dt>
+            <dd>Se ha añadido un atajo de teclado (shift + c) para copiar los resultados del árbol. Erik Kroes, gracias
+                por
+                sugerirlo.
+            </dd>
+            <dd>Se ha corregido un error con el acceso directo para revelar los elementos de la página.</dd>
+
+            <dt data-version="4.9.10">25/4/2025 (v4.9.10)</dt>
+            <dd>Se ha añadido la traducción a polaco del dialog de configuración. Muchas gracias Adam (D53 Visual
+                Design) por facilitar la traducción.
+            </dd>
+            <dd>Se ha corregido un bug (otro nuevo) relacionado con los índices en listas.</dd>
+
+            <dt data-version="4.9.9">22/4/2025 (v4.9.9)</dt>
+            <dd>Se ha corregido un problema que hacía que no se aplicase la configuración en HTML5 Outline.</dd>
+
             <dt data-version="4.9.8">18/4/2025 (v4.9.8)</dt>
             <dd>Se ha corregido un problema que hacía que no se mostrasen los resultados tras cerrar y volver a abrir el
                 panel.
@@ -27,7 +81,7 @@
             </dt>
             <dd>Nuevo análisis de la estructura de landmarks.</dd>
             <dd>Eliminado el análisis HTML5 Outline.</dd>
-            <dd>Mejoras de accesibilidad.</dd>
+            <dd>Accessibility improvements.</dd>
 
             <dt data-version="4.8.7">27/8/2024 (v 4.8.7)</dt>
             <dd>Corrección de un error en los atajos de teclado.</dd>
@@ -60,7 +114,7 @@
             <dd>Se ha añadido la versión en japonés facilitada por 'k-ta-yamada'. Muchas gracias por esta colaboración y por el esfuerzo puesto en ella.</dd>
 
             <dt data-version="4.7.9">22/1/2024 (v 4.7.9)</dt>
-            <dd lang="en-US">Updated to identify whether the headers are inside of the <code>details</code> element and whether it is open or not.</dd>
+            <dd>Updated to identify whether the headers are inside of the <code>details</code> element and whether it is open or not.</dd>
 
             <dt data-version="4.7.8">20/1/2024 (v 4.7.8)</dt>
             <dd>Cuando existen iframes ocultos, estos son identificados en el selector de documentos de la pestaña HTMLOutline.</dd>
@@ -74,8 +128,8 @@
             <dd>Otros cambios menores.</dd>
 
             <dt data-version="4.7.5">11/1/2024 (v 4.7.5)</dt>
-            <dd lang="en-US">Improved performance.</dd>
-            <dd lang="en-US">Bug fixes.</dd>
+            <dd>Improved performance.</dd>
+            <dd>Bug fixes.</dd>
 
             <dt data-version="4.7.3">3/1/2024 (v 4.7.3)</dt>
             <dd>Mejora de la interacción con el teclado en el árbol de resultados. Gracias a Andrew Kirkpatrick por sus
@@ -101,7 +155,6 @@
             </dd>
             <dd>Mejoras de accesibilidad.
             </dd>
-            <dd>Mejoras en el comportamiento del diálogo, los menús, etc.</dd>
 
             <dt data-version="4.6.3">13/12/2023 (v 4.6.3)</dt>
             <dd>Mejoras de accesibilidad.</dd>
@@ -130,10 +183,10 @@
             <dd>Añadido soporte para Shadow DOM. Si hay encabezados dentro de Shadow DOM o con contenido dentro de él,
                 se identifican como cualquier otro encabezado en el DOM.</dd>
             <dd>Se ha mejorado la forma en que se muestran los encabezados en la página.</dd>
-            <dd lang="en-US">Bug fixes.</dd>
+            <dd>Bug fixes.</dd>
 
             <dt data-version="4.5.5">12/8/2023 (v 4.5.5)</dt>
-            <dd lang="en-US">Bug fixes.</dd>
+            <dd>Bug fixes.</dd>
 
             <dt data-version="4.5.3">10/8/2023 (v 4.5.3)</dt>
             <dd>Mejoras de estilo.</dd>
@@ -244,19 +297,18 @@
             <dd>Eliminada la opción de menú "actualizar resultados.</dd>
 
             <dt data-version="3.10.0">28/2/2021 (v 3.10.0)</dt>
-            <dd>Añadida la referencia visual opcional que ayuda a identificar las encabezados/secciones que se encuentran
-                actualmente en la ventana gráfica. Cuando la página se desplaza, si la encabezado (o sección para el árbol
+            <dd>Añadida la referencia visual opcional que ayuda a identificar las cabeceras/secciones que se encuentran
+                actualmente en la ventana gráfica. Cuando la página se desplaza, si la cabecera (o sección para el árbol
                 de HTML Outline) está en la ventana gráfica, el elemento correspondiente se resalta en el árbol
                 cambiando su fondo y con una línea de 4px en su lado derecho. Esta opción puede activarse en el panel de
                 configuración (casilla de verificación con la etiqueta "Relacionar con viewport").
             </dd>
-            <dd>Corregido un error en el árbol headingsMap cuando estaba activada la opción de considerar las encabezados
+            <dd>Corregido un error en el árbol headingsMap cuando estaba activada la opción de considerar las cabeceras
                 ocultas.
             </dd>
             <dd>Mejora de la accesibilidad del componente.</dd>
+            <dd>Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator.</dd>
         </dl>
-
-        <p class="note">Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator.</p>
 
         <p>A partir de este punto, el resto de la lista del histórico de cambios está en inglés. Intentaré ir
             traduciendo a medida que pueda y haga nuevos cambios. </p>

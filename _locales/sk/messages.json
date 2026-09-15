@@ -330,5 +330,9 @@
   "resizePanelAriaLabel": {
     "message": "pomocou kurzorových klávesov zväčšite alebo zmenšite šírku panelu",
     "description": ""
+  },
+  "contextMenuLocateHeading": {
+    "message": "Nájsť nadpis v HeadingsMap",
+    "description": "Right-click context menu item shown on a heading, to locate it in the HeadingsMap panel."
   }
 }

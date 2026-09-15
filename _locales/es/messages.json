@@ -330,5 +330,9 @@
   "resizePanelAriaLabel": {
     "message": "utilice las teclas de flecha para aumentar o reducir la anchura del panel",
     "description": ""
+  },
+  "contextMenuLocateHeading": {
+    "message": "Localizar encabezado en HeadingsMap",
+    "description": "Right-click context menu item shown on a heading, to locate it in the HeadingsMap panel."
   }
 }

@@ -5,7 +5,7 @@ texts are divided into two groups:
 * Translations that are added programmatically. They are labels that are in json files under the directory "_locales".
 * HTML contents that are static. They are HTML files that are located in different folders under the directory "html".
 
-So far there are five language versions (English, French, Spanish, Polish and Japanese). If you want to contribute
+So far there are six language versions (English, French, Spanish, Polish, Japanese and Slovak). If you want to contribute
 translating it, you will be very welcome, so thank you in advance. Just follow the normal github process (fork the
 repository, etc.). And if you don't know how to do it, there is no problem. In that case you can download everything,
 translate it and then send it back to me directly. Or just contact me and I can send you the files.

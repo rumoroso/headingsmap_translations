@@ -330,5 +330,9 @@
   "resizePanelAriaLabel": {
     "message": "矢印キーでパネル幅を増減する",
     "description": ""
+  },
+  "contextMenuLocateHeading": {
+    "message": "HeadingsMap で見出しを表示",
+    "description": "Right-click context menu item shown on a heading, to locate it in the HeadingsMap panel."
   }
 }
